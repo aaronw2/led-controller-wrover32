@@ -787,8 +787,6 @@ F 3 "" H 4550 6350 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4250 6400 4550 6400
-Wire Wire Line
-	4550 6400 4550 6350
 $Comp
 L power:+3.3V #PWR013
 U 1 1 5B9E8C3A
@@ -1478,17 +1476,6 @@ Wire Wire Line
 	900  3350 900  3300
 Connection ~ 900  3300
 $Comp
-L Connector_Generic:Conn_01x12 J2
-U 1 1 5B9D440B
-P 4050 6900
-F 0 "J2" H 3970 7617 50  0000 C CNN
-F 1 "Conn_01x12" H 3970 7526 50  0000 C CNN
-F 2 "aaron:BM12B-SURS-TF" H 4050 6900 50  0001 C CNN
-F 3 "~" H 4050 6900 50  0001 C CNN
-	1    4050 6900
-	-1   0    0    -1  
-$EndComp
-$Comp
 L Connector_Generic:Conn_01x12 J4
 U 1 1 5BA0077D
 P 5650 5850
@@ -1596,4 +1583,17 @@ Wire Wire Line
 Connection ~ 6800 6350
 Wire Wire Line
 	6800 6350 6800 6450
+Wire Wire Line
+	4550 6400 4550 6350
+$Comp
+L Connector_Generic:Conn_01x12 J2
+U 1 1 5B9D440B
+P 4050 6900
+F 0 "J2" H 3970 7617 50  0000 C CNN
+F 1 "Conn_01x12" H 3970 7526 50  0000 C CNN
+F 2 "aaron:BM12B-SURS-TF" H 4050 6900 50  0001 C CNN
+F 3 "~" H 4050 6900 50  0001 C CNN
+	1    4050 6900
+	-1   0    0    -1  
+$EndComp
 $EndSCHEMATC
