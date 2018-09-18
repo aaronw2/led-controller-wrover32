@@ -187,17 +187,6 @@ F 3 "~" H 4500 1050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L switch_tact_smt:SW_SPST_KMR2 SW1
-U 1 1 5B95DB65
-P 4500 1600
-F 0 "SW1" V 4540 1459 42  0000 R CNN
-F 1 "KMR2" V 4461 1459 42  0000 R CNN
-F 2 "aaron:SW_SPST_KMR2" H 4500 1600 50  0001 C CNN
-F 3 "" H 4500 1600 50  0001 C CNN
-	1    4500 1600
-	0    -1   -1   0   
-$EndComp
-$Comp
 L Device:C C5
 U 1 1 5B95DBE5
 P 4950 1550
@@ -222,15 +211,9 @@ $EndComp
 Wire Wire Line
 	4500 2100 4500 1800
 Wire Wire Line
-	4500 1800 4600 1800
-Connection ~ 4500 1800
-Wire Wire Line
 	4500 900  4500 800 
 Wire Wire Line
 	4950 1700 4950 1800
-Wire Wire Line
-	4950 1800 4600 1800
-Connection ~ 4600 1800
 $Comp
 L Connector:USB_B_Micro J3
 U 1 1 5B95EA1C
@@ -992,12 +975,6 @@ Wire Wire Line
 	2700 5050 2700 6950
 Wire Wire Line
 	4500 1200 4500 1400
-Wire Wire Line
-	4600 1400 4500 1400
-Connection ~ 4500 1400
-Wire Wire Line
-	4600 1400 4950 1400
-Connection ~ 4600 1400
 Connection ~ 4950 1400
 Text Label 4700 6800 0    50   ~ 0
 IO34
@@ -1165,8 +1142,6 @@ Text Label 8700 3050 0    50   ~ 0
 IO27
 Wire Wire Line
 	4250 6700 4850 6700
-Wire Wire Line
-	4850 6700 4850 6750
 Text Label 4700 6700 0    50   ~ 0
 DO
 $Comp
@@ -1481,7 +1456,7 @@ U 1 1 5BA0077D
 P 5650 5850
 F 0 "J4" H 5570 6567 50  0000 C CNN
 F 1 "Conn_01x12" H 5570 6476 50  0000 C CNN
-F 2 "aaron:BM12B-SURS-TF" H 5650 5850 50  0001 C CNN
+F 2 "aaron:BM12B-SRSS-TB" H 5650 5850 50  0001 C CNN
 F 3 "~" H 5650 5850 50  0001 C CNN
 	1    5650 5850
 	-1   0    0    -1  
@@ -1526,27 +1501,6 @@ Wire Wire Line
 	5050 6500 4250 6500
 Text Label 8000 3050 0    50   ~ 0
 IO27
-$Comp
-L TI_Power_Supervisor:TPS3809 U5
-U 1 1 5BBE98E4
-P 3700 2000
-F 0 "U5" H 3700 2365 50  0000 C CNN
-F 1 "TPS3809" H 3700 2274 50  0000 C CNN
-F 2 "TO_SOT_Packages_SMD:SOT-23" H 3700 2000 50  0001 C CNN
-F 3 "https://media.digikey.com/pdf/Data%20Sheets/Texas%20Instruments%20PDFs/TPS3809xxx-Q1.pdf" H 3700 2000 50  0001 C CNN
-	1    3700 2000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3100 1900 3300 1900
-Wire Wire Line
-	3300 2100 3300 2200
-Wire Wire Line
-	3300 2200 3100 2200
-Wire Wire Line
-	4100 2000 4350 2000
-Text Label 4100 2000 0    50   ~ 0
-RESET
 Wire Wire Line
 	5750 2150 5650 2150
 Wire Wire Line
@@ -1591,9 +1545,32 @@ U 1 1 5B9D440B
 P 4050 6900
 F 0 "J2" H 3970 7617 50  0000 C CNN
 F 1 "Conn_01x12" H 3970 7526 50  0000 C CNN
-F 2 "aaron:BM12B-SURS-TF" H 4050 6900 50  0001 C CNN
+F 2 "aaron:BM12B-SRSS-TB" H 4050 6900 50  0001 C CNN
 F 3 "~" H 4050 6900 50  0001 C CNN
 	1    4050 6900
 	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 1400 4950 1400
+Wire Wire Line
+	4600 1400 4500 1400
+Connection ~ 4600 1400
+Wire Wire Line
+	4950 1800 4600 1800
+Wire Wire Line
+	4500 1800 4600 1800
+Connection ~ 4600 1800
+Connection ~ 4500 1400
+Connection ~ 4500 1800
+$Comp
+L switch_tact_smt:SW_SPST_KMR2 SW1
+U 1 1 5B95DB65
+P 4500 1600
+F 0 "SW1" V 4540 1459 42  0000 R CNN
+F 1 "KMR2" V 4461 1459 42  0000 R CNN
+F 2 "aaron:SW_SPST_KMR2" H 4500 1600 50  0001 C CNN
+F 3 "" H 4500 1600 50  0001 C CNN
+	1    4500 1600
+	0    -1   -1   0   
 $EndComp
 $EndSCHEMATC
