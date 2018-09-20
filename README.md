@@ -131,3 +131,17 @@ This board is designed to be able to drive 5 channels of NeoPixels, or two
 channels of DotStars and one channel of NeoPixels.  One NeoPixel (D1) is
 built-in to the board and the output is connected to J2 pin 4.  The other
 four channels are pins J2 6, 7, 8 and 9.
+
+Connectors J2 and J4:
+
+Connectors J2 and J4 and JST VM12B-SRSS-TB connectors and mate with the 
+JST 12SR-3S connector.  These connectors can be found at Digikey, including
+connectors with wires already installed.
+
+All other connectors are pin headers with 1.27mm pitch, which is half the
+normal 2.54mm pitch except for J5, which uses the 2.54mm pitch.
+
+USB:
+Use either a micro USB cable OR J5, do not use both for USB I/O.  Both,
+however, are safe for power and ground, however do not exceed 900ma
+when using a micro USB cable.
