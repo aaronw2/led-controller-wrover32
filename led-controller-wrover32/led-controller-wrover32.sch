@@ -810,8 +810,6 @@ Text Label 6800 4050 0    50   ~ 0
 IO32_H
 Text Label 6800 4150 0    50   ~ 0
 IO33_H
-Text Label 6800 3650 0    50   ~ 0
-IO36
 Wire Wire Line
 	3750 5250 3200 5250
 Text Label 3200 5250 0    50   ~ 0
@@ -841,14 +839,6 @@ IO14
 Text Label 3200 4250 0    50   ~ 0
 IO15
 Wire Wire Line
-	3750 4350 3200 4350
-Text Label 3200 4350 0    50   ~ 0
-IO16
-Wire Wire Line
-	3750 4450 3200 4450
-Text Label 3200 4450 0    50   ~ 0
-IO17
-Wire Wire Line
 	3750 4550 3200 4550
 Text Label 3200 4550 0    50   ~ 0
 IO18
@@ -867,7 +857,7 @@ IO34
 Wire Wire Line
 	3750 5650 3200 5650
 Text Label 3200 5650 0    50   ~ 0
-IO36
+IO35
 Wire Wire Line
 	2800 3950 3750 3950
 Wire Wire Line
@@ -988,14 +978,6 @@ Wire Wire Line
 	5850 5650 6450 5650
 Text Label 6350 5650 0    50   ~ 0
 IO5
-Wire Wire Line
-	5850 5750 6450 5750
-Text Label 6300 5750 0    50   ~ 0
-IO17
-Wire Wire Line
-	5850 5850 6450 5850
-Text Label 6300 5850 0    50   ~ 0
-IO16
 Text Label 4600 6900 0    50   ~ 0
 IO33_H
 Text Label 4600 7000 0    50   ~ 0
@@ -1612,8 +1594,6 @@ Wire Wire Line
 Wire Wire Line
 	8950 5350 8950 5200
 Wire Wire Line
-	6700 5050 6700 5950
-Wire Wire Line
 	5850 5950 6700 5950
 Wire Wire Line
 	5850 6050 6600 6050
@@ -1688,4 +1668,45 @@ Text Label 6250 2250 0    50   ~ 0
 USB_D+
 Text Label 6250 2350 0    50   ~ 0
 USB_D-
+Wire Wire Line
+	5850 5850 6700 5850
+Connection ~ 6700 5850
+Wire Wire Line
+	6700 5850 6700 5950
+$Comp
+L power:+3.3V #PWR0107
+U 1 1 5BD2AFEE
+P 6800 3500
+F 0 "#PWR0107" H 6800 3350 50  0001 C CNN
+F 1 "+3.3V" H 6815 3673 50  0000 C CNN
+F 2 "" H 6800 3500 50  0001 C CNN
+F 3 "" H 6800 3500 50  0001 C CNN
+	1    6800 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 3500 6800 3650
+$Comp
+L Device:C C16
+U 1 1 5BD3CD62
+P 6250 4000
+F 0 "C16" H 6365 4046 50  0000 L CNN
+F 1 "1uF 10V" H 5950 4250 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 6288 3850 50  0001 C CNN
+F 3 "~" H 6250 4000 50  0001 C CNN
+	1    6250 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 3850 5850 3850
+Connection ~ 5850 3850
+Wire Wire Line
+	5850 4150 6250 4150
+Connection ~ 5850 4150
+Wire Wire Line
+	6700 5050 6700 5850
+Wire Wire Line
+	5850 5750 6450 5750
+Text Label 6300 5750 0    50   ~ 0
+IO35
 $EndSCHEMATC
