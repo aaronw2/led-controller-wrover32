@@ -145,3 +145,9 @@ USB:
 Use either a micro USB cable OR J5, do not use both for USB I/O.  Both,
 however, are safe for power and ground, however do not exceed 900ma
 when using a micro USB cable.
+
+Microphone:
+
+An optional SPH0645LM4H-B i2s compatible microphone is available.
+If present, it is configured for the left channel.  Word-select is on IO5,
+clock is on IO0 and data is on IO35.
