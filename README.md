@@ -38,8 +38,6 @@ Unlike most if not all other ESP32 based boards, this board includes a
 I/O ports can also be driven by the RTC in the ESP32 to help offload driving
 NeoPixels.
 
-IO36 can be used to tri-state the outputs.
-
 I/O27 is connected to an on-board SK6812MINI RGB NeoPixel with the output
 connected to J2 pin 4.
 
@@ -55,8 +53,8 @@ J2:
 5 - IO34
 6 - IO33_H - IO33 at 5v signalling
 7 - IO32_H - IO32 at 5V signalling
-8 - IO26_H - IO26 at 5V signalling
-9 - IO25_H - IO25 at 5V signalling
+8 - IO18_H - IO18 at 5V signalling
+9 - IO5_H - IO5 at 5V signalling
 10 - SENSOR_VN - Input to Sensor_VN pin
 11 - SENSOR_VP - Input to Sensor_VP pin
 12 - Reset
@@ -68,10 +66,10 @@ J4:
 2 - IO22 (10K pullup)
 3 - IO21 (10K pullup)
 4 - IO19
-5 - IO18
-6 - IO5
+5 - IO26
+6 - IO25
 7 - IO35
-8 - +3.3V
+8 - IO0
 9 - +3.3V
 10 - GND
 11 - GND
@@ -90,6 +88,7 @@ J6:
 J7:
 1 - GND
 2 - VBUS (+5V)
+3 - FET connected to ground, driven by IO26 (max 1A, 12V)
 
 J8:
 1 - GND
@@ -136,7 +135,11 @@ Connectors J2 and J4:
 
 Connectors J2 and J4 and JST VM12B-SRSS-TB connectors and mate with the
 JST 12SR-3S connector.  These connectors can be found at Digikey, including
-connectors with wires already installed.
+connectors with wires already installed. Note that the wire for the mating
+connectors is a bit hard to find. Alpha Wire 2928 WH005 fits this connector.
+It is a bit pricy. Mouser has it cheaper than Digikey for $35/100 feet,
+though I also found it online for $25. The connector requires 7 strand wire
+with an outer diameter between 0.54 and 0.58mm.
 
 All other connectors are pin headers with 1.27mm pitch, which is half the
 normal 2.54mm pitch except for J5, which uses the 2.54mm pitch.

@@ -103,7 +103,7 @@ L Device:C C2
 U 1 1 5B95D5C2
 P 2450 1400
 F 0 "C2" H 2565 1446 50  0000 L CNN
-F 1 "10uF" H 2400 1150 50  0000 L CNN
+F 1 "10uF" H 2250 1500 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 2488 1250 50  0001 C CNN
 F 3 "http://www.samsungsem.com/kr/support/product-search/mlcc/CL21B106KOQNNNE.jsp" H 2450 1400 50  0001 C CNN
 F 4 "Samsung" H -250 -650 50  0001 C CNN "MFR"
@@ -119,7 +119,7 @@ L Device:C C3
 U 1 1 5B95D622
 P 2850 1400
 F 0 "C3" H 2965 1446 50  0000 L CNN
-F 1 "1uF" H 2550 1650 50  0000 L CNN
+F 1 "1uF" H 2900 1300 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 2888 1250 50  0001 C CNN
 F 3 "http://www.samsungsem.com/kr/support/product-search/mlcc/CL10B105KP8NNNC.jsp" H 2850 1400 50  0001 C CNN
 F 4 "Samsung" H -250 -650 50  0001 C CNN "MFR"
@@ -456,38 +456,6 @@ F 15 "MMBT2222ATPMSCT-ND" H 0   0   50  0001 C CNN "SPN"
 F 16 "-" H 0   0   50  0001 C CNN "SPURL"
 	1    9650 1550
 	1    0    0    1   
-$EndComp
-$Comp
-L Device:R R4
-U 1 1 5B98BDF4
-P 9200 1550
-F 0 "R4" V 8993 1550 50  0000 C CNN
-F 1 "10K" V 9084 1550 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 9130 1550 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/20035/dcrcwe3.pdf" H 9200 1550 50  0001 C CNN
-F 4 "Vishay Dale" H 0   0   50  0001 C CNN "MFR"
-F 5 "CRCW060310K0FKEC" H 0   0   50  0001 C CNN "MPN"
-F 6 "Digikey" H 0   0   50  0001 C CNN "SPR"
-F 7 "541-2979-1-ND" H 0   0   50  0001 C CNN "SPN"
-F 8 "-" H 0   0   50  0001 C CNN "SPURL"
-	1    9200 1550
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R3
-U 1 1 5B98BE71
-P 9200 950
-F 0 "R3" V 8993 950 50  0000 C CNN
-F 1 "10K" V 9084 950 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 9130 950 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/20035/dcrcwe3.pdf" H 9200 950 50  0001 C CNN
-F 4 "Vishay Dale" H 0   0   50  0001 C CNN "MFR"
-F 5 "CRCW060310K0FKEC" H 0   0   50  0001 C CNN "MPN"
-F 6 "Digikey" H 0   0   50  0001 C CNN "SPR"
-F 7 "541-2979-1-ND" H 0   0   50  0001 C CNN "SPN"
-F 8 "-" H 0   0   50  0001 C CNN "SPURL"
-	1    9200 950 
-	0    1    1    0   
 $EndComp
 $Comp
 L MAX14611ETD_T:MAX14611ETD+T U4
@@ -1444,7 +1412,7 @@ Text Label 4150 1100 0    50   ~ 0
 RESET
 Text Label 8650 950  0    50   ~ 0
 RTS
-Text Label 8650 1550 0    50   ~ 0
+Text Label 8650 1450 0    50   ~ 0
 DTR
 Text Label 10000 750  0    50   ~ 0
 IO0
@@ -1631,23 +1599,13 @@ Wire Wire Line
 Wire Wire Line
 	4100 1100 4350 1100
 Wire Wire Line
-	9750 1150 9550 1350
+	9750 1150 9500 1400
 Wire Wire Line
-	9750 1350 9550 1150
+	9750 1350 9500 1100
 Wire Wire Line
 	9350 950  9450 950 
 Wire Wire Line
-	9550 1150 9050 1150
-Wire Wire Line
-	9050 1150 9050 950 
-Wire Wire Line
-	9350 1550 9450 1550
-Wire Wire Line
-	9050 1550 9050 1350
-Wire Wire Line
-	9050 1350 9550 1350
-Wire Wire Line
-	9050 1550 8650 1550
+	9050 1450 8650 1450
 Wire Wire Line
 	9750 750  10200 750 
 Wire Wire Line
@@ -1942,8 +1900,6 @@ Connection ~ 2850 1250
 Connection ~ 5950 2250
 Connection ~ 7150 2750
 Connection ~ 6300 950 
-Connection ~ 9050 950 
-Connection ~ 9050 1550
 Connection ~ 10300 3450
 Connection ~ 9950 3350
 Connection ~ 9950 3800
@@ -2007,17 +1963,6 @@ F 1 "FIDUCIAL_1MM" H 9753 5400 60  0000 L CNN
 F 2 "Fiducials:Fiducial_0.5mm_Dia_1mm_Outer" H 9753 5294 60  0000 L CNN
 F 3 "" H 9650 5400 60  0000 C CNN
 	1    9650 5400
-	1    0    0    -1  
-$EndComp
-$Comp
-L fiducial:FIDUCIAL_1MM FID6
-U 1 1 5BBF9E61
-P 9650 6500
-F 0 "FID6" H 9753 6606 60  0000 L CNN
-F 1 "FIDUCIAL_1MM" H 9753 6500 60  0000 L CNN
-F 2 "Fiducials:Fiducial_1mm_Dia_2.54mm_Outer_CopperBottom" H 9753 6394 60  0000 L CNN
-F 3 "" H 9650 6500 60  0000 C CNN
-	1    9650 6500
 	1    0    0    -1  
 $EndComp
 Text Label 9500 2550 2    50   ~ 0
@@ -2142,9 +2087,7 @@ Connection ~ 9800 2100
 Wire Wire Line
 	7900 950  7900 1450
 Wire Wire Line
-	7900 950  9050 950 
-Wire Wire Line
-	8650 1850 8650 1550
+	8650 1850 8650 1450
 Wire Wire Line
 	7750 1850 8650 1850
 Wire Wire Line
@@ -2157,7 +2100,7 @@ U 1 1 5BC2EF2D
 P 8400 5400
 F 0 "RN3" H 8120 5446 50  0000 R CNN
 F 1 "R_Pack04" H 8120 5355 50  0000 R CNN
-F 2 "Resistor_SMD:R_Array_Concave_4x0603" V 8675 5400 50  0001 C CNN
+F 2 "Resistor_SMD:R_Array_Convex_4x0603" V 8675 5400 50  0001 C CNN
 F 3 "~" H 8400 5400 50  0001 C CNN
 	1    8400 5400
 	-1   0    0    -1  
@@ -2176,4 +2119,48 @@ Connection ~ 8600 5200
 Wire Wire Line
 	8500 5200 8400 5200
 Connection ~ 8500 5200
+$Comp
+L Device:R_Pack02 RN4
+U 1 1 5BC02AB8
+P 8850 1300
+F 0 "RN4" V 8533 1300 50  0000 C CNN
+F 1 "R_Pack02" V 8624 1300 50  0000 C CNN
+F 2 "Resistor_SMD:R_Array_Convex_2x0603" V 9025 1300 50  0001 C CNN
+F 3 "https://industrial.panasonic.com/cdbs/www-data/pdf/AOC0000/AOC0000C14.pdf" H 8850 1300 50  0001 C CNN
+F 4 "Panasonic" H 6950 -3750 50  0001 C CNN "MFR"
+F 5 "EXB-V4V103JV" H 6950 -3750 50  0001 C CNN "MPN"
+F 6 "Digikey" H 6950 -3750 50  0001 C CNN "SPR"
+F 7 "Y2103CT-ND" H 6950 -3750 50  0001 C CNN "SPN"
+F 8 "-" H 6950 -3750 50  0001 C CNN "SPURL"
+	1    8850 1300
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	8650 1200 8650 950 
+Wire Wire Line
+	9200 1100 9050 950 
+Wire Wire Line
+	9050 1200 9350 1200
+Wire Wire Line
+	9350 1200 9350 950 
+Wire Wire Line
+	9500 1100 9200 1100
+Connection ~ 8650 950 
+Wire Wire Line
+	8650 950  9050 950 
+Wire Wire Line
+	7900 950  8650 950 
+Wire Wire Line
+	9050 1300 9050 1400
+Connection ~ 9050 1400
+Wire Wire Line
+	9050 1400 9050 1450
+Wire Wire Line
+	9050 1400 9500 1400
+Wire Wire Line
+	8550 1550 8550 1300
+Wire Wire Line
+	8550 1300 8650 1300
+Wire Wire Line
+	8550 1550 9450 1550
 $EndSCHEMATC
