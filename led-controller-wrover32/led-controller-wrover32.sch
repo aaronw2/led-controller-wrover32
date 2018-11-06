@@ -6,8 +6,8 @@ $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 1 1
 Title "Wrover32 LED Controller"
-Date ""
-Rev "1.4.4"
+Date "2018-11-05"
+Rev "1.4.5"
 Comp ""
 Comment1 "Copyright © 2018 by Aaron Williams"
 Comment2 ""
@@ -1020,7 +1020,7 @@ U 1 1 5B95DB65
 P 6300 5700
 F 0 "SW1" V 6340 5559 42  0000 R CNN
 F 1 "KMR2" V 6261 5559 42  0000 R CNN
-F 2 "Aaron:SW_SPST_KMR2" H 6300 5700 50  0001 C CNN
+F 2 "Button_Switch_SMD:SW_SPST_KMR2" H 6300 5700 50  0001 C CNN
 F 3 "https://www.ckswitches.com/media/1479/kmr2.pdf" H 6300 5700 50  0001 C CNN
 F 4 "C&K" H 1800 4100 50  0001 C CNN "MFR"
 F 5 "KMR231NG LFS" H 1800 4100 50  0001 C CNN "MPN"
@@ -1042,7 +1042,7 @@ F 3 "" H 8500 5400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_01x05 J8
+L led-controller-wrover32-rescue:Conn_01x05-Connector J8
 U 1 1 5BAE7406
 P 8800 6050
 F 0 "J8" H 8880 6092 50  0000 L CNN
@@ -1223,7 +1223,7 @@ F 3 "" H 1300 3150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_01x03 J7
+L led-controller-wrover32-rescue:Conn_01x03-Connector J7
 U 1 1 5BB02006
 P 700 2400
 F 0 "J7" H 700 2600 50  0000 C CNN
@@ -1255,7 +1255,7 @@ F 8 "https://www.digikey.com/product-detail/en/yageo/RC0603FR-071ML/311-1.00MHRC
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:R R12
+L led-controller-wrover32-rescue:R-device R12
 U 1 1 5BB18E30
 P 5650 1000
 F 0 "R12" H 5720 1046 50  0000 L CNN
@@ -1271,7 +1271,7 @@ F 8 "-" H 450 50  50  0001 C CNN "SPURL"
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:R R13
+L led-controller-wrover32-rescue:R-device R13
 U 1 1 5BB18EB8
 P 5650 1300
 F 0 "R13" H 5720 1346 50  0000 L CNN
@@ -1527,8 +1527,6 @@ Wire Wire Line
 Wire Wire Line
 	2150 1400 2150 1250
 Wire Wire Line
-	2700 1700 2300 1700
-Wire Wire Line
 	2300 1400 2700 1400
 Wire Wire Line
 	6750 5800 6750 5900
@@ -1743,9 +1741,7 @@ Wire Wire Line
 Connection ~ 850  1250
 Connection ~ 850  1050
 Connection ~ 1550 1800
-Connection ~ 2700 1700
 Connection ~ 2300 1400
-Connection ~ 2700 1400
 Connection ~ 7150 2750
 Connection ~ 10100 3750
 Connection ~ 9850 3650
@@ -2072,8 +2068,6 @@ J7 pin 3 can be used for PWM.\nNote that Wrover32 IO26\ncan do analog output.
 Wire Notes Line
 	500  6500 2800 6500
 Wire Notes Line
-	2800 6500 2800 8000
-Wire Notes Line
 	10400 3300 7150 3300
 Wire Notes Line
 	7150 5150 10400 5150
@@ -2207,4 +2201,10 @@ Wire Wire Line
 	9850 4100 10100 4100
 Connection ~ 10150 2450
 Connection ~ 10150 3100
+Wire Notes Line
+	2800 6500 2800 8000
+Wire Wire Line
+	2700 1700 2300 1700
+Connection ~ 2700 1400
+Connection ~ 2700 1700
 $EndSCHEMATC

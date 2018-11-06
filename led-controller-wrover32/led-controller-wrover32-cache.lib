@@ -1,136 +1,11 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# Connector:Conn_01x03
+# Connector_Generic_Conn_01x02
 #
-DEF Connector:Conn_01x03 J 0 40 Y N 1 F N
-F0 "J" 0 200 50 H V C CNN
-F1 "Connector:Conn_01x03" 0 -200 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- Connector*:*_??x*mm*
- Connector*:*1x??x*mm*
- Pin?Header?Straight?1X*
- Pin?Header?Angled?1X*
- Socket?Strip?Straight?1X*
- Socket?Strip?Angled?1X*
-$ENDFPLIST
-DRAW
-S -50 -95 0 -105 1 1 6 N
-S -50 5 0 -5 1 1 6 N
-S -50 105 0 95 1 1 6 N
-S -50 150 50 -150 1 1 10 f
-X Pin_1 1 -200 100 150 R 50 50 1 1 P
-X Pin_2 2 -200 0 150 R 50 50 1 1 P
-X Pin_3 3 -200 -100 150 R 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# Connector:Conn_01x05
-#
-DEF Connector:Conn_01x05 J 0 40 Y N 1 F N
-F0 "J" 0 300 50 H V C CNN
-F1 "Connector:Conn_01x05" 0 -300 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- Connector*:*_??x*mm*
- Connector*:*1x??x*mm*
- Pin?Header?Straight?1X*
- Pin?Header?Angled?1X*
- Socket?Strip?Straight?1X*
- Socket?Strip?Angled?1X*
-$ENDFPLIST
-DRAW
-S -50 -195 0 -205 1 1 6 N
-S -50 -95 0 -105 1 1 6 N
-S -50 5 0 -5 1 1 6 N
-S -50 105 0 95 1 1 6 N
-S -50 205 0 195 1 1 6 N
-S -50 250 50 -250 1 1 10 f
-X Pin_1 1 -200 200 150 R 50 50 1 1 P
-X Pin_2 2 -200 100 150 R 50 50 1 1 P
-X Pin_3 3 -200 0 150 R 50 50 1 1 P
-X Pin_4 4 -200 -100 150 R 50 50 1 1 P
-X Pin_5 5 -200 -200 150 R 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# Connector:Micro_SD_Card
-#
-DEF Connector:Micro_SD_Card J 0 40 Y Y 1 F N
-F0 "J" -650 600 50 H V C CNN
-F1 "Connector:Micro_SD_Card" 650 600 50 H V R CNN
-F2 "" 1150 300 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- microSD*
-$ENDFPLIST
-DRAW
-S -300 -375 -200 -425 0 1 0 F
-S -300 -275 -200 -325 0 1 0 F
-S -300 -175 -200 -225 0 1 0 F
-S -300 -75 -200 -125 0 1 0 F
-S -300 25 -200 -25 0 1 0 F
-S -300 125 -200 75 0 1 0 F
-S -300 225 -200 175 0 1 0 F
-S -300 325 -200 275 0 1 0 F
-P 6 0 1 10 650 500 650 550 -750 550 -750 -650 650 -650 650 -450 N
-P 11 0 1 10 -350 -450 -350 350 -50 350 100 500 150 500 150 450 250 450 300 500 800 500 800 -450 -350 -450 f
-X DAT2 1 -900 300 150 R 50 50 1 1 B
-X DAT3/CD 2 -900 200 150 R 50 50 1 1 B
-X CMD 3 -900 100 150 R 50 50 1 1 I
-X VDD 4 -900 0 150 R 50 50 1 1 W
-X CLK 5 -900 -100 150 R 50 50 1 1 I
-X VSS 6 -900 -200 150 R 50 50 1 1 W
-X DAT0 7 -900 -300 150 R 50 50 1 1 I
-X DAT1 8 -900 -400 150 R 50 50 1 1 I
-X SHIELD 9 800 -600 150 L 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# Connector:USB_B_Micro
-#
-DEF Connector:USB_B_Micro J 0 40 Y Y 1 F N
-F0 "J" -200 450 50 H V L CNN
-F1 "Connector:USB_B_Micro" -200 350 50 H V L CNN
-F2 "" 150 -50 50 H I C CNN
-F3 "" 150 -50 50 H I C CNN
-ALIAS USB_B_Mini
-$FPLIST
- USB*
-$ENDFPLIST
-DRAW
-C -150 85 25 0 1 10 F
-C -25 135 15 0 1 10 F
-S -200 -300 200 300 0 1 10 f
-S -5 -300 5 -270 0 1 0 N
-S 10 50 -20 20 0 1 10 F
-S 200 -205 170 -195 0 1 0 N
-S 200 -105 170 -95 0 1 0 N
-S 200 -5 170 5 0 1 0 N
-S 200 195 170 205 0 1 0 N
-P 2 0 1 10 -75 85 25 85 N
-P 4 0 1 10 -125 85 -100 85 -50 135 -25 135 N
-P 4 0 1 10 -100 85 -75 85 -50 35 0 35 N
-P 4 0 1 10 25 110 25 60 75 85 25 110 F
-P 5 0 1 0 -170 220 -70 220 -80 190 -160 190 -170 220 F
-P 9 0 1 0 -185 230 -185 220 -175 190 -175 180 -65 180 -65 190 -55 220 -55 230 -185 230 N
-X VBUS 1 300 200 100 L 50 50 1 1 w
-X D- 2 300 -100 100 L 50 50 1 1 P
-X D+ 3 300 0 100 L 50 50 1 1 P
-X ID 4 300 -200 100 L 50 50 1 1 P
-X GND 5 0 -400 100 U 50 50 1 1 w
-X Shield 6 -100 -400 100 U 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# Connector_Generic:Conn_01x02
-#
-DEF Connector_Generic:Conn_01x02 J 0 40 Y N 1 F N
+DEF Connector_Generic_Conn_01x02 J 0 40 Y N 1 F N
 F0 "J" 0 100 50 H V C CNN
-F1 "Connector_Generic:Conn_01x02" 0 -200 50 H V C CNN
+F1 "Connector_Generic_Conn_01x02" 0 -200 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -145,11 +20,11 @@ X Pin_2 2 -200 -100 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Connector_Generic:Conn_01x04
+# Connector_Generic_Conn_01x04
 #
-DEF Connector_Generic:Conn_01x04 J 0 40 Y N 1 F N
+DEF Connector_Generic_Conn_01x04 J 0 40 Y N 1 F N
 F0 "J" 0 200 50 H V C CNN
-F1 "Connector_Generic:Conn_01x04" 0 -300 50 H V C CNN
+F1 "Connector_Generic_Conn_01x04" 0 -300 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -168,11 +43,11 @@ X Pin_4 4 -200 -200 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Connector_Generic:Conn_01x12
+# Connector_Generic_Conn_01x12
 #
-DEF Connector_Generic:Conn_01x12 J 0 40 Y N 1 F N
+DEF Connector_Generic_Conn_01x12 J 0 40 Y N 1 F N
 F0 "J" 0 600 50 H V C CNN
-F1 "Connector_Generic:Conn_01x12" 0 -700 50 H V C CNN
+F1 "Connector_Generic_Conn_01x12" 0 -700 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -207,11 +82,80 @@ X Pin_9 9 -200 -300 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device:C
+# Connector_Micro_SD_Card
 #
-DEF Device:C C 0 10 N Y 1 F N
+DEF Connector_Micro_SD_Card J 0 40 Y Y 1 F N
+F0 "J" -650 600 50 H V C CNN
+F1 "Connector_Micro_SD_Card" 650 600 50 H V R CNN
+F2 "" 1150 300 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ microSD*
+$ENDFPLIST
+DRAW
+S -300 -375 -200 -425 0 1 0 F
+S -300 -275 -200 -325 0 1 0 F
+S -300 -175 -200 -225 0 1 0 F
+S -300 -75 -200 -125 0 1 0 F
+S -300 25 -200 -25 0 1 0 F
+S -300 125 -200 75 0 1 0 F
+S -300 225 -200 175 0 1 0 F
+S -300 325 -200 275 0 1 0 F
+P 6 0 1 10 650 500 650 550 -750 550 -750 -650 650 -650 650 -450 N
+P 11 0 1 10 -350 -450 -350 350 -50 350 100 500 150 500 150 450 250 450 300 500 800 500 800 -450 -350 -450 f
+X DAT2 1 -900 300 150 R 50 50 1 1 B
+X DAT3/CD 2 -900 200 150 R 50 50 1 1 B
+X CMD 3 -900 100 150 R 50 50 1 1 I
+X VDD 4 -900 0 150 R 50 50 1 1 W
+X CLK 5 -900 -100 150 R 50 50 1 1 I
+X VSS 6 -900 -200 150 R 50 50 1 1 W
+X DAT0 7 -900 -300 150 R 50 50 1 1 I
+X DAT1 8 -900 -400 150 R 50 50 1 1 I
+X SHIELD 9 800 -600 150 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Connector_USB_B_Micro
+#
+DEF Connector_USB_B_Micro J 0 40 Y Y 1 F N
+F0 "J" -200 450 50 H V L CNN
+F1 "Connector_USB_B_Micro" -200 350 50 H V L CNN
+F2 "" 150 -50 50 H I C CNN
+F3 "" 150 -50 50 H I C CNN
+ALIAS USB_B_Mini
+$FPLIST
+ USB*
+$ENDFPLIST
+DRAW
+C -150 85 25 0 1 10 F
+C -25 135 15 0 1 10 F
+S -200 -300 200 300 0 1 10 f
+S -5 -300 5 -270 0 1 0 N
+S 10 50 -20 20 0 1 10 F
+S 200 -205 170 -195 0 1 0 N
+S 200 -105 170 -95 0 1 0 N
+S 200 -5 170 5 0 1 0 N
+S 200 195 170 205 0 1 0 N
+P 2 0 1 10 -75 85 25 85 N
+P 4 0 1 10 -125 85 -100 85 -50 135 -25 135 N
+P 4 0 1 10 -100 85 -75 85 -50 35 0 35 N
+P 4 0 1 10 25 110 25 60 75 85 25 110 F
+P 5 0 1 0 -170 220 -70 220 -80 190 -160 190 -170 220 F
+P 9 0 1 0 -185 230 -185 220 -175 190 -175 180 -65 180 -65 190 -55 220 -55 230 -185 230 N
+X VBUS 1 300 200 100 L 50 50 1 1 w
+X D- 2 300 -100 100 L 50 50 1 1 P
+X D+ 3 300 0 100 L 50 50 1 1 P
+X ID 4 300 -200 100 L 50 50 1 1 P
+X GND 5 0 -400 100 U 50 50 1 1 w
+X Shield 6 -100 -400 100 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Device_C
+#
+DEF Device_C C 0 10 N Y 1 F N
 F0 "C" 25 100 50 H V L CNN
-F1 "Device:C" 25 -100 50 H V L CNN
+F1 "Device_C" 25 -100 50 H V L CNN
 F2 "" 38 -150 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -225,11 +169,11 @@ X ~ 2 0 -150 110 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device:R
+# Device_R
 #
-DEF Device:R R 0 0 N Y 1 F N
+DEF Device_R R 0 0 N Y 1 F N
 F0 "R" 80 0 50 V V C CNN
-F1 "Device:R" 0 0 50 V V C CNN
+F1 "Device_R" 0 0 50 V V C CNN
 F2 "" -70 0 50 V I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -242,11 +186,11 @@ X ~ 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device:R_Pack02
+# Device_R_Pack02
 #
-DEF Device:R_Pack02 RN 0 0 Y N 1 F N
+DEF Device_R_Pack02 RN 0 0 Y N 1 F N
 F0 "RN" -200 0 50 V V C CNN
-F1 "Device:R_Pack02" 100 0 50 V V C CNN
+F1 "Device_R_Pack02" 100 0 50 V V C CNN
 F2 "" 175 0 50 V I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -268,11 +212,11 @@ X R1.2 4 -100 200 100 D 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device:R_Pack04
+# Device_R_Pack04
 #
-DEF Device:R_Pack04 RN 0 0 Y N 1 F N
+DEF Device_R_Pack04 RN 0 0 Y N 1 F N
 F0 "RN" -300 0 50 V V C CNN
-F1 "Device:R_Pack04" 200 0 50 V V C CNN
+F1 "Device_R_Pack04" 200 0 50 V V C CNN
 F2 "" 275 0 50 V I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -304,11 +248,11 @@ X R1.2 8 -200 200 100 D 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# ESP32-WROVER-I:ESP32-WROVER-I
+# ESP32-WROVER-I_ESP32-WROVER-I
 #
-DEF ESP32-WROVER-I:ESP32-WROVER-I U 0 40 Y Y 1 L N
+DEF ESP32-WROVER-I_ESP32-WROVER-I U 0 40 Y Y 1 L N
 F0 "U" -501 1203 50 H V L BNN
-F1 "ESP32-WROVER-I:ESP32-WROVER-I" -500 -1201 50 H V L BNN
+F1 "ESP32-WROVER-I_ESP32-WROVER-I" -500 -1201 50 H V L BNN
 F2 "XCVR_ESP32-WROVER-I" 0 0 50 H I L BNN
 F3 "ESP32-WROVER-I" 0 0 50 H I L BNN
 F4 "Espressif Systems" 0 0 50 H I L BNN "Field6"
@@ -360,11 +304,11 @@ X GND 39 200 -1300 200 U 50 50 1 1 W
 ENDDRAW
 ENDDEF
 #
-# Interface_USB:CP2102N-A01-GQFN24
+# Interface_USB_CP2102N-A01-GQFN24
 #
-DEF Interface_USB:CP2102N-A01-GQFN24 U 0 40 Y Y 1 F N
+DEF Interface_USB_CP2102N-A01-GQFN24 U 0 40 Y Y 1 F N
 F0 "U" -200 875 50 H V R CNN
-F1 "Interface_USB:CP2102N-A01-GQFN24" -200 800 50 H V R CNN
+F1 "Interface_USB_CP2102N-A01-GQFN24" -200 800 50 H V R CNN
 F2 "Package_DFN_QFN:QFN-24-1EP_4x4mm_P0.5mm_EP2.6x2.6mm" 450 -800 50 H I L CNN
 F3 "" 50 -1050 50 H I C CNN
 $FPLIST
@@ -400,11 +344,11 @@ X ~RSTb 9 -600 600 150 R 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# LED:SK6812MINI
+# LED_SK6812MINI
 #
-DEF LED:SK6812MINI D 0 10 Y Y 1 F N
+DEF LED_SK6812MINI D 0 10 Y Y 1 F N
 F0 "D" 200 225 50 H V R BNN
-F1 "LED:SK6812MINI" 50 -225 50 H V L TNN
+F1 "LED_SK6812MINI" 50 -225 50 H V L TNN
 F2 "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm" 50 -300 50 H I L TNN
 F3 "" 100 -375 50 H I L TNN
 $FPLIST
@@ -427,11 +371,11 @@ X VDD 4 0 300 100 D 50 50 1 1 W
 ENDDRAW
 ENDDEF
 #
-# MAX14611ETD_T:MAX14611ETD+T
+# MAX14611ETD_T_MAX14611ETD+T
 #
-DEF MAX14611ETD_T:MAX14611ETD+T U 0 40 Y Y 1 L N
+DEF MAX14611ETD_T_MAX14611ETD+T U 0 40 Y Y 1 L N
 F0 "U" -700 639 50 H V L BNN
-F1 "MAX14611ETD_T:MAX14611ETD+T" -701 -758 50 H V L BNN
+F1 "MAX14611ETD_T_MAX14611ETD+T" -701 -758 50 H V L BNN
 F2 "SON40P300X300X80-15N230X170" -650 550 50 H I L BNN
 F3 "MAX14611ETD+T" -500 650 50 H I L BNN
 F4 "1.95 USD" -600 350 50 H I L BNN
@@ -462,11 +406,11 @@ X NC 9 900 -300 200 L 40 40 0 0 N
 ENDDRAW
 ENDDEF
 #
-# Torex_Semiconductor:XCL21X
+# Torex_Semiconductor_XCL21X
 #
-DEF Torex_Semiconductor:XCL21X U 0 40 Y Y 1 F N
+DEF Torex_Semiconductor_XCL21X U 0 40 Y Y 1 F N
 F0 "U" -250 400 50 H V C CNN
-F1 "Torex_Semiconductor:XCL21X" 150 400 50 H V C CNN
+F1 "Torex_Semiconductor_XCL21X" 150 400 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -486,11 +430,11 @@ X GND 9 -250 -550 200 U 50 50 1 1 W
 ENDDRAW
 ENDDEF
 #
-# Transistor_FET:BSS138
+# Transistor_FET_BSS138
 #
-DEF Transistor_FET:BSS138 Q 0 0 Y N 1 F N
+DEF Transistor_FET_BSS138 Q 0 0 Y N 1 F N
 F0 "Q" 200 75 50 H V L CNN
-F1 "Transistor_FET:BSS138" 200 0 50 H V L CNN
+F1 "Transistor_FET_BSS138" 200 0 50 H V L CNN
 F2 "Package_TO_SOT_SMD:SOT-23" 200 -75 50 H I L CIN
 F3 "" 0 0 50 H I L CNN
 ALIAS 2N7002 MMBF170
@@ -521,11 +465,11 @@ X D 3 100 200 100 D 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Transistor_FET:BSS214NW
+# Transistor_FET_BSS214NW
 #
-DEF Transistor_FET:BSS214NW Q 0 0 Y N 1 F N
+DEF Transistor_FET_BSS214NW Q 0 0 Y N 1 F N
 F0 "Q" 200 75 50 H V L CNN
-F1 "Transistor_FET:BSS214NW" 200 0 50 H V L CNN
+F1 "Transistor_FET_BSS214NW" 200 0 50 H V L CNN
 F2 "Package_TO_SOT_SMD:SOT-323_SC-70" 200 -75 50 H I L CIN
 F3 "" 0 0 50 H I L CNN
 $FPLIST
@@ -555,29 +499,11 @@ X D 3 100 200 100 D 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# device:R
+# dk_Microphones_SPH0645LM4H-B
 #
-DEF device:R R 0 0 N Y 1 F N
-F0 "R" 80 0 50 V V C CNN
-F1 "device:R" 0 0 50 V V C CNN
-F2 "" -70 0 50 V I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- R_*
- R_*
-$ENDFPLIST
-DRAW
-S -40 -100 40 100 0 1 10 N
-X ~ 1 0 150 50 D 50 50 1 1 P
-X ~ 2 0 -150 50 U 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# dk_Microphones:SPH0645LM4H-B
-#
-DEF dk_Microphones:SPH0645LM4H-B MIC 0 40 Y Y 1 F N
+DEF dk_Microphones_SPH0645LM4H-B MIC 0 40 Y Y 1 F N
 F0 "MIC" -275 375 60 H V C CNN
-F1 "dk_Microphones:SPH0645LM4H-B" 415 -355 60 H V C CNN
+F1 "dk_Microphones_SPH0645LM4H-B" 415 -355 60 H V C CNN
 F2 "digikey-footprints:SPH0645LM4H-B" 200 200 60 H I L CNN
 F3 "http://www.knowles.com/eng/content/download/5988/105771/version/4/file/SPH0645LM4H-BRevB.PDF" 200 300 60 H I L CNN
 F4 "423-1405-1-ND" 200 400 60 H I L CNN "Digi-Key_PN"
@@ -616,11 +542,11 @@ X DATA_OUT 6 400 0 106 L 50 50 1 1 O
 ENDDRAW
 ENDDEF
 #
-# dk_TVS-Diodes:USBLC6-2SC6
+# dk_TVS-Diodes_USBLC6-2SC6
 #
-DEF dk_TVS-Diodes:USBLC6-2SC6 D 0 40 Y Y 1 F N
+DEF dk_TVS-Diodes_USBLC6-2SC6 D 0 40 Y Y 1 F N
 F0 "D" -400 550 60 H V L CNN
-F1 "dk_TVS-Diodes:USBLC6-2SC6" 0 -550 60 H V C CNN
+F1 "dk_TVS-Diodes_USBLC6-2SC6" 0 -550 60 H V C CNN
 F2 "digikey-footprints:SOT23-6L" 200 200 60 H I L CNN
 F3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/06/1d/48/9c/6c/20/4a/b2/CD00050750.pdf/files/CD00050750.pdf/jcr:content/translations/en.CD00050750.pdf" 200 300 60 H I L CNN
 F4 "497-5235-1-ND" 200 400 60 H I L CNN "Digi-Key_PN"
@@ -695,11 +621,11 @@ X ~ 6 500 300 100 L 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# dk_Transistors-Bipolar-BJT-Single:MMBT2222A-TP
+# dk_Transistors-Bipolar-BJT-Single_MMBT2222A-TP
 #
-DEF dk_Transistors-Bipolar-BJT-Single:MMBT2222A-TP Q 0 0 Y Y 1 F N
+DEF dk_Transistors-Bipolar-BJT-Single_MMBT2222A-TP Q 0 0 Y Y 1 F N
 F0 "Q" -126 166 60 H V L CNN
-F1 "dk_Transistors-Bipolar-BJT-Single:MMBT2222A-TP" 206 0 60 V V C CNN
+F1 "dk_Transistors-Bipolar-BJT-Single_MMBT2222A-TP" 206 0 60 V V C CNN
 F2 "digikey-footprints:SOT-23-3" 200 200 60 H I L CNN
 F3 "http://www.mccsemi.com/up_pdf/MMBT2222A(SOT-23).pdf" 200 300 60 H I L CNN
 F4 "MMBT2222ATPMSCT-ND" 200 400 60 H I L CNN "Digi-Key_PN"
@@ -725,11 +651,11 @@ X C 3 100 200 100 D 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# fiducial:FIDUCIAL_1MM
+# fiducial_FIDUCIAL_1MM
 #
-DEF fiducial:FIDUCIAL_1MM FID 0 40 Y Y 1 F N
+DEF fiducial_FIDUCIAL_1MM FID 0 40 Y Y 1 F N
 F0 "FID" 0 125 60 H V C CNN
-F1 "fiducial:FIDUCIAL_1MM" 0 -125 60 H V C CNN
+F1 "fiducial_FIDUCIAL_1MM" 0 -125 60 H V C CNN
 F2 "" 0 0 60 H V C CNN
 F3 "" 0 0 60 H V C CNN
 DRAW
@@ -738,11 +664,85 @@ C 0 0 75 0 1 0 N
 ENDDRAW
 ENDDEF
 #
-# power:+3.3V
+# led-controller-wrover32-rescue_Conn_01x03-Connector
 #
-DEF power:+3.3V #PWR 0 0 Y Y 1 F P
+DEF led-controller-wrover32-rescue_Conn_01x03-Connector J 0 40 Y N 1 F N
+F0 "J" 0 200 50 H V C CNN
+F1 "led-controller-wrover32-rescue_Conn_01x03-Connector" 0 -200 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_??x*mm*
+ Connector*:*1x??x*mm*
+ Pin?Header?Straight?1X*
+ Pin?Header?Angled?1X*
+ Socket?Strip?Straight?1X*
+ Socket?Strip?Angled?1X*
+$ENDFPLIST
+DRAW
+S -50 -95 0 -105 1 1 6 N
+S -50 5 0 -5 1 1 6 N
+S -50 105 0 95 1 1 6 N
+S -50 150 50 -150 1 1 10 f
+X Pin_1 1 -200 100 150 R 50 50 1 1 P
+X Pin_2 2 -200 0 150 R 50 50 1 1 P
+X Pin_3 3 -200 -100 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# led-controller-wrover32-rescue_Conn_01x05-Connector
+#
+DEF led-controller-wrover32-rescue_Conn_01x05-Connector J 0 40 Y N 1 F N
+F0 "J" 0 300 50 H V C CNN
+F1 "led-controller-wrover32-rescue_Conn_01x05-Connector" 0 -300 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_??x*mm*
+ Connector*:*1x??x*mm*
+ Pin?Header?Straight?1X*
+ Pin?Header?Angled?1X*
+ Socket?Strip?Straight?1X*
+ Socket?Strip?Angled?1X*
+$ENDFPLIST
+DRAW
+S -50 -195 0 -205 1 1 6 N
+S -50 -95 0 -105 1 1 6 N
+S -50 5 0 -5 1 1 6 N
+S -50 105 0 95 1 1 6 N
+S -50 205 0 195 1 1 6 N
+S -50 250 50 -250 1 1 10 f
+X Pin_1 1 -200 200 150 R 50 50 1 1 P
+X Pin_2 2 -200 100 150 R 50 50 1 1 P
+X Pin_3 3 -200 0 150 R 50 50 1 1 P
+X Pin_4 4 -200 -100 150 R 50 50 1 1 P
+X Pin_5 5 -200 -200 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# led-controller-wrover32-rescue_R-device
+#
+DEF led-controller-wrover32-rescue_R-device R 0 0 N Y 1 F N
+F0 "R" 80 0 50 V V C CNN
+F1 "led-controller-wrover32-rescue_R-device" 0 0 50 V V C CNN
+F2 "" -70 0 50 V I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ R_*
+ R_*
+$ENDFPLIST
+DRAW
+S -40 -100 40 100 0 1 10 N
+X ~ 1 0 150 50 D 50 50 1 1 P
+X ~ 2 0 -150 50 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# power_+3.3V
+#
+DEF power_+3.3V #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -150 50 H I C CNN
-F1 "power:+3.3V" 0 140 50 H V C CNN
+F1 "power_+3.3V" 0 140 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 ALIAS +3.3V
@@ -754,11 +754,11 @@ X +3V3 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# power:GND
+# power_GND
 #
-DEF power:GND #PWR 0 0 Y Y 1 F P
+DEF power_GND #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -250 50 H I C CNN
-F1 "power:GND" 0 -150 50 H V C CNN
+F1 "power_GND" 0 -150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -767,11 +767,11 @@ X GND 1 0 0 0 D 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# power:VBUS
+# power_VBUS
 #
-DEF power:VBUS #PWR 0 0 Y Y 1 F P
+DEF power_VBUS #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -150 50 H I C CNN
-F1 "power:VBUS" 0 150 50 H V C CNN
+F1 "power_VBUS" 0 150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -782,11 +782,11 @@ X VBUS 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# switch_tact_smt:SW_SPST_KMR2
+# switch_tact_smt_SW_SPST_KMR2
 #
-DEF switch_tact_smt:SW_SPST_KMR2 SW 0 40 Y Y 1 F N
+DEF switch_tact_smt_SW_SPST_KMR2 SW 0 40 Y Y 1 F N
 F0 "SW" -100 250 42 H V L BNN
-F1 "switch_tact_smt:SW_SPST_KMR2" -200 -200 42 H V L BNN
+F1 "switch_tact_smt_SW_SPST_KMR2" -200 -200 42 H V L BNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
