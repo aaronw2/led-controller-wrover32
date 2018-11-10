@@ -76,9 +76,9 @@ J4:
 12 - VBUS (+5V)
 
 J5: USB
-1 - VBUS (+5)
-2 - D+
-3 - D-
+1 - VBUS (+5) (3A input capable)
+2 - D-
+3 - D+
 4 - GND
 
 J6:
@@ -97,6 +97,15 @@ J8:
 4 - IO21 (pullup) same as J4-3
 5 - +3.3V
 
+J9:
+1 - GND
+2 - +5V (3A input capable)
+
+J101:
+Note: pins 1 and 2 are the opposite of other power connectors
+1 - +12V 400ma
+2 - GND
+
 I2C:
 I2C is supported on pins IO21, IO22 and IO23, though one of those pins can
 also be used for a shared interruput line.
@@ -108,7 +117,9 @@ generate 3.3v with an output capability of up to 1A.  It supports automatic
 shutdown for thermal, overcurrent and under voltage events.
 
 Any VBUS (+5V) pin many be used to deliver or draw 5V from the board.  Total
-current should not exceed 2A for all combined ground and +5V pins.
+current should not exceed 2A for all combined ground and +5V pins, however
+for power input connectors J5 and J9 are capable of handling 3A in order to
+supply the 12V booster
 
 Ground:
 Any GND pin can be used for ground.
@@ -117,6 +128,12 @@ Any GND pin can be used for ground.
 The on-board power supply is capable of generating up to 1A.  The Wrover32 can
 consume up to 500ma.  Please limit power consumption to no more than 200ma to
 be safe.
+
++12V
+This board includes a 5V to 12V boost circuit in order to provide power to
+a fan or other accessories via J101.  Do not exceed 400ma.  All components
+needed for the 12V boost circuit start at reference 100.  To disable 12V
+support, do not install any components in this range, i.e. J101, R101, etc.
 
 RESET:
 
@@ -141,8 +158,11 @@ It is a bit pricy. Mouser has it cheaper than Digikey for $35/100 feet,
 though I also found it online for $25. The connector requires 7 strand wire
 with an outer diameter between 0.54 and 0.58mm.
 
+Connectors J5 and J101 are JST PH series connectors which are readily
+available. J101 is not at all uncommon for computer fans.
+
 All other connectors are pin headers with 1.27mm pitch, which is half the
-normal 2.54mm pitch except for J5, which uses the 2.54mm pitch.
+normal 2.54mm pitch except for J9, which uses the 2.54mm pitch.
 
 USB:
 Use either a micro USB cable OR J5, do not use both for USB I/O.  Both,
@@ -154,3 +174,15 @@ Microphone:
 An optional SPH0645LM4H-B i2s compatible microphone is available.
 If present, it is configured for the left channel.  Word-select is on IO5,
 clock is on IO0 and data is on IO35.
+
+Fan control:
+The PWM pin is not near the 12v supply due to routing issues.  In order to
+use PWM support, the fan must be connected to +12 or +5 and the PWM pin
+(J7 pin 3) for ground. Note that J7 pin 3 should never be shorted to ground
+as this will cause Q4 to act as a diode and likely burn up.
+
+Booting and programming:
+This follows the model used on the Wrover development board where DTR and
+RTS are used to control IO0, IO2 and RESET.  Note that revision 1.5 and later
+fixes the programming by supporting IO2.  IO2 is new for the Wrover32 and is
+not used by the Wroom32.
