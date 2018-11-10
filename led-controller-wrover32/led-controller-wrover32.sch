@@ -4,10 +4,10 @@ EELAYER 26 0
 EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
-Sheet 1 1
+Sheet 1 2
 Title "Wrover32 LED Controller"
-Date "2018-11-09"
-Rev "1.5"
+Date "2018-11-10"
+Rev "2.0"
 Comp ""
 Comment1 "Copyright © 2018 by Aaron Williams"
 Comment2 ""
@@ -124,7 +124,7 @@ L power:+3.3V #PWR07
 U 1 1 5B95D7ED
 P 2700 1400
 F 0 "#PWR07" H 2700 1250 50  0001 C CNN
-F 1 "+3.3V" H 2715 1573 50  0000 C CNN
+F 1 "+3.3V" H 2850 1450 50  0000 C CNN
 F 2 "" H 2700 1400 50  0001 C CNN
 F 3 "" H 2700 1400 50  0001 C CNN
 	1    2700 1400
@@ -249,7 +249,7 @@ U 1 1 5B95FBDA
 P 4200 1350
 F 0 "J5" H 4280 1342 50  0000 L CNN
 F 1 "Conn_01x04 DNS" H 4100 1050 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 4200 1350 50  0001 C CNN
+F 2 "Connector_JST:JST_PH_B4B-PH-K_1x04_P2.00mm_Vertical" H 4200 1350 50  0001 C CNN
 F 3 "~" H 4200 1350 50  0001 C CNN
 F 4 "-" H -2150 -1350 50  0001 C CNN "MFR"
 F 5 "-" H -2150 -1350 50  0001 C CNN "MPN"
@@ -328,7 +328,7 @@ U 1 1 5B964205
 P 1600 5700
 F 0 "J1" H 1550 4883 50  0000 C CNN
 F 1 "Micro_SD_Card" H 1550 4974 50  0000 C CNN
-F 2 "Connector_Card:microSD_HC_Wuerth_693072010801" H 2750 6000 50  0001 C CNN
+F 2 "Aaron:microSD_HC_Wuerth_693072010801" H 2750 6000 50  0001 C CNN
 F 3 "http://katalog.we-online.de/em/datasheet/693072010801.pdf" H 1600 5700 50  0001 C CNN
 F 4 "Wuerth" H 0   -1050 50  0001 C CNN "MFR"
 F 5 "693072010801" H 0   -1050 50  0001 C CNN "MPN"
@@ -1701,19 +1701,11 @@ Wire Wire Line
 Wire Wire Line
 	4400 2150 4400 2300
 Wire Wire Line
-	4400 2500 4500 2500
-Wire Wire Line
-	4500 2500 4500 2000
-Wire Wire Line
 	4000 2900 4100 2900
 Wire Wire Line
 	5950 2250 5950 2000
 Wire Wire Line
 	5950 2000 5750 2000
-Wire Wire Line
-	4400 2600 4600 2600
-Wire Wire Line
-	4750 2000 4500 2000
 Connection ~ 850  1250
 Connection ~ 850  1050
 Connection ~ 1550 1800
@@ -1911,18 +1903,6 @@ Connection ~ 8200 5400
 Wire Wire Line
 	8100 5400 8000 5400
 Connection ~ 8100 5400
-Wire Wire Line
-	4400 1450 4500 1450
-Wire Wire Line
-	4500 1450 4500 2000
-Connection ~ 4500 2000
-Wire Wire Line
-	4400 1350 4600 1350
-Wire Wire Line
-	4600 1350 4600 2600
-Connection ~ 4600 2600
-Wire Wire Line
-	4600 2600 4750 2600
 NoConn ~ 4400 2700
 Connection ~ 1400 1800
 NoConn ~ 7900 5800
@@ -1968,7 +1948,7 @@ Wire Wire Line
 Wire Wire Line
 	2150 2850 2150 2750
 Connection ~ 2300 2850
-Text Notes 3100 2400 0    50   ~ 0
+Text Notes 3450 2100 0    50   ~ 0
 Place near\nUSB conn
 Wire Wire Line
 	9450 3950 9650 3950
@@ -1996,7 +1976,7 @@ Wire Wire Line
 	7650 4350 7350 4350
 Wire Wire Line
 	7650 4450 7350 4450
-Text Notes 1850 650  0    50   ~ 0
+Text Notes 500  650  0    50   ~ 0
 5V to 3.3V Buck Regulator\n1A maximum output
 Text Notes 1200 2200 0    50   ~ 0
 AUX Power Input/Output connectors
@@ -2033,12 +2013,6 @@ Wire Notes Line
 Wire Notes Line
 	3100 2050 500  2050
 Wire Notes Line
-	500  3400 2700 3400
-Wire Notes Line
-	2700 3400 2700 2050
-Wire Notes Line
-	2700 3200 7150 3200
-Wire Notes Line
 	6050 4950 6050 6200
 Wire Notes Line
 	7150 4950 6050 4950
@@ -2048,7 +2022,7 @@ Wire Notes Line
 	3500 8000 3500 6200
 Wire Notes Line
 	6250 6200 6250 8000
-Text Notes 2800 3300 0    50   ~ 0
+Text Notes 3550 3300 0    50   ~ 0
 Espressif ESP32 Wrover module and SD connector
 Wire Wire Line
 	4150 6900 4600 6900
@@ -2123,8 +2097,6 @@ Text Label 4400 2500 0    50   ~ 0
 D+
 Text Label 4400 2600 0    50   ~ 0
 D-
-Wire Notes Line
-	3100 2050 3100 500 
 Wire Wire Line
 	1700 3950 1450 3950
 Connection ~ 1700 3950
@@ -2314,4 +2286,102 @@ Wire Wire Line
 	6100 1250 6300 1250
 Connection ~ 6300 1250
 Connection ~ 6100 950 
+$Sheet
+S 2250 700  800  500 
+U 5BE8E860
+F0 "12v-booster" 50
+F1 "12v-booster.sch" 50
+$EndSheet
+Wire Wire Line
+	4400 2600 4650 2600
+Wire Wire Line
+	4400 1350 4650 1350
+Wire Wire Line
+	4650 1350 4650 2600
+Connection ~ 4650 2600
+Wire Wire Line
+	4650 2600 4750 2600
+Wire Wire Line
+	4550 2500 4550 2000
+Wire Wire Line
+	4400 2500 4550 2500
+Wire Wire Line
+	4400 1450 4550 1450
+Wire Wire Line
+	4750 2000 4550 2000
+Connection ~ 4550 2000
+Wire Wire Line
+	4550 2000 4550 1450
+$Comp
+L power:VBUS #PWR017
+U 1 1 5BF5F96D
+P 2950 2550
+F 0 "#PWR017" H 2950 2400 50  0001 C CNN
+F 1 "VBUS" H 3100 2600 50  0000 C CNN
+F 2 "" H 2950 2550 50  0001 C CNN
+F 3 "" H 2950 2550 50  0001 C CNN
+	1    2950 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR046
+U 1 1 5BF5F9E8
+P 2950 2850
+F 0 "#PWR046" H 2950 2600 50  0001 C CNN
+F 1 "GND" H 2955 2677 50  0000 C CNN
+F 2 "" H 2950 2850 50  0001 C CNN
+F 3 "" H 2950 2850 50  0001 C CNN
+	1    2950 2850
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	500  3400 3100 3400
+Wire Notes Line
+	3100 500  3100 3400
+Wire Notes Line
+	3100 3200 7150 3200
+$Comp
+L Device:C C19
+U 1 1 5BF97903
+P 2950 2700
+F 0 "C19" H 3000 2800 50  0000 L CNN
+F 1 "10uF" H 2950 2600 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 2988 2550 50  0001 C CNN
+F 3 "http://www.samsungsem.com/kr/support/product-search/mlcc/CL21B106KOQNNNE.jsp" H 2950 2700 50  0001 C CNN
+F 4 "Samsung" H 2050 -450 50  0001 C CNN "MFR"
+F 5 "CL21B106KOQNNNE" H 2050 -450 50  0001 C CNN "MPN"
+F 6 "Digikey" H 2050 -450 50  0001 C CNN "SPR"
+F 7 "1276-2872-1-ND" H 2050 -450 50  0001 C CNN "SPN"
+F 8 "-" H 2050 -450 50  0001 C CNN "SPURL"
+	1    2950 2700
+	1    0    0    -1  
+$EndComp
+Text Notes 2200 600  0    50   ~ 0
+5V to 12V 400ma MAX
+$Comp
+L Connector_Generic:Conn_01x02 J9
+U 1 1 5BF0E8E9
+P 2650 2750
+F 0 "J9" H 2650 2550 50  0000 C CNN
+F 1 "Conn_01x02 DNS" H 2650 2450 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 2650 2750 50  0001 C CNN
+F 3 "~" H 2650 2750 50  0001 C CNN
+F 4 "-" H 1550 -1100 50  0001 C CNN "MFR"
+F 5 "-" H 1550 -1100 50  0001 C CNN "MPN"
+F 6 "-" H 1550 -1100 50  0001 C CNN "SPR"
+F 7 "-" H 1550 -1100 50  0001 C CNN "SPN"
+F 8 "-" H 1550 -1100 50  0001 C CNN "SPURL"
+	1    2650 2750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2850 2650 2850 2550
+Wire Wire Line
+	2850 2550 2950 2550
+Connection ~ 2950 2550
+Wire Wire Line
+	2850 2750 2850 2850
+Wire Wire Line
+	2850 2850 2950 2850
+Connection ~ 2950 2850
 $EndSCHEMATC
