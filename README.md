@@ -77,8 +77,8 @@ J4:
 
 J5: USB
 1 - VBUS (+5)
-2 - D+
-3 - D-
+2 - D-
+3 - D+
 4 - GND
 
 J6:
@@ -154,3 +154,14 @@ Microphone:
 An optional SPH0645LM4H-B i2s compatible microphone is available.
 If present, it is configured for the left channel.  Word-select is on IO5,
 clock is on IO0 and data is on IO35.
+
+PWM Control:
+J7 pin 3 is capable of providing PWM control or even being driven by the
+D to A.  This pin is capable of sinking up to 12V and 1A (in PWM mode).
+Do not short this pin to ground or bad things will happen.
+
+Booting and programming:
+This board follows the standard in the Wrover32 reference design where
+DTR and RTS are used to control IO0, IO2 and RESET.  Note that revision
+1.5.0 fixed an issue where IO2 was not being driven, preventing booting
+or programming over the serial port.
