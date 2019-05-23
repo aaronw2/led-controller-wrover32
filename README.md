@@ -1,5 +1,6 @@
 # led-controller-wrover32
-Wrover32 based LED controller for NeoPixels and DotStars w/5v signalling & micro SD
+Wrover32 based LED controller for NeoPixels and DotStars with 5v signalling
+and micro SD
 
 Power:
 
@@ -146,7 +147,7 @@ pull the RESET line to ground.
 This board is designed to be able to drive 5 channels of NeoPixels, or two
 channels of DotStars and one channel of NeoPixels.  One NeoPixel (D1) is
 built-in to the board and the output is connected to J2 pin 4.  The other
-four channels are pins J2 6, 7, 8 and 9.
+four channels are pins J2 6, 7, 8 and 9.  Note that D1 uses a WS2813B-Mini.
 
 Connectors J2 and J4:
 
@@ -186,3 +187,30 @@ This follows the model used on the Wrover development board where DTR and
 RTS are used to control IO0, IO2 and RESET.  Note that revision 1.5 and later
 fixes the programming by supporting IO2.  IO2 is new for the Wrover32 and is
 not used by the Wroom32.
+
+GPIOs:
+IO0: I2S-BCLK, RTS for programming
+IO2: SD-DAT0, RTS for programming
+IO4: SD-DAT1
+IO5: 5V I/O
+IO12: SD-DAT2
+IO13: SD-DAT3/CD
+IO14: SD-Clock
+IO15: SD-Command
+IO16: do not use
+IO17: do not use
+IO18: 5V I/O
+IO19: I2S-WS
+IO21: Pull-up
+IO22: Pull-up
+IO23: Pull-up
+IO25:
+IO26: PWM-J7
+IO27: Status RGB LED
+IO32: 5V I/O
+IO33: 5V I/O
+IO34:
+IO35: I2S-data in
+SENSOR_VP:
+SENSOR_VN:
+
