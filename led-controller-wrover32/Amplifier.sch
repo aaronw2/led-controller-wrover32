@@ -1,0 +1,194 @@
+EESchema Schematic File Version 4
+LIBS:led-controller-wrover32-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Aaron:MAX98357A U5
+U 1 1 5DB543D3
+P 3900 3200
+F 0 "U5" H 3450 3500 50  0000 C CNN
+F 1 "MAX98357A" H 4150 3500 50  0000 C CNN
+F 2 "Aaron:VQFN-16-1EP_3x3mm_P0.5mm_EP1.68x1.68mm" H 3900 3200 50  0001 C CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/MAX98357A-MAX98357B.pdf" H 3900 3200 50  0001 C CNN
+F 4 "Maxim Integrated" H 3900 3200 50  0001 C CNN "MFR"
+F 5 "MAX98357AETE+T" H 3900 3200 50  0001 C CNN "MPN"
+F 6 "Digikey" H 3900 3200 50  0001 C CNN "SPR"
+F 7 "MAX98357AETE+TCT-ND" H 3900 3200 50  0001 C CNN "SPN"
+F 8 "https://www.digikey.com/products/en/integrated-circuits-ics/linear-amplifiers-audio/742?k=MAX98357A&k=&pkeyword=MAX98357A&sv=0&pv7=2&pv1291=108687&pv16=108891&sf=0&FV=-8%7C742&quantity=&ColumnSort=0&page=1&pageSize=500" H 3900 3200 50  0001 C CNN "SPURL"
+	1    3900 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C20
+U 1 1 5DB55B9D
+P 4450 2650
+F 0 "C20" H 4565 2696 50  0000 L CNN
+F 1 "10uF" H 4565 2605 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4488 2500 50  0001 C CNN
+F 3 "~" H 4450 2650 50  0001 C CNN
+	1    4450 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C21
+U 1 1 5DB56E4D
+P 4850 2650
+F 0 "C21" H 4965 2696 50  0000 L CNN
+F 1 "0.1uF" H 4965 2605 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4888 2500 50  0001 C CNN
+F 3 "~" H 4850 2650 50  0001 C CNN
+	1    4850 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0116
+U 1 1 5DB5770E
+P 3900 3650
+F 0 "#PWR0116" H 3900 3400 50  0001 C CNN
+F 1 "GND" H 3905 3477 50  0000 C CNN
+F 2 "" H 3900 3650 50  0001 C CNN
+F 3 "" H 3900 3650 50  0001 C CNN
+	1    3900 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0117
+U 1 1 5DB58235
+P 3000 3500
+F 0 "#PWR0117" H 3000 3250 50  0001 C CNN
+F 1 "GND" H 3005 3327 50  0000 C CNN
+F 2 "" H 3000 3500 50  0001 C CNN
+F 3 "" H 3000 3500 50  0001 C CNN
+	1    3000 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 3200 3000 3200
+Wire Wire Line
+	3000 3200 3000 3500
+$Comp
+L power:+3.3V #PWR0118
+U 1 1 5DB59262
+P 3000 2650
+F 0 "#PWR0118" H 3000 2500 50  0001 C CNN
+F 1 "+3.3V" H 3015 2823 50  0000 C CNN
+F 2 "" H 3000 2650 50  0001 C CNN
+F 3 "" H 3000 2650 50  0001 C CNN
+	1    3000 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 2500 4850 2500
+$Comp
+L power:GND #PWR0119
+U 1 1 5DB5D003
+P 4850 2800
+F 0 "#PWR0119" H 4850 2550 50  0001 C CNN
+F 1 "GND" H 4855 2627 50  0000 C CNN
+F 2 "" H 4850 2800 50  0001 C CNN
+F 3 "" H 4850 2800 50  0001 C CNN
+	1    4850 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 2800 4450 2800
+Connection ~ 4850 2800
+$Comp
+L power:VBUS #PWR0120
+U 1 1 5DB5DCA0
+P 4450 2500
+F 0 "#PWR0120" H 4450 2350 50  0001 C CNN
+F 1 "VBUS" H 4465 2673 50  0000 C CNN
+F 2 "" H 4450 2500 50  0001 C CNN
+F 3 "" H 4450 2500 50  0001 C CNN
+	1    4450 2500
+	1    0    0    -1  
+$EndComp
+Connection ~ 4450 2500
+$Comp
+L power:VBUS #PWR0121
+U 1 1 5DB5E7EE
+P 3900 2750
+F 0 "#PWR0121" H 3900 2600 50  0001 C CNN
+F 1 "VBUS" H 3915 2923 50  0000 C CNN
+F 2 "" H 3900 2750 50  0001 C CNN
+F 3 "" H 3900 2750 50  0001 C CNN
+	1    3900 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J11
+U 1 1 5DBCE011
+P 5100 3200
+F 0 "J11" H 5180 3192 50  0000 L CNN
+F 1 "Conn_01x02" H 5180 3101 50  0000 L CNN
+F 2 "Aaron:JST_SH_BM02B-SRSS-TB_1x02-1MP_P1.00mm_Vertical" H 5100 3200 50  0001 C CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/JST%20PDFs/SR%20Connector.pdf" H 5100 3200 50  0001 C CNN
+F 4 "JST Sales America Inc." H 5100 3200 50  0001 C CNN "MFR"
+F 5 "BM02B-SRSS-TB(LF)(SN)" H 5100 3200 50  0001 C CNN "MPN"
+F 6 "Digikey" H 5100 3200 50  0001 C CNN "SPR"
+F 7 "455-1788-1-ND" H 5100 3200 50  0001 C CNN "SPN"
+F 8 "https://www.digikey.com/product-detail/en/jst-sales-america-inc/BM02B-SRSS-TB-LF-SN/455-1788-1-ND/926859" H 5100 3200 50  0001 C CNN "SPURL"
+	1    5100 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 3100 2650 3100
+Text Label 2650 3100 0    50   ~ 0
+IO25
+Wire Wire Line
+	3200 3300 2650 3300
+Text Label 2650 3300 0    50   ~ 0
+IO26
+Wire Wire Line
+	3200 3400 2650 3400
+Text Label 2650 3400 0    50   ~ 0
+IO34
+Text GLabel 2650 3100 0    50   Input ~ 0
+IO25
+Text GLabel 2650 3300 0    50   Input ~ 0
+IO26
+Text GLabel 2650 3400 0    50   Input ~ 0
+IO34
+$Comp
+L Device:C C22
+U 1 1 5E040A75
+P 3000 2800
+F 0 "C22" H 2850 2900 50  0000 L CNN
+F 1 "0.1uF" H 2800 2700 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3038 2650 50  0001 C CNN
+F 3 "~" H 3000 2800 50  0001 C CNN
+	1    3000 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 2650 3200 2650
+Wire Wire Line
+	3200 2650 3200 3000
+Connection ~ 3000 2650
+Wire Wire Line
+	3000 3200 3000 2950
+Connection ~ 3000 3200
+Text Label 4600 3100 0    50   ~ 0
+SPKR+
+Text Label 4600 3300 0    50   ~ 0
+SPKR-
+Wire Wire Line
+	4900 3100 4900 3200
+Wire Wire Line
+	4550 3100 4900 3100
+Wire Wire Line
+	4550 3300 4900 3300
+$EndSCHEMATC
