@@ -102,6 +102,10 @@ J9:
 1 - GND
 2 - +5V (3A input capable)
 
+J11:
+1 - Speaker +
+2 - Speaker -
+
 J101:
 Note: pins 1 and 2 are the opposite of other power connectors
 1 - +12V 400ma
@@ -110,6 +114,16 @@ Note: pins 1 and 2 are the opposite of other power connectors
 I2C:
 I2C is supported on pins IO21, IO22 and IO23, though one of those pins can
 also be used for a shared interruput line.
+
+Notes:
+Some pins serve multiple purposes.  For example, two of the 5V I/O pins are
+shared.  For example, IO5 is also connected to the FET for PWM and IO33 is
+also connected to the BCLK on the amplifier.  If these are used, do not use
+the 5V I/Os for IO5 and/or IO33.  If IO33 is used, do not hook up a speaker.
+
+IO18 and IO32 are dedicated for 5V I/O and IO27 is dedicated for the status
+LED and the output of that is useable for driving WS2812s or compatible 24-bit
+LEDs.
 
 Power:
 
@@ -189,10 +203,10 @@ fixes the programming by supporting IO2.  IO2 is new for the Wrover32 and is
 not used by the Wroom32.
 
 GPIOs:
-IO0: I2S-BCLK, RTS for programming
+IO0: I2S-BCLK, RTS for programming, J4-8
 IO2: SD-DAT0, RTS for programming
 IO4: SD-DAT1
-IO5: 5V I/O
+IO5: 5V I/O, FAN PWM
 IO12: SD-DAT2
 IO13: SD-DAT3/CD
 IO14: SD-Clock
@@ -200,17 +214,17 @@ IO15: SD-Command
 IO16: do not use
 IO17: do not use
 IO18: 5V I/O
-IO19: I2S-WS
-IO21: Pull-up
-IO22: Pull-up
-IO23: Pull-up
-IO25:
-IO26: PWM-J7
-IO27: Status RGB LED
+IO19: mic I2S-WS, JU4-4
+IO21: Pull-up, J4-3
+IO22: Pull-up, J4-2
+IO23: Pull-up, J4-1
+IO25: J4-6, Speaker DIN
+IO26: J4-5, Speaker BCLK
+IO27: Status RGB LED output
 IO32: 5V I/O
-IO33: 5V I/O
-IO34:
-IO35: I2S-data in
-SENSOR_VP:
-SENSOR_VN:
+IO33: 5V I/O, Speaker LRCLK
+IO34: J2-5 (input only)
+IO35: MIC I2S-data in, J4-7
+SENSOR_VP: J2-11
+SENSOR_VN: J2-10
 

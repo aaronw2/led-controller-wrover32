@@ -155,13 +155,13 @@ IO26
 Wire Wire Line
 	3200 3400 2650 3400
 Text Label 2650 3400 0    50   ~ 0
-IO34
+IO33
 Text GLabel 2650 3100 0    50   Input ~ 0
 IO25
 Text GLabel 2650 3300 0    50   Input ~ 0
 IO26
 Text GLabel 2650 3400 0    50   Input ~ 0
-IO34
+IO33
 $Comp
 L Device:C C22
 U 1 1 5E040A75

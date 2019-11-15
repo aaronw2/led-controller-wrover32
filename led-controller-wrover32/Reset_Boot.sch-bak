@@ -300,4 +300,6 @@ $EndComp
 Wire Wire Line
 	3200 2750 3400 2750
 Connection ~ 3400 2750
+NoConn ~ 4100 2250
+NoConn ~ 3700 2250
 $EndSCHEMATC
