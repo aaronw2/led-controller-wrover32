@@ -92,24 +92,6 @@ F 3 "" H 2550 2350 50  0001 C CNN
 	1    2550 2350
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2550 2350 2800 2350
-Wire Wire Line
-	2800 2350 2800 2450
-Connection ~ 2800 2350
-Wire Wire Line
-	3200 2350 3200 2450
-Wire Wire Line
-	3200 2450 3400 2450
-Connection ~ 3200 2450
-Wire Wire Line
-	3400 2450 3700 2450
-Connection ~ 3400 2450
-Wire Wire Line
-	3700 2450 3700 2350
-Connection ~ 3700 2450
-Wire Wire Line
-	3700 2450 3700 2550
 $Comp
 L power:GND #PWR0126
 U 1 1 5DD72571
@@ -121,18 +103,6 @@ F 3 "" H 4100 2550 50  0001 C CNN
 	1    4100 2550
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4100 2450 4500 2450
-Wire Wire Line
-	4100 2350 4250 2350
-Wire Wire Line
-	4250 2350 4250 1800
-Wire Wire Line
-	4250 1800 5200 1800
-Wire Wire Line
-	5200 1800 5200 2450
-Wire Wire Line
-	5200 2450 5000 2450
 $Comp
 L power:GND #PWR0127
 U 1 1 5DD73FDE
@@ -155,16 +125,6 @@ F 3 "" H 5000 2750 50  0001 C CNN
 	1    5000 2750
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5000 2150 5650 2150
-Text Label 5500 2150 0    50   ~ 0
-IO0
-Wire Wire Line
-	4500 2750 4500 3100
-Wire Wire Line
-	4500 3100 5650 3100
-Text Label 5500 3100 0    50   ~ 0
-IO2
 $Comp
 L Device:R_Pack04 RN6
 U 1 1 5DD75EB2
@@ -172,21 +132,15 @@ P 3900 2450
 F 0 "RN6" V 3483 2450 50  0000 C CNN
 F 1 "100K" V 3574 2450 50  0000 C CNN
 F 2 "Resistor_SMD:R_Array_Convex_4x0603" V 4175 2450 50  0001 C CNN
-F 3 "https://www.bourns.com/docs/Product-Datasheets/CATCAY.pdf" H 3900 2450 50  0001 C CNN
-F 4 "Bourns" H 3900 2450 50  0001 C CNN "MFR"
-F 5 "CAT16-1003F4LF" H 3900 2450 50  0001 C CNN "MPN"
+F 3 "https://industrial.panasonic.com/cdbs/www-data/pdf/AOC0000/AOC0000C14.pdf" H 3900 2450 50  0001 C CNN
+F 4 "Panasonic" H 3900 2450 50  0001 C CNN "MFR"
+F 5 "EXB-V8V103JV" H 3900 2450 50  0001 C CNN "MPN"
 F 6 "Digikey" H 3900 2450 50  0001 C CNN "SPR"
-F 7 "CAT16-1003F4LFCT-ND" H 3900 2450 50  0001 C CNN "SPN"
+F 7 "Y4103CT-ND" H 3900 2450 50  0001 C CNN "SPN"
 F 8 "https://www.digikey.com/product-detail/en/bourns-inc/CAT16-1003F4LF/CAT16-1003F4LFCT-ND/3592894" H 3900 2450 50  0001 C CNN "SPURL"
 	1    3900 2450
 	0    1    1    0   
 $EndComp
-Text GLabel 5650 2150 2    50   Output ~ 0
-IO0
-Text GLabel 5650 3100 2    50   Output ~ 0
-IO2
-Text GLabel 5650 3700 2    50   Output ~ 0
-~RESET
 $Comp
 L power:+3.3V #PWR?
 U 1 1 5DDF9E79
@@ -227,11 +181,11 @@ AR Path="/5DD65482/5DDF9E8F" Ref="C5"  Part="1"
 F 0 "C5" H 3965 3896 50  0000 L CNN
 F 1 "0.1uF" H 3965 3805 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 3888 3700 50  0001 C CNN
-F 3 "http://www.samsungsem.com/kr/support/product-search/mlcc/CL10B104KO8WPNC.jsp" H 3850 3850 50  0001 C CNN
-F 4 "Samsung" H -1100 2300 50  0001 C CNN "MFR"
-F 5 "CL10B104KO8WPNC" H -1100 2300 50  0001 C CNN "MPN"
+F 3 "http://datasheets.avx.com/FlexitermMLCC.pdf" H 3850 3850 50  0001 C CNN
+F 4 "AVX" H -1100 2300 50  0001 C CNN "MFR"
+F 5 "06035C104K4Z4A" H -1100 2300 50  0001 C CNN "MPN"
 F 6 "Digikey" H -1100 2300 50  0001 C CNN "SPR"
-F 7 "1276-6582-1-ND" H -1100 2300 50  0001 C CNN "SPN"
+F 7 "478-10679-1-ND" H -1100 2300 50  0001 C CNN "SPN"
 F 8 "-" H -1100 2300 50  0001 C CNN "SPURL"
 	1    3850 3850
 	1    0    0    -1  
@@ -249,15 +203,6 @@ F 3 "" H 3400 4100 50  0001 C CNN
 	1    3400 4100
 	1    0    0    -1  
 $EndComp
-Text Label 3900 3700 0    50   ~ 0
-~RESET
-Text Notes 3600 3400 0    50   ~ 0
-Reset button
-Wire Wire Line
-	3850 4000 3850 4100
-Connection ~ 3850 3700
-Wire Wire Line
-	3850 3700 5650 3700
 $Comp
 L switch_tact_smt:SW_SPST_KMR2 SW1
 U 1 1 5E038054
@@ -274,18 +219,6 @@ F 8 "https://www.digikey.com/product-detail/en/c-k/KMR211GLFS/401-1426-1-ND/5504
 	1    3400 3900
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	3500 4100 3850 4100
-Wire Wire Line
-	3500 3700 3850 3700
-Wire Wire Line
-	3400 3700 3500 3700
-Connection ~ 3400 3700
-Connection ~ 3500 3700
-Wire Wire Line
-	3400 4100 3500 4100
-Connection ~ 3400 4100
-Connection ~ 3500 4100
 $Comp
 L Device:R R3
 U 1 1 5DBEA787
@@ -294,11 +227,83 @@ F 0 "R3" H 3250 2700 50  0000 L CNN
 F 1 "10K" H 3250 2500 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 3130 2600 50  0001 C CNN
 F 3 "~" H 3200 2600 50  0001 C CNN
+F 4 "-" H 0   0   50  0001 C CNN "MFR"
+F 5 "-" H 0   0   50  0001 C CNN "MPN"
+F 6 "-" H 0   0   50  0001 C CNN "SPR"
+F 7 "-" H 0   0   50  0001 C CNN "SPN"
+F 8 "-" H 0   0   50  0001 C CNN "SPURL"
 	1    3200 2600
 	1    0    0    -1  
 $EndComp
+Text Label 5500 2150 0    50   ~ 0
+IO0
+Text Label 5500 3100 0    50   ~ 0
+IO2
+Text GLabel 5650 2150 2    50   Output ~ 0
+IO0
+Text GLabel 5650 3100 2    50   Output ~ 0
+IO2
+Text GLabel 5650 3700 2    50   Output ~ 0
+~RESET
+Text Label 3900 3700 0    50   ~ 0
+~RESET
+Text Notes 3600 3400 0    50   ~ 0
+Reset button
+Wire Wire Line
+	2550 2350 2800 2350
+Wire Wire Line
+	2800 2350 2800 2450
+Wire Wire Line
+	3200 2350 3200 2450
+Wire Wire Line
+	3200 2450 3400 2450
+Wire Wire Line
+	3400 2450 3700 2450
+Wire Wire Line
+	3700 2450 3700 2350
+Wire Wire Line
+	3700 2450 3700 2550
+Wire Wire Line
+	4100 2450 4500 2450
+Wire Wire Line
+	4100 2350 4250 2350
+Wire Wire Line
+	4250 2350 4250 1800
+Wire Wire Line
+	4250 1800 5200 1800
+Wire Wire Line
+	5200 1800 5200 2450
+Wire Wire Line
+	5200 2450 5000 2450
+Wire Wire Line
+	5000 2150 5650 2150
+Wire Wire Line
+	4500 2750 4500 3100
+Wire Wire Line
+	4500 3100 5650 3100
+Wire Wire Line
+	3850 4000 3850 4100
+Wire Wire Line
+	3850 3700 5650 3700
+Wire Wire Line
+	3500 4100 3850 4100
+Wire Wire Line
+	3500 3700 3850 3700
+Wire Wire Line
+	3400 3700 3500 3700
+Wire Wire Line
+	3400 4100 3500 4100
 Wire Wire Line
 	3200 2750 3400 2750
+Connection ~ 2800 2350
+Connection ~ 3200 2450
+Connection ~ 3400 2450
+Connection ~ 3700 2450
+Connection ~ 3850 3700
+Connection ~ 3400 3700
+Connection ~ 3500 3700
+Connection ~ 3400 4100
+Connection ~ 3500 4100
 Connection ~ 3400 2750
 NoConn ~ 4100 2250
 NoConn ~ 3700 2250

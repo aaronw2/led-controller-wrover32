@@ -37,7 +37,12 @@ P 4450 2650
 F 0 "C20" H 4565 2696 50  0000 L CNN
 F 1 "10uF" H 4565 2605 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 4488 2500 50  0001 C CNN
-F 3 "~" H 4450 2650 50  0001 C CNN
+F 3 "http://www.samsungsem.com/kr/support/product-search/mlcc/CL21B106KOQNNNE.jsp" H 4450 2650 50  0001 C CNN
+F 4 "Samsung" H 0   0   50  0001 C CNN "MFR"
+F 5 "CL21B106KOQNNNE" H 0   0   50  0001 C CNN "MPN"
+F 6 "Digikey" H 0   0   50  0001 C CNN "SPR"
+F 7 "1276-2872-1-ND" H 0   0   50  0001 C CNN "SPN"
+F 8 "-" H 0   0   50  0001 C CNN "SPURL"
 	1    4450 2650
 	1    0    0    -1  
 $EndComp
@@ -48,7 +53,12 @@ P 4850 2650
 F 0 "C21" H 4965 2696 50  0000 L CNN
 F 1 "0.1uF" H 4965 2605 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 4888 2500 50  0001 C CNN
-F 3 "~" H 4850 2650 50  0001 C CNN
+F 3 "http://datasheets.avx.com/FlexitermMLCC.pdf" H 4850 2650 50  0001 C CNN
+F 4 "AVX" H 0   0   50  0001 C CNN "MFR"
+F 5 "06035C104K4Z4A" H 0   0   50  0001 C CNN "MPN"
+F 6 "Digikey" H 0   0   50  0001 C CNN "SPR"
+F 7 "478-10679-1-ND" H 0   0   50  0001 C CNN "SPN"
+F 8 "-" H 0   0   50  0001 C CNN "SPURL"
 	1    4850 2650
 	1    0    0    -1  
 $EndComp
@@ -74,10 +84,6 @@ F 3 "" H 3000 3500 50  0001 C CNN
 	1    3000 3500
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3200 3200 3000 3200
-Wire Wire Line
-	3000 3200 3000 3500
 $Comp
 L power:+3.3V #PWR0118
 U 1 1 5DB59262
@@ -89,8 +95,6 @@ F 3 "" H 3000 2650 50  0001 C CNN
 	1    3000 2650
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4450 2500 4850 2500
 $Comp
 L power:GND #PWR0119
 U 1 1 5DB5D003
@@ -102,9 +106,6 @@ F 3 "" H 4850 2800 50  0001 C CNN
 	1    4850 2800
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4850 2800 4450 2800
-Connection ~ 4850 2800
 $Comp
 L power:VBUS #PWR0120
 U 1 1 5DB5DCA0
@@ -116,7 +117,6 @@ F 3 "" H 4450 2500 50  0001 C CNN
 	1    4450 2500
 	1    0    0    -1  
 $EndComp
-Connection ~ 4450 2500
 $Comp
 L power:VBUS #PWR0121
 U 1 1 5DB5E7EE
@@ -133,7 +133,7 @@ L Connector_Generic:Conn_01x02 J11
 U 1 1 5DBCE011
 P 5100 3200
 F 0 "J11" H 5180 3192 50  0000 L CNN
-F 1 "Conn_01x02" H 5180 3101 50  0000 L CNN
+F 1 "BM02B-SRSS-TB(LF)(SN)" H 5180 3101 50  0000 L CNN
 F 2 "Aaron:JST_SH_BM02B-SRSS-TB_1x02-1MP_P1.00mm_Vertical" H 5100 3200 50  0001 C CNN
 F 3 "https://media.digikey.com/pdf/Data%20Sheets/JST%20PDFs/SR%20Connector.pdf" H 5100 3200 50  0001 C CNN
 F 4 "JST Sales America Inc." H 5100 3200 50  0001 C CNN "MFR"
@@ -144,16 +144,26 @@ F 8 "https://www.digikey.com/product-detail/en/jst-sales-america-inc/BM02B-SRSS-
 	1    5100 3200
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3200 3100 2650 3100
+$Comp
+L Device:C C22
+U 1 1 5E040A75
+P 3000 2800
+F 0 "C22" H 2850 2900 50  0000 L CNN
+F 1 "0.1uF" H 2800 2700 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3038 2650 50  0001 C CNN
+F 3 "http://datasheets.avx.com/FlexitermMLCC.pdf" H 3000 2800 50  0001 C CNN
+F 4 "AVX" H 0   0   50  0001 C CNN "MFR"
+F 5 "06035C104K4Z4A" H 0   0   50  0001 C CNN "MPN"
+F 6 "Digikey" H 0   0   50  0001 C CNN "SPR"
+F 7 "478-10679-1-ND" H 0   0   50  0001 C CNN "SPN"
+F 8 "-" H 0   0   50  0001 C CNN "SPURL"
+	1    3000 2800
+	1    0    0    -1  
+$EndComp
 Text Label 2650 3100 0    50   ~ 0
 IO25
-Wire Wire Line
-	3200 3300 2650 3300
 Text Label 2650 3300 0    50   ~ 0
 IO26
-Wire Wire Line
-	3200 3400 2650 3400
 Text Label 2650 3400 0    50   ~ 0
 IO33
 Text GLabel 2650 3100 0    50   Input ~ 0
@@ -162,33 +172,38 @@ Text GLabel 2650 3300 0    50   Input ~ 0
 IO26
 Text GLabel 2650 3400 0    50   Input ~ 0
 IO33
-$Comp
-L Device:C C22
-U 1 1 5E040A75
-P 3000 2800
-F 0 "C22" H 2850 2900 50  0000 L CNN
-F 1 "0.1uF" H 2800 2700 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 3038 2650 50  0001 C CNN
-F 3 "~" H 3000 2800 50  0001 C CNN
-	1    3000 2800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3000 2650 3200 2650
-Wire Wire Line
-	3200 2650 3200 3000
-Connection ~ 3000 2650
-Wire Wire Line
-	3000 3200 3000 2950
-Connection ~ 3000 3200
 Text Label 4600 3100 0    50   ~ 0
 SPKR+
 Text Label 4600 3300 0    50   ~ 0
 SPKR-
+Wire Wire Line
+	3200 3200 3000 3200
+Wire Wire Line
+	3000 3200 3000 3500
+Wire Wire Line
+	4450 2500 4850 2500
+Wire Wire Line
+	4850 2800 4450 2800
+Wire Wire Line
+	3200 3100 2650 3100
+Wire Wire Line
+	3200 3300 2650 3300
+Wire Wire Line
+	3200 3400 2650 3400
+Wire Wire Line
+	3000 2650 3200 2650
+Wire Wire Line
+	3200 2650 3200 3000
+Wire Wire Line
+	3000 3200 3000 2950
 Wire Wire Line
 	4900 3100 4900 3200
 Wire Wire Line
 	4550 3100 4900 3100
 Wire Wire Line
 	4550 3300 4900 3300
+Connection ~ 4850 2800
+Connection ~ 4450 2500
+Connection ~ 3000 2650
+Connection ~ 3000 3200
 $EndSCHEMATC
