@@ -215,9 +215,9 @@ IO16: do not use
 IO17: do not use
 IO18: 5V I/O
 IO19: mic I2S-WS, JU4-4
-IO21: Pull-up, J4-3
-IO22: Pull-up, J4-2
-IO23: Pull-up, J4-1
+IO21: Pull-up, J4-3, SDA
+IO22: Pull-up, J4-2, SCL
+IO23: Pull-up, J4-1, /INT
 IO25: J4-6, Speaker DIN
 IO26: J4-5, Speaker BCLK
 IO27: Status RGB LED output
