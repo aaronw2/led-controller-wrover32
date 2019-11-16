@@ -6,8 +6,8 @@ $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 1 4
 Title "Wrover32 LED Controller"
-Date "2019-11-15"
-Rev "3.0.1"
+Date "2019-11-16"
+Rev "3.0.3"
 Comp ""
 Comment1 "Copyright © 2019 by Aaron Williams"
 Comment2 ""
@@ -691,7 +691,7 @@ L Connector_Generic:Conn_01x12 J4
 U 1 1 5BA0077D
 P 5250 7100
 F 0 "J4" H 5170 7817 50  0000 C CNN
-F 1 "Conn_01x12" H 5170 7726 50  0000 C CNN
+F 1 "BM12B-SRSS-TBT(LF)(SN)" V 5400 7100 50  0000 C CNN
 F 2 "Connectors_JST-BM12B-SURS-TF:BM12B-SRSS-TB" H 5250 7100 50  0001 C CNN
 F 3 "http://www.jst-mfg.com/product/pdf/eng/eSUR.pdf" H 5250 7100 50  0001 C CNN
 F 4 "JST" H -400 1450 50  0001 C CNN "MFR"
@@ -718,7 +718,7 @@ L Connector_Generic:Conn_01x12 J2
 U 1 1 5B9D440B
 P 3950 7100
 F 0 "J2" H 3870 7817 50  0000 C CNN
-F 1 "Conn_01x12" H 3950 7700 50  0000 C CNN
+F 1 "BM12B-SRSS-TBT(LF)(SN)" V 4100 7100 50  0000 C CNN
 F 2 "Connectors_JST-BM12B-SURS-TF:BM12B-SRSS-TB" H 3950 7100 50  0001 C CNN
 F 3 "http://www.jst-mfg.com/product/pdf/eng/eSUR.pdf" H 3950 7100 50  0001 C CNN
 F 4 "JST" H 250 -100 50  0001 C CNN "MFR"
@@ -1266,9 +1266,9 @@ F 8 "-" H 1300 -1150 50  0001 C CNN "SPURL"
 	1    2400 2700
 	-1   0    0    1   
 $EndComp
-Text Label 7750 1550 0    50   ~ 0
-RXD0
 Text Label 7750 1650 0    50   ~ 0
+RXD0
+Text Label 7750 1550 0    50   ~ 0
 TXD0
 Text Label 5000 5050 0    50   ~ 0
 RXD0

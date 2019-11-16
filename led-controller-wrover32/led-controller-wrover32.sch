@@ -6,8 +6,8 @@ $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 1 4
 Title "Wrover32 LED Controller"
-Date "2019-11-15"
-Rev "3.0.1"
+Date "2019-11-16"
+Rev "3.0.3"
 Comp ""
 Comment1 "Copyright © 2019 by Aaron Williams"
 Comment2 ""
@@ -1266,9 +1266,9 @@ F 8 "-" H 1300 -1150 50  0001 C CNN "SPURL"
 	1    2400 2700
 	-1   0    0    1   
 $EndComp
-Text Label 7750 1550 0    50   ~ 0
-RXD0
 Text Label 7750 1650 0    50   ~ 0
+RXD0
+Text Label 7750 1550 0    50   ~ 0
 TXD0
 Text Label 5000 5050 0    50   ~ 0
 RXD0
@@ -2431,4 +2431,6 @@ Text Label 7850 6150 0    50   ~ 0
 SDA
 Text Label 7850 6050 0    50   ~ 0
 SCL
+Text Label 5350 4250 0    50   ~ 0
+~RESET
 $EndSCHEMATC
