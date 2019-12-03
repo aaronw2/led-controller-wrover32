@@ -1,10 +1,9 @@
 EESchema Schematic File Version 4
-LIBS:led-controller-wrover32-cache
 EELAYER 30 0
 EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
-Sheet 2 4
+Sheet 2 5
 Title "12v Booster"
 Date "2018-11-10"
 Rev "1.0"

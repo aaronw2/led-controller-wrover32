@@ -1,10 +1,9 @@
 EESchema Schematic File Version 4
-LIBS:led-controller-wrover32-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 4
+Sheet 3 5
 Title ""
 Date ""
 Rev ""
@@ -128,22 +127,6 @@ F 3 "" H 3900 2750 50  0001 C CNN
 	1    3900 2750
 	1    0    0    -1  
 $EndComp
-$Comp
-L Connector_Generic:Conn_01x02 J11
-U 1 1 5DBCE011
-P 5100 3200
-F 0 "J11" H 5180 3192 50  0000 L CNN
-F 1 "Conn_01x02" H 5180 3101 50  0000 L CNN
-F 2 "Aaron:JST_SH_BM02B-SRSS-TB_1x02-1MP_P1.00mm_Vertical" H 5100 3200 50  0001 C CNN
-F 3 "https://media.digikey.com/pdf/Data%20Sheets/JST%20PDFs/SR%20Connector.pdf" H 5100 3200 50  0001 C CNN
-F 4 "JST Sales America Inc." H 5100 3200 50  0001 C CNN "MFR"
-F 5 "BM02B-SRSS-TB(LF)(SN)" H 5100 3200 50  0001 C CNN "MPN"
-F 6 "Digikey" H 5100 3200 50  0001 C CNN "SPR"
-F 7 "455-1788-1-ND" H 5100 3200 50  0001 C CNN "SPN"
-F 8 "https://www.digikey.com/product-detail/en/jst-sales-america-inc/BM02B-SRSS-TB-LF-SN/455-1788-1-ND/926859" H 5100 3200 50  0001 C CNN "SPURL"
-	1    5100 3200
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3200 3100 2650 3100
 Text Label 2650 3100 0    50   ~ 0
@@ -186,9 +169,55 @@ SPKR+
 Text Label 4600 3300 0    50   ~ 0
 SPKR-
 Wire Wire Line
-	4900 3100 4900 3200
-Wire Wire Line
 	4550 3100 4900 3100
 Wire Wire Line
-	4550 3300 4900 3300
+	4900 3100 4900 3200
+$Comp
+L Connector_Generic:Conn_01x02 J11
+U 1 1 5DBCE011
+P 5200 3200
+F 0 "J11" H 5280 3192 50  0000 L CNN
+F 1 "Conn_01x02" H 5280 3101 50  0000 L CNN
+F 2 "Aaron:JST_SH_BM02B-SRSS-TB_1x02-1MP_P1.00mm_Vertical" H 5200 3200 50  0001 C CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/JST%20PDFs/SR%20Connector.pdf" H 5200 3200 50  0001 C CNN
+F 4 "JST Sales America Inc." H 5200 3200 50  0001 C CNN "MFR"
+F 5 "BM02B-SRSS-TB(LF)(SN)" H 5200 3200 50  0001 C CNN "MPN"
+F 6 "Digikey" H 5200 3200 50  0001 C CNN "SPR"
+F 7 "455-1788-1-ND" H 5200 3200 50  0001 C CNN "SPN"
+F 8 "https://www.digikey.com/product-detail/en/jst-sales-america-inc/BM02B-SRSS-TB-LF-SN/455-1788-1-ND/926859" H 5200 3200 50  0001 C CNN "SPURL"
+	1    5200 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J10
+U 1 1 5E133F76
+P 5200 3600
+F 0 "J10" H 5280 3592 50  0000 L CNN
+F 1 "Conn_01x02 DNS" H 5280 3501 50  0000 L CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_1x02_P1.27mm_Vertical_SMD_Pin1Left" H 5200 3600 50  0001 C CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/JST%20PDFs/SR%20Connector.pdf" H 5200 3600 50  0001 C CNN
+F 4 "JST Sales America Inc." H 5200 3600 50  0001 C CNN "MFR"
+F 5 "BM02B-SRSS-TB(LF)(SN)" H 5200 3600 50  0001 C CNN "MPN"
+F 6 "Digikey" H 5200 3600 50  0001 C CNN "SPR"
+F 7 "455-1788-1-ND" H 5200 3600 50  0001 C CNN "SPN"
+F 8 "https://www.digikey.com/product-detail/en/jst-sales-america-inc/BM02B-SRSS-TB-LF-SN/455-1788-1-ND/926859" H 5200 3600 50  0001 C CNN "SPURL"
+	1    5200 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 3200 5000 3200
+Wire Wire Line
+	4550 3300 4800 3300
+Wire Wire Line
+	4900 3200 4900 3600
+Wire Wire Line
+	4900 3600 5000 3600
+Connection ~ 4900 3200
+Wire Wire Line
+	4800 3300 4800 3700
+Wire Wire Line
+	4800 3700 5000 3700
+Connection ~ 4800 3300
+Wire Wire Line
+	4800 3300 5000 3300
 $EndSCHEMATC

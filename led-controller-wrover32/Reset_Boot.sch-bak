@@ -1,10 +1,9 @@
 EESchema Schematic File Version 4
-LIBS:led-controller-wrover32-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 4
+Sheet 4 5
 Title ""
 Date ""
 Rev ""
@@ -17,25 +16,25 @@ $EndDescr
 $Comp
 L dk_Transistors-FETs-MOSFETs-Arrays:BSS138DW-7-F Q5
 U 1 1 5DD66E94
-P 4800 2350
-F 0 "Q5" H 4750 2837 60  0000 C CNN
-F 1 "BSS138DW-7-F" H 4750 2731 60  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-363_SC-70-6" H 5000 2550 60  0001 L CNN
-F 3 "https://www.diodes.com/assets/Datasheets/ds30203.pdf" V 5000 2650 60  0001 L CNN
-F 4 "BSS138DW-FDICT-ND" H 5000 2750 60  0001 L CNN "Digi-Key_PN"
-F 5 "BSS138DW-7-F" H 5000 2850 60  0001 L CNN "MPN"
-F 6 "Discrete Semiconductor Products" H 5000 2950 60  0001 L CNN "Category"
-F 7 "Transistors - FETs, MOSFETs - Arrays" H 5000 3050 60  0001 L CNN "Family"
-F 8 "https://www.diodes.com/assets/Datasheets/ds30203.pdf" H 5000 3150 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/diodes-incorporated/BSS138DW-7-F/BSS138DW-FDICT-ND/808541" H 5000 3250 60  0001 L CNN "DK_Detail_Page"
-F 10 "MOSFET 2N-CH 50V 0.2A SC70-6" H 5000 3350 60  0001 L CNN "Description"
-F 11 "Diodes Incorporated" H 5000 3450 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 5000 3550 60  0001 L CNN "Status"
-F 13 "Diodes Incorporated" H 4800 2350 50  0001 C CNN "MFR"
-F 14 "Digikey" H 4800 2350 50  0001 C CNN "SPR"
-F 15 "BSS138DW-FDICT-ND" H 4800 2350 50  0001 C CNN "SPN"
-F 16 "https://www.digikey.com/products/en/discrete-semiconductor-products/transistors-fets-mosfets-arrays/289?k=BSS138DW-7-F&k=&pkeyword=BSS138DW-7-F&sv=0&pv7=2&sf=0&quantity=&ColumnSort=0&page=1&stock=1&nstock=1&pageSize=500" H 4800 2350 50  0001 C CNN "SPURL"
-	1    4800 2350
+P 5050 2350
+F 0 "Q5" H 5000 2837 60  0000 C CNN
+F 1 "BSS138DW-7-F" H 5000 2731 60  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-363_SC-70-6" H 5250 2550 60  0001 L CNN
+F 3 "https://www.diodes.com/assets/Datasheets/ds30203.pdf" V 5250 2650 60  0001 L CNN
+F 4 "BSS138DW-FDICT-ND" H 5250 2750 60  0001 L CNN "Digi-Key_PN"
+F 5 "BSS138DW-7-F" H 5250 2850 60  0001 L CNN "MPN"
+F 6 "Discrete Semiconductor Products" H 5250 2950 60  0001 L CNN "Category"
+F 7 "Transistors - FETs, MOSFETs - Arrays" H 5250 3050 60  0001 L CNN "Family"
+F 8 "https://www.diodes.com/assets/Datasheets/ds30203.pdf" H 5250 3150 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/diodes-incorporated/BSS138DW-7-F/BSS138DW-FDICT-ND/808541" H 5250 3250 60  0001 L CNN "DK_Detail_Page"
+F 10 "MOSFET 2N-CH 50V 0.2A SC70-6" H 5250 3350 60  0001 L CNN "Description"
+F 11 "Diodes Incorporated" H 5250 3450 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 5250 3550 60  0001 L CNN "Status"
+F 13 "Diodes Incorporated" H 5050 2350 50  0001 C CNN "MFR"
+F 14 "Digikey" H 5050 2350 50  0001 C CNN "SPR"
+F 15 "BSS138DW-FDICT-ND" H 5050 2350 50  0001 C CNN "SPN"
+F 16 "https://www.digikey.com/products/en/discrete-semiconductor-products/transistors-fets-mosfets-arrays/289?k=BSS138DW-7-F&k=&pkeyword=BSS138DW-7-F&sv=0&pv7=2&sf=0&quantity=&ColumnSort=0&page=1&stock=1&nstock=1&pageSize=500" H 5050 2350 50  0001 C CNN "SPURL"
+	1    5050 2350
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -122,47 +121,47 @@ F 3 "" H 4100 2550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4100 2450 4500 2450
+	4100 2450 4750 2450
 Wire Wire Line
 	4100 2350 4250 2350
 Wire Wire Line
 	4250 2350 4250 1800
 Wire Wire Line
-	4250 1800 5200 1800
+	4250 1800 5450 1800
 Wire Wire Line
-	5200 1800 5200 2450
+	5450 1800 5450 2450
 Wire Wire Line
-	5200 2450 5000 2450
+	5450 2450 5250 2450
 $Comp
 L power:GND #PWR0127
 U 1 1 5DD73FDE
-P 4500 2150
-F 0 "#PWR0127" H 4500 1900 50  0001 C CNN
-F 1 "GND" H 4505 1977 50  0000 C CNN
-F 2 "" H 4500 2150 50  0001 C CNN
-F 3 "" H 4500 2150 50  0001 C CNN
-	1    4500 2150
+P 4750 2150
+F 0 "#PWR0127" H 4750 1900 50  0001 C CNN
+F 1 "GND" H 4755 1977 50  0000 C CNN
+F 2 "" H 4750 2150 50  0001 C CNN
+F 3 "" H 4750 2150 50  0001 C CNN
+	1    4750 2150
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0128
 U 1 1 5DD74502
-P 5000 2750
-F 0 "#PWR0128" H 5000 2500 50  0001 C CNN
-F 1 "GND" H 5005 2577 50  0000 C CNN
-F 2 "" H 5000 2750 50  0001 C CNN
-F 3 "" H 5000 2750 50  0001 C CNN
-	1    5000 2750
+P 5250 2750
+F 0 "#PWR0128" H 5250 2500 50  0001 C CNN
+F 1 "GND" H 5255 2577 50  0000 C CNN
+F 2 "" H 5250 2750 50  0001 C CNN
+F 3 "" H 5250 2750 50  0001 C CNN
+	1    5250 2750
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5000 2150 5650 2150
+	5250 2150 5650 2150
 Text Label 5500 2150 0    50   ~ 0
 IO0
 Wire Wire Line
-	4500 2750 4500 3100
+	4750 2750 4750 3100
 Wire Wire Line
-	4500 3100 5650 3100
+	4750 3100 5650 3100
 Text Label 5500 3100 0    50   ~ 0
 IO2
 $Comp
@@ -302,4 +301,10 @@ Wire Wire Line
 Connection ~ 3400 2750
 NoConn ~ 4100 2250
 NoConn ~ 3700 2250
+Text Label 3200 2450 0    50   ~ 0
+~RST_SW_OUT
+Text Label 4450 1800 0    50   ~ 0
+RST_IO2_DRV
+Text Label 4150 2450 0    50   ~ 0
+RST_IO0_DRV
 $EndSCHEMATC
