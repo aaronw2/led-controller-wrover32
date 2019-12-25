@@ -19,6 +19,24 @@ U 5BE8E860
 F0 "12v-booster" 50
 F1 "12v-booster.sch" 50
 $EndSheet
+$Sheet
+S 6000 4150 850  700 
+U 5DB534FC
+F0 "Amp" 50
+F1 "Amplifier.sch" 50
+$EndSheet
+$Sheet
+S 6150 5050 900  1050
+U 5DD65482
+F0 "Reset_Boot" 50
+F1 "Reset_Boot.sch" 50
+$EndSheet
+$Sheet
+S 8400 3750 1200 950 
+U 5DE460A6
+F0 "Level Shifter" 50
+F1 "levelshifter.sch" 50
+$EndSheet
 $Comp
 L Torex_Semiconductor:XCL21X U1
 U 1 1 5B95D259
@@ -272,22 +290,6 @@ F 10 "1904-1015-1-ND" H 0   0   50  0001 C CNN "SPN"
 F 11 "https://www.digikey.com/product-detail/en/espressif-systems/ESP32-WROVER-16MB/1904-1015-1-ND/9381724" H 0   0   50  0001 C CNN "SPURL"
 	1    4350 4650
 	1    0    0    -1  
-$EndComp
-$Comp
-L led-controller-wrover32-rescue:Micro_SD_Card-Connector J1
-U 1 1 5B964205
-P 1600 5700
-F 0 "J1" H 1550 4883 50  0000 C CNN
-F 1 "Micro_SD_Card" H 1550 4974 50  0000 C CNN
-F 2 "Aaron:microSD_HC_Wuerth_693072010801" H 2750 6000 50  0001 C CNN
-F 3 "http://katalog.we-online.de/em/datasheet/693072010801.pdf" H 1600 5700 50  0001 C CNN
-F 4 "Wuerth" H 0   -1050 50  0001 C CNN "MFR"
-F 5 "693072010801" H 0   -1050 50  0001 C CNN "MPN"
-F 6 "Digikey" H 0   -1050 50  0001 C CNN "SPR"
-F 7 "732-3820-1-ND" H 0   -1050 50  0001 C CNN "SPN"
-F 8 "https://www.digikey.com/product-detail/en/w-rth-elektronik/693072010801/732-3820-1-ND/3124605" H 0   -1050 50  0001 C CNN "SPURL"
-	1    1600 5700
-	-1   0    0    1   
 $EndComp
 $Comp
 L power:GND #PWR06
@@ -544,7 +546,7 @@ L Connector_Generic:Conn_01x02 J6
 U 1 1 5BFC2435
 P 1700 2700
 F 0 "J6" H 1700 2500 50  0000 C CNN
-F 1 "Conn_01x02 DNI" H 1700 2850 50  0000 C CNN
+F 1 "Conn_01x02 DNF" H 1700 2850 50  0000 C CNN
 F 2 "Connector_PinHeader_1.27mm:PinHeader_1x02_P1.27mm_Vertical" H 1700 2700 50  0001 C CNN
 F 3 "http://suddendocs.samtec.com/catalog_english/tms_th.pdf" H 1700 2700 50  0001 C CNN
 F 4 "Samtec Inc." H 600 -1150 50  0001 C CNN "MFR"
@@ -690,7 +692,7 @@ L led-controller-wrover32-rescue:Conn_01x05-Connector-led-controller-wrover32-re
 U 1 1 5BAE7406
 P 8800 6050
 F 0 "J8" H 8880 6092 50  0000 L CNN
-F 1 "Conn_01x05 DNI" H 8880 6001 50  0000 L CNN
+F 1 "Conn_01x05 DNF" H 8880 6001 50  0000 L CNN
 F 2 "Connector_PinHeader_1.27mm:PinHeader_1x05_P1.27mm_Vertical" H 8800 6050 50  0001 C CNN
 F 3 "http://suddendocs.samtec.com/catalog_english/tms_th.pdf" H 8800 6050 50  0001 C CNN
 F 4 "Samtec Inc." H -450 200 50  0001 C CNN "MFR"
@@ -735,12 +737,12 @@ P 6000 3700
 F 0 "C16" H 6100 3650 50  0000 L CNN
 F 1 "0.1uF" H 6100 3800 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 6038 3550 50  0001 C CNN
-F 3 "http://datasheets.avx.com/FlexitermMLCC.pdf" H 6000 3700 50  0001 C CNN
-F 4 "AVX" H -250 -300 50  0001 C CNN "MFR"
-F 5 "06035C104K4Z4A" H -250 -300 50  0001 C CNN "MPN"
+F 3 "https://psearch.en.murata.com/capacitor/product/GCM188R71H104KA57%23.pdf" H 6000 3700 50  0001 C CNN
+F 4 "Murata Electronics" H -250 -300 50  0001 C CNN "MFR"
+F 5 "GCM188R71H104KA57D" H -250 -300 50  0001 C CNN "MPN"
 F 6 "Digikey" H -250 -300 50  0001 C CNN "SPR"
-F 7 "478-10679-1-ND" H -250 -300 50  0001 C CNN "SPN"
-F 8 "https://www.digikey.com/product-detail/en/avx-corporation/06035C104K4Z4A/478-10679-1-ND/7536550" H -250 -300 50  0001 C CNN "SPURL"
+F 7 "490-4779-1-ND" H -250 -300 50  0001 C CNN "SPN"
+F 8 "https://www.digikey.com/product-detail/en/murata-electronics/GCM188R71H104KA57D/490-4779-1-ND/1641698" H -250 -300 50  0001 C CNN "SPURL"
 	1    6000 3700
 	1    0    0    -1  
 $EndComp
@@ -942,9 +944,9 @@ L fiducial:FIDUCIAL_1MM FID1
 U 1 1 5BBF8CC4
 P 9750 5900
 F 0 "FID1" H 9853 6006 60  0000 L CNN
-F 1 "FIDUCIAL_1MM" H 9853 5900 60  0000 L CNN
+F 1 "DNF" H 9853 5900 60  0000 L CNN
 F 2 "Fiducial:Fiducial_0.5mm_Mask1mm" H 9853 5794 60  0001 L CNN
-F 3 "" H 9750 5900 60  0000 C CNN
+F 3 "" H 9750 5900 60  0001 C CNN
 F 4 "-" H 0   0   50  0001 C CNN "MFR"
 F 5 "-" H 0   0   50  0001 C CNN "MPN"
 F 6 "-" H 0   0   50  0001 C CNN "SPR"
@@ -958,9 +960,9 @@ L fiducial:FIDUCIAL_1MM FID2
 U 1 1 5BBF955C
 P 9750 6100
 F 0 "FID2" H 9853 6206 60  0000 L CNN
-F 1 "FIDUCIAL_1MM" H 9853 6100 60  0000 L CNN
+F 1 "DNF" H 9853 6100 60  0000 L CNN
 F 2 "Fiducial:Fiducial_0.5mm_Mask1mm" H 9853 5994 60  0001 L CNN
-F 3 "" H 9750 6100 60  0000 C CNN
+F 3 "" H 9750 6100 60  0001 C CNN
 F 4 "-" H 0   0   50  0001 C CNN "MFR"
 F 5 "-" H 0   0   50  0001 C CNN "MPN"
 F 6 "-" H 0   0   50  0001 C CNN "SPR"
@@ -974,9 +976,9 @@ L fiducial:FIDUCIAL_1MM FID3
 U 1 1 5BBF95EA
 P 9750 6300
 F 0 "FID3" H 9853 6406 60  0000 L CNN
-F 1 "FIDUCIAL_1MM" H 9853 6300 60  0000 L CNN
+F 1 "DNF" H 9853 6300 60  0000 L CNN
 F 2 "Fiducial:Fiducial_0.5mm_Mask1mm" H 9853 6194 60  0001 L CNN
-F 3 "" H 9750 6300 60  0000 C CNN
+F 3 "" H 9750 6300 60  0001 C CNN
 F 4 "-" H 0   0   50  0001 C CNN "MFR"
 F 5 "-" H 0   0   50  0001 C CNN "MPN"
 F 6 "-" H 0   0   50  0001 C CNN "SPR"
@@ -1017,9 +1019,9 @@ L fiducial:FIDUCIAL_1MM FID4
 U 1 1 5BE7C932
 P 9750 6500
 F 0 "FID4" H 9853 6606 60  0000 L CNN
-F 1 "FIDUCIAL_1MM" H 9853 6500 60  0000 L CNN
+F 1 "DNF" H 9853 6500 60  0000 L CNN
 F 2 "Fiducial:Fiducial_0.5mm_Mask1mm" H 9853 6394 60  0001 L CNN
-F 3 "" H 9750 6500 60  0000 C CNN
+F 3 "" H 9750 6500 60  0001 C CNN
 F 4 "-" H 0   0   50  0001 C CNN "MFR"
 F 5 "-" H 0   0   50  0001 C CNN "MPN"
 F 6 "-" H 0   0   50  0001 C CNN "SPR"
@@ -1035,12 +1037,12 @@ P 700 7400
 F 0 "C17" H 700 7500 50  0000 L CNN
 F 1 "0.1uF" H 700 7300 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 738 7250 50  0001 C CNN
-F 3 "http://datasheets.avx.com/FlexitermMLCC.pdf" H 700 7400 50  0001 C CNN
-F 4 "AVX" H -9600 3750 50  0001 C CNN "MFR"
-F 5 "06035C104K4Z4A" H -9600 3750 50  0001 C CNN "MPN"
+F 3 "https://psearch.en.murata.com/capacitor/product/GCM188R71H104KA57%23.pdf" H 700 7400 50  0001 C CNN
+F 4 "Murata Electronics" H -9600 3750 50  0001 C CNN "MFR"
+F 5 "GCM188R71H104KA57D" H -9600 3750 50  0001 C CNN "MPN"
 F 6 "Digikey" H -9600 3750 50  0001 C CNN "SPR"
-F 7 "478-10679-1-ND" H -9600 3750 50  0001 C CNN "SPN"
-F 8 "https://www.digikey.com/product-detail/en/avx-corporation/06035C104K4Z4A/478-10679-1-ND/7536550" H -9600 3750 50  0001 C CNN "SPURL"
+F 7 "490-4779-1-ND" H -9600 3750 50  0001 C CNN "SPN"
+F 8 "https://www.digikey.com/product-detail/en/murata-electronics/GCM188R71H104KA57D/490-4779-1-ND/1641698" H -9600 3750 50  0001 C CNN "SPURL"
 	1    700  7400
 	1    0    0    -1  
 $EndComp
@@ -1125,7 +1127,7 @@ L Connector_Generic:Conn_01x02 J9
 U 1 1 5BF0E8E9
 P 2400 2700
 F 0 "J9" H 2400 2500 50  0000 C CNN
-F 1 "Conn_01x02 DNI" H 2300 2350 50  0000 C CNN
+F 1 "Conn_01x02 DNF" H 2300 2350 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 2400 2700 50  0001 C CNN
 F 3 "~" H 2400 2700 50  0001 C CNN
 F 4 "-" H 1300 -1150 50  0001 C CNN "MFR"
@@ -1134,6 +1136,344 @@ F 6 "-" H 1300 -1150 50  0001 C CNN "SPR"
 F 7 "-" H 1300 -1150 50  0001 C CNN "SPN"
 F 8 "-" H 1300 -1150 50  0001 C CNN "SPURL"
 	1    2400 2700
+	-1   0    0    1   
+$EndComp
+$Comp
+L WS2813-mini:WS2813-MINI D1
+U 1 1 5CE7C0AE
+P 9250 2800
+F 0 "D1" H 9250 3367 50  0000 C CNN
+F 1 "WS2813-MINI" H 9250 3276 50  0000 C CNN
+F 2 "LED_WS2813-mini:LED_WS2813-MINI-2" H 9250 2800 50  0001 L BNN
+F 3 "http://www.world-semi.com/DownLoadFile/102" H 9250 2800 50  0001 L BNN
+F 4 "Worldsemi" H 9250 2800 50  0001 L BNN "Field4"
+F 5 "WS2813-MINI" H 9250 2800 50  0001 L BNN "Field5"
+F 6 "Unavailable" H 9250 2800 50  0001 L BNN "Field6"
+F 7 "None" H 9250 2800 50  0001 L BNN "Field7"
+F 8 "Package Analog Devices" H 9250 2800 50  0001 L BNN "Field8"
+F 9 "World Semi" H 9250 2800 50  0001 C CNN "MFR"
+F 10 "WS2813B-Mini" H 9250 2800 50  0001 C CNN "MPN"
+F 11 "LCSC" H -450 0   50  0001 C CNN "SPR"
+F 12 "C189639" H -450 0   50  0001 C CNN "SPN"
+F 13 "https://lcsc.com/product-detail/Light-Emitting-Diodes-LED_Worldsemi-WS2813-Mini-WS2813-3535_C189639.html" H -450 0   50  0001 C CNN "SPURL"
+	1    9250 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR030
+U 1 1 5BD437A9
+P 9850 3150
+F 0 "#PWR030" H 9850 2900 50  0001 C CNN
+F 1 "GND" H 9850 3000 50  0000 C CNN
+F 2 "" H 9850 3150 50  0001 C CNN
+F 3 "" H 9850 3150 50  0001 C CNN
+	1    9850 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VBUS #PWR029
+U 1 1 5BD1BD91
+P 9850 2500
+F 0 "#PWR029" H 9850 2350 50  0001 C CNN
+F 1 "VBUS" H 9700 2600 50  0000 C CNN
+F 2 "" H 9850 2500 50  0001 C CNN
+F 3 "" H 9850 2500 50  0001 C CNN
+	1    9850 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C9
+U 1 1 5BD1BC1B
+P 9850 3000
+F 0 "C9" H 9900 3100 50  0000 L CNN
+F 1 "10uF" H 9900 2900 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 9888 2850 50  0001 C CNN
+F 3 "http://www.samsungsem.com/kr/support/product-search/mlcc/CL21B106KOQNNNE.jsp" H 9850 3000 50  0001 C CNN
+F 4 "Samsung" H 150 850 50  0001 C CNN "MFR"
+F 5 "CL21B106KOQNNNE" H 150 850 50  0001 C CNN "MPN"
+F 6 "Digikey" H 150 850 50  0001 C CNN "SPR"
+F 7 "1276-2872-1-ND" H 150 850 50  0001 C CNN "SPN"
+F 8 "-" H 150 850 50  0001 C CNN "SPURL"
+	1    9850 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VBUS #PWR028
+U 1 1 5BCFF0B3
+P 8500 2400
+F 0 "#PWR028" H 8500 2250 50  0001 C CNN
+F 1 "VBUS" H 8350 2500 50  0000 C CNN
+F 2 "" H 8500 2400 50  0001 C CNN
+F 3 "" H 8500 2400 50  0001 C CNN
+	1    8500 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 5BCE2111
+P 8100 2550
+F 0 "R5" V 8200 2550 50  0000 C CNN
+F 1 "4.7K" V 8100 2550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 8030 2550 50  0001 C CNN
+F 3 "https://www.bourns.com/docs/Product-Datasheets/CHPREZTR.pdf" H 8100 2550 50  0001 C CNN
+F 4 "Bourns Inc." H -150 200 50  0001 C CNN "MFR"
+F 5 "CR0603-FX-4701ELF" H -150 200 50  0001 C CNN "MPN"
+F 6 "Digikey" H -150 200 50  0001 C CNN "SPR"
+F 7 "CR0603-FX-4701ELFCT-ND" H -150 200 50  0001 C CNN "SPN"
+F 8 "https://www.digikey.com/product-detail/en/bourns-inc/CR0603-FX-4701ELF/CR0603-FX-4701ELFCT-ND/3740884" H -150 200 50  0001 C CNN "SPURL"
+	1    8100 2550
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+3.3V #PWR027
+U 1 1 5BCD89DF
+P 8100 2400
+F 0 "#PWR027" H 8100 2250 50  0001 C CNN
+F 1 "+3.3V" H 7950 2500 50  0000 C CNN
+F 2 "" H 8100 2400 50  0001 C CNN
+F 3 "" H 8100 2400 50  0001 C CNN
+	1    8100 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:BSS138 Q3
+U 1 1 5BCD84EA
+P 8300 2700
+F 0 "Q3" V 8550 2700 50  0000 C CNN
+F 1 "BSS138" V 8641 2700 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 8500 2625 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/BS/BSS138.pdf" H 8300 2700 50  0001 L CNN
+F 4 "ON Semiconductor" H -250 200 50  0001 C CNN "MFR"
+F 5 "BSS138" H -250 200 50  0001 C CNN "MPN"
+F 6 "Digikey" H -250 200 50  0001 C CNN "SPR"
+F 7 "BSS138CT-ND" H -250 200 50  0001 C CNN "SPN"
+F 8 "-" H -250 200 50  0001 C CNN "SPURL"
+	1    8300 2700
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+12V #PWR0123
+U 1 1 5E0E6837
+P 1300 2500
+F 0 "#PWR0123" H 1300 2350 50  0001 C CNN
+F 1 "+12V" H 1315 2673 50  0000 C CNN
+F 2 "" H 1300 2500 50  0001 C CNN
+F 3 "" H 1300 2500 50  0001 C CNN
+	1    1300 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L dk_Transistors-Bipolar-BJT-Single:MMSS8050-H-TP Q1
+U 1 1 5DD27350
+P 9000 850
+F 0 "Q1" H 9188 903 60  0000 L CNN
+F 1 "MMSS8050-H-TP" H 9188 797 60  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 9200 1050 60  0001 L CNN
+F 3 "http://www.mccsemi.com/up_pdf/MMSS8050(SOT-23).pdf" H 9200 1150 60  0001 L CNN
+F 4 "MMSS8050-H-TPMSCT-ND" H 9200 1250 60  0001 L CNN "Digi-Key_PN"
+F 5 "MMSS8050-H-TP" H 9200 1350 60  0001 L CNN "MPN"
+F 6 "Discrete Semiconductor Products" H 9200 1450 60  0001 L CNN "Category"
+F 7 "Transistors - Bipolar (BJT) - Single" H 9200 1550 60  0001 L CNN "Family"
+F 8 "http://www.mccsemi.com/up_pdf/MMSS8050(SOT-23).pdf" H 9200 1650 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/micro-commercial-co/MMSS8050-H-TP/MMSS8050-H-TPMSCT-ND/2825945" H 9200 1750 60  0001 L CNN "DK_Detail_Page"
+F 10 "TRANS NPN 25V 1.5A SOT23" H 9200 1850 60  0001 L CNN "Description"
+F 11 "Micro Commercial Co" H 9200 1950 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 9200 2050 60  0001 L CNN "Status"
+F 13 "Micro Commercial Co" H 9000 850 50  0001 C CNN "MFR"
+F 14 "Digikey" H 9000 850 50  0001 C CNN "SPR"
+F 15 "MMSS8050-H-TPMSCT-ND" H 9000 850 50  0001 C CNN "SPN"
+F 16 "https://www.digikey.com/products/en/discrete-semiconductor-products/transistors-bipolar-bjt-single/276?k=MMSS8050-H-TP&k=&pkeyword=MMSS8050-H-TP&sv=0&pv7=2&sf=0&quantity=&ColumnSort=0&page=1&pageSize=500" H 9000 850 50  0001 C CNN "SPURL"
+	1    9000 850 
+	1    0    0    -1  
+$EndComp
+$Comp
+L dk_Microphones:SPH0645LM4H-B MIC1
+U 1 1 5DE52238
+P 1850 7400
+F 0 "MIC1" H 2150 7650 60  0000 L CNN
+F 1 "SPH0645LM4H-B" H 2294 7347 60  0000 L CNN
+F 2 "Aaron:SPH0645LM4H-B" H 2050 7600 60  0001 L CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Knowles%20Acoustics%20PDFs/SPH0645LM4H-B.pdf" H 2050 7700 60  0001 L CNN
+F 4 "423-1405-1-ND" H 2050 7800 60  0001 L CNN "Digi-Key_PN"
+F 5 "SPH0645LM4H-B" H 2050 7900 60  0001 L CNN "MPN"
+F 6 "Audio Products" H 2050 8000 60  0001 L CNN "Category"
+F 7 "Microphones" H 2050 8100 60  0001 L CNN "Family"
+F 8 "https://media.digikey.com/pdf/Data%20Sheets/Knowles%20Acoustics%20PDFs/SPH0645LM4H-B.pdf" H 2050 8200 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/knowles/SPH0645LM4H-B/423-1405-1-ND/5332432" H 2050 8300 60  0001 L CNN "DK_Detail_Page"
+F 10 "CRAWFORD MIC DGT I2S BOTTOM PORT" H 2050 8400 60  0001 L CNN "Description"
+F 11 "Knowles" H 2050 8500 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 2050 8600 60  0001 L CNN "Status"
+F 13 "Knowles" H 1850 7400 50  0001 C CNN "MFR"
+F 14 "Digikey" H 1850 7400 50  0001 C CNN "SPR"
+F 15 "423-1405-1-ND" H 1850 7400 50  0001 C CNN "SPN"
+F 16 "https://www.digikey.com/products/en/audio-products/microphones/158?k=SPH0645LM4H-B&k=&pkeyword=SPH0645LM4H-B&sv=0&pv7=2&sf=0&quantity=&ColumnSort=0&page=1&pageSize=500" H 1850 7400 50  0001 C CNN "SPURL"
+	1    1850 7400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Power_Protection:SP0502BAHT D3
+U 1 1 5DF173E0
+P 3100 2700
+F 0 "D3" H 3050 2950 50  0000 L CNN
+F 1 "SP0502BAHT" H 2550 2400 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3325 2650 50  0001 L CNN
+F 3 "http://www.littelfuse.com/~/media/files/littelfuse/technical%20resources/documents/data%20sheets/sp05xxba.pdf" H 3225 2825 50  0001 C CNN
+F 4 "Littlefuse Inc." H 3100 2700 50  0001 C CNN "MFR"
+F 5 "SP0502BAHTG" H 3100 2700 50  0001 C CNN "MPN"
+F 6 "Digikey" H 3100 2700 50  0001 C CNN "SPR"
+F 7 "F2714CT-ND" H 3100 2700 50  0001 C CNN "SPN"
+F 8 "https://www.digikey.com/products/en/circuit-protection/tvs-diodes/144?k=SP0502BAHT&k=&pkeyword=SP0502BAHT&sv=0&pv7=2&pv1989=0&sf=0&quantity=&ColumnSort=0&page=1&stock=1&nstock=1&pageSize=500" H 3100 2700 50  0001 C CNN "SPURL"
+	1    3100 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5DFA084D
+P 3200 2500
+F 0 "#FLG0101" H 3200 2575 50  0001 C CNN
+F 1 "PWR_FLAG" H 3200 2673 50  0000 C CNN
+F 2 "" H 3200 2500 50  0001 C CNN
+F 3 "~" H 3200 2500 50  0001 C CNN
+	1    3200 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP1
+U 1 1 5E040823
+P 7300 5800
+F 0 "TP1" H 7358 5918 50  0000 L CNN
+F 1 "DNF" H 7358 5827 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 7500 5800 50  0001 C CNN
+F 3 "~" H 7500 5800 50  0001 C CNN
+F 4 "-" H 0   0   50  0001 C CNN "MFR"
+F 5 "-" H 0   0   50  0001 C CNN "MPN"
+F 6 "-" H 0   0   50  0001 C CNN "SPR"
+F 7 "-" H 0   0   50  0001 C CNN "SPN"
+F 8 "-" H 0   0   50  0001 C CNN "SPURL"
+	1    7300 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Pack04 RN3
+U 1 1 5BC2EF2D
+P 8000 5600
+F 0 "RN3" H 8350 5700 50  0000 R CNN
+F 1 "4.7K" H 8550 5600 50  0000 R CNN
+F 2 "Resistor_SMD:R_Array_Convex_4x0603" V 8275 5600 50  0001 C CNN
+F 3 "https://www.bourns.com/docs/Product-Datasheets/CATCAY.pdf" H 8000 5600 50  0001 C CNN
+F 4 "Bourns Inc." H 0   0   50  0001 C CNN "MFR"
+F 5 "CAT16-4701F4LF" H 0   0   50  0001 C CNN "MPN"
+F 6 "Digikey" H 0   0   50  0001 C CNN "SPR"
+F 7 "CAT16-4701F4LFCT-ND" H 0   0   50  0001 C CNN "SPN"
+F 8 "https://www.digikey.com/product-detail/en/bourns-inc/CAT16-4701F4LF/CAT16-4701F4LFCT-ND/3592883" H 0   0   50  0001 C CNN "SPURL"
+	1    8000 5600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R6
+U 1 1 5BCE2065
+P 8500 2550
+F 0 "R6" V 8600 2550 50  0000 C CNN
+F 1 "4.7K" V 8500 2550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 8430 2550 50  0001 C CNN
+F 3 "https://www.bourns.com/docs/Product-Datasheets/CHPREZTR.pdf" H 8500 2550 50  0001 C CNN
+F 4 "Bourns Inc." H -350 200 50  0001 C CNN "MFR"
+F 5 "CR0603-FX-4701ELF" H -350 200 50  0001 C CNN "MPN"
+F 6 "Digikey" H -350 200 50  0001 C CNN "SPR"
+F 7 "CR0603-FX-4701ELFCT-ND" H -350 200 50  0001 C CNN "SPN"
+F 8 "https://www.digikey.com/product-detail/en/bourns-inc/CR0603-FX-4701ELF/CR0603-FX-4701ELFCT-ND/3740884" H -350 200 50  0001 C CNN "SPURL"
+	1    8500 2550
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+3.3V #PWR0131
+U 1 1 5DF33608
+P 8900 1550
+F 0 "#PWR0131" H 8900 1400 50  0001 C CNN
+F 1 "+3.3V" H 8900 1700 50  0000 C CNN
+F 2 "" H 8900 1550 50  0001 C CNN
+F 3 "" H 8900 1550 50  0001 C CNN
+	1    8900 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP2
+U 1 1 5DF45B92
+P 8000 1300
+F 0 "TP2" H 7900 1500 50  0000 L CNN
+F 1 "DNF" H 7900 1600 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 8200 1300 50  0001 C CNN
+F 3 "~" H 8200 1300 50  0001 C CNN
+F 4 "-" H 0   0   50  0001 C CNN "MFR"
+F 5 "-" H 0   0   50  0001 C CNN "MPN"
+F 6 "-" H 0   0   50  0001 C CNN "SPR"
+F 7 "-" H 0   0   50  0001 C CNN "SPN"
+F 8 "-" H 0   0   50  0001 C CNN "SPURL"
+	1    8000 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Aaron:FMB2222A Q2
+U 1 1 5DFE1744
+P 9450 1250
+F 0 "Q2" H 9594 1296 50  0000 L CNN
+F 1 "FMB2222A" H 9594 1205 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6" H 9450 1250 50  0001 L BNN
+F 3 "https://www.onsemi.com/pub/Collateral/MMPQ2222A-D.pdf" H 9450 1250 50  0001 C CNN
+F 4 "ON Semiconductor" H 0   0   50  0001 C CNN "MFR"
+F 5 "FMB2222A" H 0   0   50  0001 C CNN "MPN"
+F 6 "Digikey" H 0   0   50  0001 C CNN "SPR"
+F 7 "FMB2222ACT-ND" H 0   0   50  0001 C CNN "SPN"
+F 8 "-" H 0   0   50  0001 C CNN "SPURL"
+	1    9450 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Aaron:FMB2222A Q2
+U 2 1 5DFE27B6
+P 9450 1750
+F 0 "Q2" H 9594 1796 50  0000 L CNN
+F 1 "FMB2222A" H 9594 1705 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6" H 9450 1750 50  0001 L BNN
+F 3 "https://www.onsemi.com/pub/Collateral/MMPQ2222A-D.pdf" H 9450 1750 50  0001 C CNN
+F 4 "ON Semiconductor" H 9450 1750 50  0001 C CNN "MFR"
+F 5 "FMB2222A" H 9450 1750 50  0001 C CNN "MPN"
+F 6 "Digikey" H 9450 1750 50  0001 C CNN "SPR"
+F 7 "FMB2222ACT-ND" H 9450 1750 50  0001 C CNN "SPN"
+F 8 "https://www.digikey.com/product-detail/en/on-semiconductor/FMB2222A/FMB2222ACT-ND/2053099" H 9450 1750 50  0001 C CNN "SPURL"
+	2    9450 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J7
+U 1 1 5DEEBC9B
+P 850 2600
+F 0 "J7" H 850 2350 50  0000 C CNN
+F 1 "Conn_01x02 DNF" H 800 2750 50  0000 C CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_1x02_P1.27mm_Vertical" H 850 2600 50  0001 C CNN
+F 3 "http://suddendocs.samtec.com/catalog_english/tms_th.pdf" H 850 2600 50  0001 C CNN
+F 4 "Samtec Inc." H 850 2600 50  0001 C CNN "MFR"
+F 5 "TMS-102-01-G-S" H 850 2600 50  0001 C CNN "MPN"
+F 6 "Digikey" H 850 2600 50  0001 C CNN "SPR"
+F 7 "SAM12199-ND" H 850 2600 50  0001 C CNN "SPN"
+F 8 "https://www.digikey.com/products/en/connectors-interconnects/rectangular-connectors-headers-male-pins/314?k=1.27mm+header&k=&pkeyword=1.27mm+header&sv=0&pv88=121326&sf=0&FV=28%7C353507%2C28%7C353523%2C28%7C353526%2C28%7C353527%2C69%7C411897%2C1790%7C7022%2C1989%7C0%2C2021%7C417859%2C2025%7C15230%2C-8%7C314%2C1795%7C350796&quantity=&ColumnSort=0&page=1&stock=1&nstock=1&pageSize=500" H 850 2600 50  0001 C CNN "SPURL"
+	1    850  2600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L led-controller-wrover32-rescue:Micro_SD_Card-Connector J1
+U 1 1 5B964205
+P 1600 5700
+F 0 "J1" H 1550 4883 50  0000 C CNN
+F 1 "Micro_SD_Card" H 1550 4974 50  0000 C CNN
+F 2 "Aaron:microSD_HC_Wuerth_693072010801" H 2750 6000 50  0001 C CNN
+F 3 "http://katalog.we-online.de/em/datasheet/693072010801.pdf" H 1600 5700 50  0001 C CNN
+F 4 "Wuerth" H 0   -1050 50  0001 C CNN "MFR"
+F 5 "693072010801" H 0   -1050 50  0001 C CNN "MPN"
+F 6 "Digikey" H 0   -1050 50  0001 C CNN "SPR"
+F 7 "732-3820-1-ND" H 0   -1050 50  0001 C CNN "SPN"
+F 8 "https://www.digikey.com/product-detail/en/w-rth-elektronik/693072010801/732-3820-1-ND/3124605" H 0   -1050 50  0001 C CNN "SPURL"
+	1    1600 5700
 	-1   0    0    1   
 $EndComp
 Text Label 7800 1650 0    50   ~ 0
@@ -1296,6 +1636,56 @@ Text Label 9900 1550 0    50   ~ 0
 IO2
 Text Notes 2200 600  0    50   ~ 0
 5V to 12V 400ma MAX
+Text GLabel 3300 5450 0    50   Output ~ 0
+IO33
+Text GLabel 3300 5050 0    50   Output ~ 0
+IO25
+Text GLabel 3300 5150 0    50   Output ~ 0
+IO26
+Text Notes 7900 2200 0    50   ~ 0
+3V to 5V level shifter and WS1812B 3535\nNote output goes to J2 pin 4
+Text Label 8500 2800 0    50   ~ 0
+IO27_5V
+Text Label 7900 2800 0    50   ~ 0
+IO27
+Text Label 10300 2800 0    50   ~ 0
+DO
+Text GLabel 2300 3550 0    50   Input ~ 0
+IO0
+Text GLabel 2300 3650 0    50   Input ~ 0
+IO2
+Text GLabel 5750 5700 0    50   Input ~ 0
+~RESET
+Text Label 7850 6150 0    50   ~ 0
+SDA
+Text Label 7850 6050 0    50   ~ 0
+SCL
+Text GLabel 7850 4050 2    50   Output ~ 0
+IO5
+Text GLabel 7850 4150 2    50   Output ~ 0
+IO18
+Text GLabel 7850 4250 2    50   Output ~ 0
+IO32
+Text GLabel 7850 4350 2    50   Output ~ 0
+IO33
+Text GLabel 10050 4050 0    50   Input ~ 0
+IO5_H
+Text GLabel 10050 4150 0    50   Input ~ 0
+IO18_H
+Text GLabel 10050 4250 0    50   Input ~ 0
+IO32_H
+Text GLabel 10050 4350 0    50   Input ~ 0
+IO33_H
+Text Label 8250 1050 0    50   ~ 0
+IO0_RTS_DRV
+Text Label 8300 1750 0    50   ~ 0
+IO2_RTS_DRV
+Text Label 8800 1000 1    50   ~ 0
+RST_DTR_DRV
+Text Label 6100 2150 0    50   ~ 0
+VBUS_REF
+Text Label 5800 5700 0    50   ~ 0
+~RESET
 Wire Wire Line
 	850  1050 850  1250
 Wire Wire Line
@@ -1475,29 +1865,13 @@ Wire Wire Line
 Wire Wire Line
 	2600 3650 2600 4600
 Wire Wire Line
-	2500 5400 2600 5400
-Wire Wire Line
-	2500 5500 2600 5500
-Wire Wire Line
 	2600 5500 2600 6250
-Wire Wire Line
-	2500 5600 2900 5600
-Wire Wire Line
-	2500 5700 3100 5700
 Wire Wire Line
 	3100 5700 3100 5950
 Wire Wire Line
 	3100 5950 3200 5950
 Wire Wire Line
-	2500 5800 3000 5800
-Wire Wire Line
-	2500 5900 2700 5900
-Wire Wire Line
-	2500 6000 2800 6000
-Wire Wire Line
 	3200 6250 2600 6250
-Wire Wire Line
-	600  5100 800  5100
 Wire Wire Line
 	8000 5800 8000 5950
 Wire Wire Line
@@ -1676,6 +2050,162 @@ Wire Wire Line
 	2600 2600 2600 2500
 Wire Wire Line
 	2600 2500 2700 2500
+Wire Wire Line
+	3750 5650 3550 5650
+Wire Wire Line
+	3550 5350 3750 5350
+Wire Wire Line
+	3750 5250 3550 5250
+Wire Wire Line
+	3550 4950 3750 4950
+Wire Wire Line
+	3750 4850 3550 4850
+Wire Wire Line
+	3550 4750 3750 4750
+Wire Wire Line
+	3550 4650 3750 4650
+Wire Wire Line
+	3300 5050 3750 5050
+Wire Wire Line
+	3300 5150 3750 5150
+Wire Wire Line
+	3550 4550 3750 4550
+Wire Wire Line
+	9850 2500 9750 2500
+Wire Wire Line
+	9850 2600 9850 2500
+Wire Wire Line
+	9850 2600 9750 2600
+Wire Wire Line
+	9850 2850 9850 2600
+Wire Wire Line
+	9750 3150 9750 3100
+Wire Wire Line
+	9850 3150 9750 3150
+Wire Wire Line
+	8500 2800 8750 2800
+Wire Wire Line
+	8300 2400 8100 2400
+Wire Wire Line
+	8300 2500 8300 2400
+Wire Wire Line
+	8100 2800 7900 2800
+Wire Wire Line
+	8500 2800 8500 2700
+Wire Wire Line
+	8100 2800 8100 2700
+Wire Notes Line
+	7850 2000 7850 3300
+Wire Wire Line
+	10050 4050 10400 4050
+Wire Wire Line
+	10050 4150 10400 4150
+Wire Wire Line
+	10050 4250 10400 4250
+Wire Wire Line
+	10050 4350 10400 4350
+Wire Notes Line
+	7850 2000 10400 2000
+Wire Wire Line
+	9750 2800 10450 2800
+Wire Wire Line
+	8250 1050 8250 1350
+Wire Wire Line
+	8800 850  8800 1450
+Wire Wire Line
+	8800 1450 8700 1450
+Wire Wire Line
+	9100 1050 9100 1150
+Wire Wire Line
+	9100 1150 8750 1150
+Wire Wire Line
+	8150 1850 9250 1850
+Wire Wire Line
+	8250 1050 8950 1050
+Wire Wire Line
+	8950 1050 8950 1250
+Wire Wire Line
+	8950 1250 9350 1250
+Wire Wire Line
+	8300 1250 8200 1250
+Wire Wire Line
+	8200 1250 8200 1750
+Wire Wire Line
+	8200 1750 9350 1750
+Wire Wire Line
+	2300 3550 3750 3550
+Wire Wire Line
+	2600 3650 2300 3650
+Wire Wire Line
+	5750 5700 6000 5700
+Wire Wire Line
+	2700 2500 3000 2500
+Wire Wire Line
+	3000 2500 3200 2500
+Wire Notes Line
+	500  3400 3400 3400
+Wire Notes Line
+	3400 600  3400 3400
+Wire Notes Line
+	3400 3200 7150 3200
+Wire Wire Line
+	9550 1550 10000 1550
+Wire Wire Line
+	3750 5550 3550 5550
+Wire Wire Line
+	3300 5450 3750 5450
+Wire Wire Line
+	8000 5400 7900 5400
+Wire Wire Line
+	7300 5800 7900 5800
+Wire Wire Line
+	8900 1550 8700 1550
+Wire Wire Line
+	8000 1550 8000 1300
+Wire Wire Line
+	8000 1550 8300 1550
+Wire Wire Line
+	2700 2800 2700 2900
+Wire Wire Line
+	2700 2900 2600 2900
+Wire Wire Line
+	2600 2700 2600 2900
+Wire Wire Line
+	2700 2900 3100 2900
+Wire Wire Line
+	9550 1450 9250 1450
+Wire Wire Line
+	9250 1450 9250 1850
+Wire Wire Line
+	9550 1950 9250 1950
+Wire Wire Line
+	9250 1950 9250 1850
+Wire Wire Line
+	1300 2500 1050 2500
+Wire Wire Line
+	1050 2500 1050 2600
+Wire Wire Line
+	1050 2700 1050 2800
+Wire Wire Line
+	1050 2800 1300 2800
+Wire Wire Line
+	8750 2900 8750 2800
+Wire Wire Line
+	2500 6000 2800 6000
+Wire Wire Line
+	2500 5900 2700 5900
+Wire Wire Line
+	2500 5800 3000 5800
+Wire Wire Line
+	2500 5700 3100 5700
+Wire Wire Line
+	2500 5600 2900 5600
+Wire Wire Line
+	2500 5500 2600 5500
+Wire Wire Line
+	2500 5400 2600 5400
+Wire Wire Line
+	600  5100 800  5100
 Connection ~ 850  1250
 Connection ~ 850  1050
 Connection ~ 1550 1800
@@ -1728,6 +2258,25 @@ Connection ~ 6100 950
 Connection ~ 4650 2600
 Connection ~ 4550 2000
 Connection ~ 2700 2500
+Connection ~ 9850 2500
+Connection ~ 9850 2600
+Connection ~ 9850 3150
+Connection ~ 8500 2800
+Connection ~ 8100 2800
+Connection ~ 8100 2400
+Connection ~ 8750 1150
+Connection ~ 2600 3650
+Connection ~ 2250 7400
+Connection ~ 3000 2500
+Connection ~ 3200 2500
+Connection ~ 8000 5400
+Connection ~ 2600 2500
+Connection ~ 3100 2900
+Connection ~ 2700 2900
+Connection ~ 9250 1850
+Connection ~ 1300 2500
+Connection ~ 1300 2800
+Connection ~ 8750 2800
 NoConn ~ 4400 2700
 NoConn ~ 4950 4250
 NoConn ~ 4950 4350
@@ -1746,538 +2295,4 @@ NoConn ~ 7750 2450
 NoConn ~ 6550 1650
 NoConn ~ 6550 1550
 NoConn ~ 6550 1250
-$Sheet
-S 6000 4150 850  700 
-U 5DB534FC
-F0 "Amp" 50
-F1 "Amplifier.sch" 50
-$EndSheet
-Text GLabel 3300 5450 0    50   Output ~ 0
-IO33
-Text GLabel 3300 5050 0    50   Output ~ 0
-IO25
-Wire Wire Line
-	3750 5650 3550 5650
-Wire Wire Line
-	3550 5350 3750 5350
-Wire Wire Line
-	3750 5250 3550 5250
-Wire Wire Line
-	3550 4950 3750 4950
-Wire Wire Line
-	3750 4850 3550 4850
-Wire Wire Line
-	3550 4750 3750 4750
-Wire Wire Line
-	3550 4650 3750 4650
-Wire Wire Line
-	3300 5050 3750 5050
-Text GLabel 3300 5150 0    50   Output ~ 0
-IO26
-Wire Wire Line
-	3300 5150 3750 5150
-Wire Wire Line
-	3550 4550 3750 4550
-Connection ~ 9850 2500
-Connection ~ 9850 2600
-Connection ~ 9850 3150
-Connection ~ 8500 2800
-Connection ~ 8100 2800
-Connection ~ 8100 2400
-Wire Wire Line
-	9850 2500 9750 2500
-Wire Wire Line
-	9850 2600 9850 2500
-Wire Wire Line
-	9850 2600 9750 2600
-Wire Wire Line
-	9850 2850 9850 2600
-Wire Wire Line
-	9750 3150 9750 3100
-Wire Wire Line
-	9850 3150 9750 3150
-Wire Wire Line
-	8500 2800 8750 2800
-Wire Wire Line
-	8300 2400 8100 2400
-Wire Wire Line
-	8300 2500 8300 2400
-Wire Wire Line
-	8100 2800 7900 2800
-Wire Wire Line
-	8500 2800 8500 2700
-Wire Wire Line
-	8100 2800 8100 2700
-Text Notes 7900 2200 0    50   ~ 0
-3V to 5V level shifter and WS1812B 3535\nNote output goes to J2 pin 4
-Text Label 8500 2800 0    50   ~ 0
-IO27_5V
-Text Label 7900 2800 0    50   ~ 0
-IO27
-Text Label 10300 2800 0    50   ~ 0
-DO
-$Comp
-L WS2813-mini:WS2813-MINI D1
-U 1 1 5CE7C0AE
-P 9250 2800
-F 0 "D1" H 9250 3367 50  0000 C CNN
-F 1 "WS2813-MINI" H 9250 3276 50  0000 C CNN
-F 2 "LED_WS2813-mini:LED_WS2813-MINI-2" H 9250 2800 50  0001 L BNN
-F 3 "http://www.world-semi.com/DownLoadFile/102" H 9250 2800 50  0001 L BNN
-F 4 "Worldsemi" H 9250 2800 50  0001 L BNN "Field4"
-F 5 "WS2813-MINI" H 9250 2800 50  0001 L BNN "Field5"
-F 6 "Unavailable" H 9250 2800 50  0001 L BNN "Field6"
-F 7 "None" H 9250 2800 50  0001 L BNN "Field7"
-F 8 "Package Analog Devices" H 9250 2800 50  0001 L BNN "Field8"
-F 9 "World Semi" H 9250 2800 50  0001 C CNN "MFR"
-F 10 "WS2813-Mini" H 9250 2800 50  0001 C CNN "MPN"
-F 11 "LCSC" H -450 0   50  0001 C CNN "SPR"
-F 12 "C189639" H -450 0   50  0001 C CNN "SPN"
-F 13 "https://lcsc.com/product-detail/Light-Emitting-Diodes-LED_Worldsemi-WS2813-Mini-WS2813-3535_C189639.html" H -450 0   50  0001 C CNN "SPURL"
-	1    9250 2800
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR030
-U 1 1 5BD437A9
-P 9850 3150
-F 0 "#PWR030" H 9850 2900 50  0001 C CNN
-F 1 "GND" H 9850 3000 50  0000 C CNN
-F 2 "" H 9850 3150 50  0001 C CNN
-F 3 "" H 9850 3150 50  0001 C CNN
-	1    9850 3150
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:VBUS #PWR029
-U 1 1 5BD1BD91
-P 9850 2500
-F 0 "#PWR029" H 9850 2350 50  0001 C CNN
-F 1 "VBUS" H 9700 2600 50  0000 C CNN
-F 2 "" H 9850 2500 50  0001 C CNN
-F 3 "" H 9850 2500 50  0001 C CNN
-	1    9850 2500
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C9
-U 1 1 5BD1BC1B
-P 9850 3000
-F 0 "C9" H 9900 3100 50  0000 L CNN
-F 1 "10uF" H 9900 2900 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 9888 2850 50  0001 C CNN
-F 3 "http://www.samsungsem.com/kr/support/product-search/mlcc/CL21B106KOQNNNE.jsp" H 9850 3000 50  0001 C CNN
-F 4 "Samsung" H 150 850 50  0001 C CNN "MFR"
-F 5 "CL21B106KOQNNNE" H 150 850 50  0001 C CNN "MPN"
-F 6 "Digikey" H 150 850 50  0001 C CNN "SPR"
-F 7 "1276-2872-1-ND" H 150 850 50  0001 C CNN "SPN"
-F 8 "-" H 150 850 50  0001 C CNN "SPURL"
-	1    9850 3000
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:VBUS #PWR028
-U 1 1 5BCFF0B3
-P 8500 2400
-F 0 "#PWR028" H 8500 2250 50  0001 C CNN
-F 1 "VBUS" H 8350 2500 50  0000 C CNN
-F 2 "" H 8500 2400 50  0001 C CNN
-F 3 "" H 8500 2400 50  0001 C CNN
-	1    8500 2400
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R5
-U 1 1 5BCE2111
-P 8100 2550
-F 0 "R5" V 8200 2550 50  0000 C CNN
-F 1 "4.7K" V 8100 2550 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 8030 2550 50  0001 C CNN
-F 3 "https://www.bourns.com/docs/Product-Datasheets/CHPREZTR.pdf" H 8100 2550 50  0001 C CNN
-F 4 "Bourns Inc." H -150 200 50  0001 C CNN "MFR"
-F 5 "CR0603-FX-4701ELF" H -150 200 50  0001 C CNN "MPN"
-F 6 "Digikey" H -150 200 50  0001 C CNN "SPR"
-F 7 "CR0603-FX-4701ELFCT-ND" H -150 200 50  0001 C CNN "SPN"
-F 8 "https://www.digikey.com/product-detail/en/bourns-inc/CR0603-FX-4701ELF/CR0603-FX-4701ELFCT-ND/3740884" H -150 200 50  0001 C CNN "SPURL"
-	1    8100 2550
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:+3.3V #PWR027
-U 1 1 5BCD89DF
-P 8100 2400
-F 0 "#PWR027" H 8100 2250 50  0001 C CNN
-F 1 "+3.3V" H 7950 2500 50  0000 C CNN
-F 2 "" H 8100 2400 50  0001 C CNN
-F 3 "" H 8100 2400 50  0001 C CNN
-	1    8100 2400
-	1    0    0    -1  
-$EndComp
-$Comp
-L Transistor_FET:BSS138 Q3
-U 1 1 5BCD84EA
-P 8300 2700
-F 0 "Q3" V 8550 2700 50  0000 C CNN
-F 1 "BSS138" V 8641 2700 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 8500 2625 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/BS/BSS138.pdf" H 8300 2700 50  0001 L CNN
-F 4 "ON Semiconductor" H -250 200 50  0001 C CNN "MFR"
-F 5 "BSS138" H -250 200 50  0001 C CNN "MPN"
-F 6 "Digikey" H -250 200 50  0001 C CNN "SPR"
-F 7 "BSS138CT-ND" H -250 200 50  0001 C CNN "SPN"
-F 8 "-" H -250 200 50  0001 C CNN "SPURL"
-	1    8300 2700
-	0    1    1    0   
-$EndComp
-Wire Notes Line
-	7850 2000 7850 3300
-Wire Wire Line
-	10050 4050 10400 4050
-Wire Wire Line
-	10050 4150 10400 4150
-Wire Wire Line
-	10050 4250 10400 4250
-Wire Wire Line
-	10050 4350 10400 4350
-Wire Notes Line
-	7850 2000 10400 2000
-Wire Wire Line
-	9750 2800 10450 2800
-$Comp
-L power:+12V #PWR0123
-U 1 1 5E0E6837
-P 1300 2500
-F 0 "#PWR0123" H 1300 2350 50  0001 C CNN
-F 1 "+12V" H 1315 2673 50  0000 C CNN
-F 2 "" H 1300 2500 50  0001 C CNN
-F 3 "" H 1300 2500 50  0001 C CNN
-	1    1300 2500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8250 1050 8250 1350
-Wire Wire Line
-	8800 850  8800 1450
-Wire Wire Line
-	8800 1450 8700 1450
-Wire Wire Line
-	9100 1050 9100 1150
-Wire Wire Line
-	9100 1150 8750 1150
-Connection ~ 8750 1150
-Wire Wire Line
-	8150 1850 9250 1850
-Wire Wire Line
-	8250 1050 8950 1050
-Wire Wire Line
-	8950 1050 8950 1250
-Wire Wire Line
-	8950 1250 9350 1250
-Wire Wire Line
-	8300 1250 8200 1250
-Wire Wire Line
-	8200 1250 8200 1750
-Wire Wire Line
-	8200 1750 9350 1750
-$Comp
-L dk_Transistors-Bipolar-BJT-Single:MMSS8050-H-TP Q1
-U 1 1 5DD27350
-P 9000 850
-F 0 "Q1" H 9188 903 60  0000 L CNN
-F 1 "MMSS8050-H-TP" H 9188 797 60  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 9200 1050 60  0001 L CNN
-F 3 "http://www.mccsemi.com/up_pdf/MMSS8050(SOT-23).pdf" H 9200 1150 60  0001 L CNN
-F 4 "MMSS8050-H-TPMSCT-ND" H 9200 1250 60  0001 L CNN "Digi-Key_PN"
-F 5 "MMSS8050-H-TP" H 9200 1350 60  0001 L CNN "MPN"
-F 6 "Discrete Semiconductor Products" H 9200 1450 60  0001 L CNN "Category"
-F 7 "Transistors - Bipolar (BJT) - Single" H 9200 1550 60  0001 L CNN "Family"
-F 8 "http://www.mccsemi.com/up_pdf/MMSS8050(SOT-23).pdf" H 9200 1650 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/micro-commercial-co/MMSS8050-H-TP/MMSS8050-H-TPMSCT-ND/2825945" H 9200 1750 60  0001 L CNN "DK_Detail_Page"
-F 10 "TRANS NPN 25V 1.5A SOT23" H 9200 1850 60  0001 L CNN "Description"
-F 11 "Micro Commercial Co" H 9200 1950 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 9200 2050 60  0001 L CNN "Status"
-F 13 "Micro Commercial Co" H 9000 850 50  0001 C CNN "MFR"
-F 14 "Digikey" H 9000 850 50  0001 C CNN "SPR"
-F 15 "MMSS8050-H-TPMSCT-ND" H 9000 850 50  0001 C CNN "SPN"
-F 16 "https://www.digikey.com/products/en/discrete-semiconductor-products/transistors-bipolar-bjt-single/276?k=MMSS8050-H-TP&k=&pkeyword=MMSS8050-H-TP&sv=0&pv7=2&sf=0&quantity=&ColumnSort=0&page=1&pageSize=500" H 9000 850 50  0001 C CNN "SPURL"
-	1    9000 850 
-	1    0    0    -1  
-$EndComp
-$Sheet
-S 6150 5050 900  1050
-U 5DD65482
-F0 "Reset_Boot" 50
-F1 "Reset_Boot.sch" 50
-$EndSheet
-Text GLabel 2300 3550 0    50   Input ~ 0
-IO0
-Text GLabel 2300 3650 0    50   Input ~ 0
-IO2
-Wire Wire Line
-	2300 3550 3750 3550
-Wire Wire Line
-	2600 3650 2300 3650
-Connection ~ 2600 3650
-Text GLabel 5750 5700 0    50   Input ~ 0
-~RESET
-Wire Wire Line
-	5750 5700 6000 5700
-$Comp
-L dk_Microphones:SPH0645LM4H-B MIC1
-U 1 1 5DE52238
-P 1850 7400
-F 0 "MIC1" H 2150 7650 60  0000 L CNN
-F 1 "SPH0645LM4H-B" H 2294 7347 60  0000 L CNN
-F 2 "Aaron:SPH0645LM4H-B" H 2050 7600 60  0001 L CNN
-F 3 "https://media.digikey.com/pdf/Data%20Sheets/Knowles%20Acoustics%20PDFs/SPH0645LM4H-B.pdf" H 2050 7700 60  0001 L CNN
-F 4 "423-1405-1-ND" H 2050 7800 60  0001 L CNN "Digi-Key_PN"
-F 5 "SPH0645LM4H-B" H 2050 7900 60  0001 L CNN "MPN"
-F 6 "Audio Products" H 2050 8000 60  0001 L CNN "Category"
-F 7 "Microphones" H 2050 8100 60  0001 L CNN "Family"
-F 8 "https://media.digikey.com/pdf/Data%20Sheets/Knowles%20Acoustics%20PDFs/SPH0645LM4H-B.pdf" H 2050 8200 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/knowles/SPH0645LM4H-B/423-1405-1-ND/5332432" H 2050 8300 60  0001 L CNN "DK_Detail_Page"
-F 10 "CRAWFORD MIC DGT I2S BOTTOM PORT" H 2050 8400 60  0001 L CNN "Description"
-F 11 "Knowles" H 2050 8500 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 2050 8600 60  0001 L CNN "Status"
-F 13 "Knowles" H 1850 7400 50  0001 C CNN "MFR"
-F 14 "Digikey" H 1850 7400 50  0001 C CNN "SPR"
-F 15 "423-1405-1-ND" H 1850 7400 50  0001 C CNN "SPN"
-F 16 "https://www.digikey.com/products/en/audio-products/microphones/158?k=SPH0645LM4H-B&k=&pkeyword=SPH0645LM4H-B&sv=0&pv7=2&sf=0&quantity=&ColumnSort=0&page=1&pageSize=500" H 1850 7400 50  0001 C CNN "SPURL"
-	1    1850 7400
-	1    0    0    -1  
-$EndComp
-Connection ~ 2250 7400
-$Comp
-L Power_Protection:SP0502BAHT D3
-U 1 1 5DF173E0
-P 3100 2700
-F 0 "D3" H 3050 2950 50  0000 L CNN
-F 1 "SP0502BAHT" H 2550 2400 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 3325 2650 50  0001 L CNN
-F 3 "http://www.littelfuse.com/~/media/files/littelfuse/technical%20resources/documents/data%20sheets/sp05xxba.pdf" H 3225 2825 50  0001 C CNN
-F 4 "Littlefuse Inc." H 3100 2700 50  0001 C CNN "MFR"
-F 5 "SP0502BAHTG" H 3100 2700 50  0001 C CNN "MPN"
-F 6 "Digikey" H 3100 2700 50  0001 C CNN "SPR"
-F 7 "F2714CT-ND" H 3100 2700 50  0001 C CNN "SPN"
-F 8 "https://www.digikey.com/products/en/circuit-protection/tvs-diodes/144?k=SP0502BAHT&k=&pkeyword=SP0502BAHT&sv=0&pv7=2&pv1989=0&sf=0&quantity=&ColumnSort=0&page=1&stock=1&nstock=1&pageSize=500" H 3100 2700 50  0001 C CNN "SPURL"
-	1    3100 2700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2700 2500 3000 2500
-Connection ~ 3000 2500
-Wire Wire Line
-	3000 2500 3200 2500
-Wire Notes Line
-	500  3400 3400 3400
-Wire Notes Line
-	3400 600  3400 3400
-Wire Notes Line
-	3400 3200 7150 3200
-$Comp
-L power:PWR_FLAG #FLG0101
-U 1 1 5DFA084D
-P 3200 2500
-F 0 "#FLG0101" H 3200 2575 50  0001 C CNN
-F 1 "PWR_FLAG" H 3200 2673 50  0000 C CNN
-F 2 "" H 3200 2500 50  0001 C CNN
-F 3 "~" H 3200 2500 50  0001 C CNN
-	1    3200 2500
-	1    0    0    -1  
-$EndComp
-Connection ~ 3200 2500
-Wire Wire Line
-	9550 1550 10000 1550
-Wire Wire Line
-	3750 5550 3550 5550
-Wire Wire Line
-	3300 5450 3750 5450
-Text Label 7850 6150 0    50   ~ 0
-SDA
-Text Label 7850 6050 0    50   ~ 0
-SCL
-$Sheet
-S 8400 3750 1200 950 
-U 5DE460A6
-F0 "Level Shifter" 50
-F1 "levelshifter.sch" 50
-$EndSheet
-Text GLabel 7850 4050 2    50   Output ~ 0
-IO5
-Text GLabel 7850 4150 2    50   Output ~ 0
-IO18
-Text GLabel 7850 4250 2    50   Output ~ 0
-IO32
-Text GLabel 7850 4350 2    50   Output ~ 0
-IO33
-Text GLabel 10050 4050 0    50   Input ~ 0
-IO5_H
-Text GLabel 10050 4150 0    50   Input ~ 0
-IO18_H
-Text GLabel 10050 4250 0    50   Input ~ 0
-IO32_H
-Text GLabel 10050 4350 0    50   Input ~ 0
-IO33_H
-Text Label 8250 1050 0    50   ~ 0
-IO0_RTS_DRV
-Text Label 8300 1750 0    50   ~ 0
-IO2_RTS_DRV
-Text Label 8800 1000 1    50   ~ 0
-RST_DTR_DRV
-Text Label 6100 2150 0    50   ~ 0
-VBUS_REF
-Wire Wire Line
-	8000 5400 7900 5400
-Connection ~ 8000 5400
-$Comp
-L Connector:TestPoint TP1
-U 1 1 5E040823
-P 7300 5800
-F 0 "TP1" H 7358 5918 50  0000 L CNN
-F 1 "TestPoint" H 7358 5827 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 7500 5800 50  0001 C CNN
-F 3 "~" H 7500 5800 50  0001 C CNN
-	1    7300 5800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7300 5800 7900 5800
-$Comp
-L Device:R_Pack04 RN3
-U 1 1 5BC2EF2D
-P 8000 5600
-F 0 "RN3" H 8350 5700 50  0000 R CNN
-F 1 "4.7K" H 8550 5600 50  0000 R CNN
-F 2 "Resistor_SMD:R_Array_Convex_4x0603" V 8275 5600 50  0001 C CNN
-F 3 "https://www.bourns.com/docs/Product-Datasheets/CATCAY.pdf" H 8000 5600 50  0001 C CNN
-F 4 "Bourns Inc." H 0   0   50  0001 C CNN "MFR"
-F 5 "CAT16-4701F4LF" H 0   0   50  0001 C CNN "MPN"
-F 6 "Digikey" H 0   0   50  0001 C CNN "SPR"
-F 7 "CAT16-4701F4LFCT-ND" H 0   0   50  0001 C CNN "SPN"
-F 8 "https://www.digikey.com/product-detail/en/bourns-inc/CAT16-4701F4LF/CAT16-4701F4LFCT-ND/3592883" H 0   0   50  0001 C CNN "SPURL"
-	1    8000 5600
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Device:R R6
-U 1 1 5BCE2065
-P 8500 2550
-F 0 "R6" V 8600 2550 50  0000 C CNN
-F 1 "4.7K" V 8500 2550 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 8430 2550 50  0001 C CNN
-F 3 "https://www.bourns.com/docs/Product-Datasheets/CHPREZTR.pdf" H 8500 2550 50  0001 C CNN
-F 4 "Bourns Inc." H -350 200 50  0001 C CNN "MFR"
-F 5 "CR0603-FX-4701ELF" H -350 200 50  0001 C CNN "MPN"
-F 6 "Digikey" H -350 200 50  0001 C CNN "SPR"
-F 7 "CR0603-FX-4701ELFCT-ND" H -350 200 50  0001 C CNN "SPN"
-F 8 "https://www.digikey.com/product-detail/en/bourns-inc/CR0603-FX-4701ELF/CR0603-FX-4701ELFCT-ND/3740884" H -350 200 50  0001 C CNN "SPURL"
-	1    8500 2550
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:+3.3V #PWR0131
-U 1 1 5DF33608
-P 8900 1550
-F 0 "#PWR0131" H 8900 1400 50  0001 C CNN
-F 1 "+3.3V" H 8900 1700 50  0000 C CNN
-F 2 "" H 8900 1550 50  0001 C CNN
-F 3 "" H 8900 1550 50  0001 C CNN
-	1    8900 1550
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:TestPoint TP2
-U 1 1 5DF45B92
-P 8000 1300
-F 0 "TP2" H 7900 1500 50  0000 L CNN
-F 1 "TestPoint" H 7800 1600 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 8200 1300 50  0001 C CNN
-F 3 "~" H 8200 1300 50  0001 C CNN
-	1    8000 1300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8900 1550 8700 1550
-Wire Wire Line
-	8000 1550 8000 1300
-Wire Wire Line
-	8000 1550 8300 1550
-Connection ~ 2600 2500
-Connection ~ 3100 2900
-Wire Wire Line
-	2700 2800 2700 2900
-Connection ~ 2700 2900
-Wire Wire Line
-	2700 2900 2600 2900
-Wire Wire Line
-	2600 2700 2600 2900
-Wire Wire Line
-	2700 2900 3100 2900
-Text Label 5800 5700 0    50   ~ 0
-~RESET
-$Comp
-L Aaron:FMB2222A Q2
-U 1 1 5DFE1744
-P 9450 1250
-F 0 "Q2" H 9594 1296 50  0000 L CNN
-F 1 "FMB2222A" H 9594 1205 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-6" H 9450 1250 50  0001 L BNN
-F 3 "https://www.onsemi.com/pub/Collateral/MMPQ2222A-D.pdf" H 9450 1250 50  0001 C CNN
-	1    9450 1250
-	1    0    0    -1  
-$EndComp
-$Comp
-L Aaron:FMB2222A Q2
-U 2 1 5DFE27B6
-P 9450 1750
-F 0 "Q2" H 9594 1796 50  0000 L CNN
-F 1 "FMB2222A" H 9594 1705 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-6" H 9450 1750 50  0001 L BNN
-F 3 "https://www.onsemi.com/pub/Collateral/MMPQ2222A-D.pdf" H 9450 1750 50  0001 C CNN
-F 4 "ON Semiconductor" H 9450 1750 50  0001 C CNN "MFR"
-F 5 "FMB2222A" H 9450 1750 50  0001 C CNN "MPN"
-F 6 "Digikey" H 9450 1750 50  0001 C CNN "SPR"
-F 7 "FMB2222ACT-ND" H 9450 1750 50  0001 C CNN "SPN"
-F 8 "https://www.digikey.com/product-detail/en/on-semiconductor/FMB2222A/FMB2222ACT-ND/2053099" H 9450 1750 50  0001 C CNN "SPURL"
-	2    9450 1750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9550 1450 9250 1450
-Wire Wire Line
-	9250 1450 9250 1850
-Wire Wire Line
-	9550 1950 9250 1950
-Wire Wire Line
-	9250 1950 9250 1850
-Connection ~ 9250 1850
-Wire Wire Line
-	1300 2500 1050 2500
-Wire Wire Line
-	1050 2500 1050 2600
-Connection ~ 1300 2500
-Wire Wire Line
-	1050 2700 1050 2800
-Wire Wire Line
-	1050 2800 1300 2800
-Connection ~ 1300 2800
-Connection ~ 8750 2800
-Wire Wire Line
-	8750 2900 8750 2800
-$Comp
-L Connector_Generic:Conn_01x02 J7
-U 1 1 5DEEBC9B
-P 850 2600
-F 0 "J7" H 850 2350 50  0000 C CNN
-F 1 "Conn_01x02 DNI" H 800 2750 50  0000 C CNN
-F 2 "Connector_PinHeader_1.27mm:PinHeader_1x02_P1.27mm_Vertical" H 850 2600 50  0001 C CNN
-F 3 "http://suddendocs.samtec.com/catalog_english/tms_th.pdf" H 850 2600 50  0001 C CNN
-F 4 "Samtec Inc." H 850 2600 50  0001 C CNN "MFR"
-F 5 "TMS-102-01-G-S" H 850 2600 50  0001 C CNN "MPN"
-F 6 "Digikey" H 850 2600 50  0001 C CNN "SPR"
-F 7 "SAM12199-ND" H 850 2600 50  0001 C CNN "SPN"
-F 8 "https://www.digikey.com/products/en/connectors-interconnects/rectangular-connectors-headers-male-pins/314?k=1.27mm+header&k=&pkeyword=1.27mm+header&sv=0&pv88=121326&sf=0&FV=28%7C353507%2C28%7C353523%2C28%7C353526%2C28%7C353527%2C69%7C411897%2C1790%7C7022%2C1989%7C0%2C2021%7C417859%2C2025%7C15230%2C-8%7C314%2C1795%7C350796&quantity=&ColumnSort=0&page=1&stock=1&nstock=1&pageSize=500" H 850 2600 50  0001 C CNN "SPURL"
-	1    850  2600
-	-1   0    0    -1  
-$EndComp
 $EndSCHEMATC
