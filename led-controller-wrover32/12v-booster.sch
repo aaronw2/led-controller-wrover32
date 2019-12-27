@@ -5,8 +5,8 @@ $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 2 5
 Title "Wrover32 LED Controller"
-Date "2019-12-19"
-Rev "3.5"
+Date "2019-12-26"
+Rev "3.7"
 Comp "Copyright © 2018 by Aaron Williams"
 Comment1 "Copyright © 2019 by Aaron Williams"
 Comment2 ""

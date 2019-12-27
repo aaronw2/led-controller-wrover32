@@ -5,8 +5,8 @@ $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 1 5
 Title "Wrover32 LED Controller"
-Date "2019-12-24"
-Rev "3.6"
+Date "2019-12-26"
+Rev "3.7"
 Comp ""
 Comment1 "Copyright © 2019 by Aaron Williams"
 Comment2 ""
@@ -170,46 +170,30 @@ F 8 "-" H -1250 250 50  0001 C CNN "SPURL"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Interface_USB:CP2102N-A01-GQFN24 U3
-U 1 1 5B95EB77
-P 7150 1850
-F 0 "U3" H 7150 2928 50  0000 C CNN
-F 1 "CP2102N-A01-GQFN24" H 7150 2837 50  0000 C CNN
-F 2 "Aaron:QFN-24-1EP_4x4mm_Pitch0.5mm_rounded_corners" H 7600 1050 50  0001 L CNN
-F 3 "http://www.silabs.com/support%20documents/technicaldocs/cp2102n-datasheet.pdf" H 7200 800 50  0001 C CNN
-F 4 "Silicon Image" H 0   0   50  0001 C CNN "MFR"
-F 5 "CP2102N-A01-GQFN24" H 0   0   50  0001 C CNN "MPN"
-F 6 "Digikey" H 0   0   50  0001 C CNN "SPR"
-F 7 "336-4737-1-ND" H 0   0   50  0001 C CNN "SPN"
-F 8 "-" H 0   0   50  0001 C CNN "SPURL"
-	1    7150 1850
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+3.3V #PWR019
 U 1 1 5B95EC15
-P 6100 950
-F 0 "#PWR019" H 6100 800 50  0001 C CNN
-F 1 "+3.3V" H 6115 1123 50  0000 C CNN
-F 2 "" H 6100 950 50  0001 C CNN
-F 3 "" H 6100 950 50  0001 C CNN
-	1    6100 950 
+P 6000 750
+F 0 "#PWR019" H 6000 600 50  0001 C CNN
+F 1 "+3.3V" H 6015 923 50  0000 C CNN
+F 2 "" H 6000 750 50  0001 C CNN
+F 3 "" H 6000 750 50  0001 C CNN
+	1    6000 750 
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C6
 U 1 1 5B95EC34
-P 6300 1100
-F 0 "C6" H 6350 1000 50  0000 L CNN
-F 1 "10uF" H 6100 1200 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 6338 950 50  0001 C CNN
-F 3 "http://www.samsungsem.com/kr/support/product-search/mlcc/CL21B106KOQNNNE.jsp" H 6300 1100 50  0001 C CNN
-F 4 "Samsung" H 250 -450 50  0001 C CNN "MFR"
-F 5 "CL21B106KOQNNNE" H 250 -450 50  0001 C CNN "MPN"
-F 6 "Digikey" H 250 -450 50  0001 C CNN "SPR"
-F 7 "1276-2872-1-ND" H 250 -450 50  0001 C CNN "SPN"
-F 8 "-" H 250 -450 50  0001 C CNN "SPURL"
-	1    6300 1100
+P 6000 900
+F 0 "C6" H 6050 800 50  0000 L CNN
+F 1 "10uF" H 5800 1000 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 6038 750 50  0001 C CNN
+F 3 "http://www.samsungsem.com/kr/support/product-search/mlcc/CL21B106KOQNNNE.jsp" H 6000 900 50  0001 C CNN
+F 4 "Samsung" H -50 -650 50  0001 C CNN "MFR"
+F 5 "CL21B106KOQNNNE" H -50 -650 50  0001 C CNN "MPN"
+F 6 "Digikey" H -50 -650 50  0001 C CNN "SPR"
+F 7 "1276-2872-1-ND" H -50 -650 50  0001 C CNN "SPN"
+F 8 "-" H -50 -650 50  0001 C CNN "SPURL"
+	1    6000 900 
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -242,23 +226,23 @@ $EndComp
 $Comp
 L power:GND #PWR022
 U 1 1 5B961003
-P 7150 2850
-F 0 "#PWR022" H 7150 2600 50  0001 C CNN
-F 1 "GND" H 7155 2677 50  0000 C CNN
-F 2 "" H 7150 2850 50  0001 C CNN
-F 3 "" H 7150 2850 50  0001 C CNN
-	1    7150 2850
+P 7050 2750
+F 0 "#PWR022" H 7050 2500 50  0001 C CNN
+F 1 "GND" H 7055 2577 50  0000 C CNN
+F 2 "" H 7050 2750 50  0001 C CNN
+F 3 "" H 7050 2750 50  0001 C CNN
+	1    7050 2750
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR020
 U 1 1 5B96152F
-P 6300 1250
-F 0 "#PWR020" H 6300 1000 50  0001 C CNN
-F 1 "GND" H 6200 1150 50  0000 C CNN
-F 2 "" H 6300 1250 50  0001 C CNN
-F 3 "" H 6300 1250 50  0001 C CNN
-	1    6300 1250
+P 6200 1050
+F 0 "#PWR020" H 6200 800 50  0001 C CNN
+F 1 "GND" H 6100 950 50  0000 C CNN
+F 2 "" H 6200 1050 50  0001 C CNN
+F 3 "" H 6200 1050 50  0001 C CNN
+	1    6200 1050
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -818,38 +802,6 @@ F 3 "" H 1300 2800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L led-controller-wrover32-rescue:R-device-led-controller-wrover32-rescue R12
-U 1 1 5BB18E30
-P 5650 1000
-F 0 "R12" H 5450 1050 50  0000 L CNN
-F 1 "22.1K" H 5400 950 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 5580 1000 50  0001 C CNN
-F 3 "" H 5650 1000 50  0001 C CNN
-F 4 "Bourns, Inc." H 5650 1000 50  0001 C CNN "MFR"
-F 5 "CR0603-FX-2212ELF" H 5650 1000 50  0001 C CNN "MPN"
-F 6 "Digikey" H 5650 1000 50  0001 C CNN "SPR"
-F 7 "CR0603-FX-2212ELFCT-ND" H 5650 1000 50  0001 C CNN "SPN"
-F 8 "-" H 450 50  50  0001 C CNN "SPURL"
-	1    5650 1000
-	1    0    0    -1  
-$EndComp
-$Comp
-L led-controller-wrover32-rescue:R-device-led-controller-wrover32-rescue R13
-U 1 1 5BB18EB8
-P 5650 1300
-F 0 "R13" H 5450 1350 50  0000 L CNN
-F 1 "47.5K" H 5400 1250 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 5580 1300 50  0001 C CNN
-F 3 "" H 5650 1300 50  0001 C CNN
-F 4 "Bourns, Inc." H 5650 1300 50  0001 C CNN "MFR"
-F 5 "CR0603-FX-4752ELF" H 5650 1300 50  0001 C CNN "MPN"
-F 6 "Digikey" H 5650 1300 50  0001 C CNN "SPR"
-F 7 "CR0603-FX-4752ELFCT-ND" H 5650 1300 50  0001 C CNN "SPN"
-F 8 "-" H 450 50  50  0001 C CNN "SPURL"
-	1    5650 1300
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:VBUS #PWR044
 U 1 1 5BB19039
 P 5650 850
@@ -858,17 +810,6 @@ F 1 "VBUS" H 5665 1023 50  0000 C CNN
 F 2 "" H 5650 850 50  0001 C CNN
 F 3 "" H 5650 850 50  0001 C CNN
 	1    5650 850 
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR045
-U 1 1 5BB190F8
-P 5650 1450
-F 0 "#PWR045" H 5650 1200 50  0001 C CNN
-F 1 "GND" H 5650 1300 50  0000 C CNN
-F 2 "" H 5650 1450 50  0001 C CNN
-F 3 "" H 5650 1450 50  0001 C CNN
-	1    5650 1450
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1007,10 +948,10 @@ F 1 "100K" V 8700 1650 50  0000 C CNN
 F 2 "Resistor_SMD:R_Array_Convex_4x0603" V 8775 1450 50  0001 C CNN
 F 3 "https://industrial.panasonic.com/cdbs/www-data/pdf/AOC0000/AOC0000C14.pdf" H 8500 1450 50  0001 C CNN
 F 4 "Panasonic" H 6600 -4150 50  0001 C CNN "MFR"
-F 5 "EXB-V8V103JV" H 6600 -4150 50  0001 C CNN "MPN"
+F 5 "EXB-V8V104JV" H 6600 -4150 50  0001 C CNN "MPN"
 F 6 "Digikey" H 6600 -4150 50  0001 C CNN "SPR"
-F 7 "Y4103CT-ND" H 6600 -4150 50  0001 C CNN "SPN"
-F 8 "-" H 6600 -4150 50  0001 C CNN "SPURL"
+F 7 "Y4104CT-ND" H 6600 -4150 50  0001 C CNN "SPN"
+F 8 "https://www.digikey.com/product-detail/en/panasonic-electronic-components/EXB-V8V104JV/Y4104CT-ND/155183" H 6600 -4150 50  0001 C CNN "SPURL"
 	1    8500 1450
 	0    1    1    0   
 $EndComp
@@ -1066,22 +1007,6 @@ F 1 "GND" H 705 7377 50  0000 C CNN
 F 2 "" H 700 7550 50  0001 C CNN
 F 3 "" H 700 7550 50  0001 C CNN
 	1    700  7550
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C18
-U 1 1 5BE92E4E
-P 6100 1100
-F 0 "C18" H 5950 1000 50  0000 L CNN
-F 1 "10uF" H 5900 1200 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 6138 950 50  0001 C CNN
-F 3 "http://www.samsungsem.com/kr/support/product-search/mlcc/CL21B106KOQNNNE.jsp" H 6100 1100 50  0001 C CNN
-F 4 "Samsung" H 50  -450 50  0001 C CNN "MFR"
-F 5 "CL21B106KOQNNNE" H 50  -450 50  0001 C CNN "MPN"
-F 6 "Digikey" H 50  -450 50  0001 C CNN "SPR"
-F 7 "1276-2872-1-ND" H 50  -450 50  0001 C CNN "SPN"
-F 8 "-" H 50  -450 50  0001 C CNN "SPURL"
-	1    6100 1100
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1399,17 +1324,17 @@ $EndComp
 $Comp
 L Connector:TestPoint TP2
 U 1 1 5DF45B92
-P 8000 1300
-F 0 "TP2" H 7900 1500 50  0000 L CNN
-F 1 "DNF" H 7900 1600 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 8200 1300 50  0001 C CNN
-F 3 "~" H 8200 1300 50  0001 C CNN
-F 4 "-" H 0   0   50  0001 C CNN "MFR"
-F 5 "-" H 0   0   50  0001 C CNN "MPN"
-F 6 "-" H 0   0   50  0001 C CNN "SPR"
-F 7 "-" H 0   0   50  0001 C CNN "SPN"
-F 8 "-" H 0   0   50  0001 C CNN "SPURL"
-	1    8000 1300
+P 8000 1000
+F 0 "TP2" H 7900 1200 50  0000 L CNN
+F 1 "DNF" H 7900 1300 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 8200 1000 50  0001 C CNN
+F 3 "~" H 8200 1000 50  0001 C CNN
+F 4 "-" H 0   -300 50  0001 C CNN "MFR"
+F 5 "-" H 0   -300 50  0001 C CNN "MPN"
+F 6 "-" H 0   -300 50  0001 C CNN "SPR"
+F 7 "-" H 0   -300 50  0001 C CNN "SPN"
+F 8 "-" H 0   -300 50  0001 C CNN "SPURL"
+	1    8000 1000
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1476,9 +1401,9 @@ F 8 "https://www.digikey.com/product-detail/en/w-rth-elektronik/693072010801/732
 	1    1600 5700
 	-1   0    0    1   
 $EndComp
-Text Label 7800 1650 0    50   ~ 0
+Text Label 7750 1550 0    50   ~ 0
 RXD0
-Text Label 7800 1550 0    50   ~ 0
+Text Label 7800 1650 0    50   ~ 0
 TXD0
 Text Label 5000 5050 0    50   ~ 0
 RXD0
@@ -1486,9 +1411,9 @@ Text Label 5000 5150 0    50   ~ 0
 TXD0
 Text Label 5150 3750 0    50   ~ 0
 ~RESET
-Text Label 7750 1450 0    50   ~ 0
+Text Label 7800 1850 0    50   ~ 0
 RTS
-Text Label 7750 1850 0    50   ~ 0
+Text Label 7800 1250 0    50   ~ 0
 DTR
 Text Label 9900 1050 0    50   ~ 0
 IO0
@@ -1590,9 +1515,9 @@ Text Label 7500 6050 0    50   ~ 0
 IO22
 Text Label 7500 6150 0    50   ~ 0
 IO21
-Text Label 6000 2250 0    50   ~ 0
+Text Label 6000 1650 0    50   ~ 0
 USB_D+
-Text Label 6000 2350 0    50   ~ 0
+Text Label 6000 1550 0    50   ~ 0
 USB_D-
 Text Label 5450 7200 0    50   ~ 0
 IO35
@@ -1682,8 +1607,6 @@ Text Label 8300 1750 0    50   ~ 0
 IO2_RTS_DRV
 Text Label 8800 1000 1    50   ~ 0
 RST_DTR_DRV
-Text Label 6100 2150 0    50   ~ 0
-VBUS_REF
 Text Label 5800 5700 0    50   ~ 0
 ~RESET
 Wire Wire Line
@@ -1701,17 +1624,9 @@ Wire Wire Line
 Wire Wire Line
 	2300 1400 2700 1400
 Wire Wire Line
-	6550 2250 5950 2250
+	7050 2650 7150 2650
 Wire Wire Line
-	7150 2750 7250 2750
-Wire Wire Line
-	7150 2850 7150 2750
-Wire Wire Line
-	6550 1850 6450 1850
-Wire Wire Line
-	7150 950  7050 950 
-Wire Wire Line
-	7750 1450 8050 1450
+	7050 2750 7050 2650
 Wire Wire Line
 	7750 1550 7950 1550
 Wire Wire Line
@@ -1819,10 +1734,6 @@ Wire Wire Line
 Wire Wire Line
 	4000 2900 4100 2900
 Wire Wire Line
-	5950 2250 5950 2000
-Wire Wire Line
-	5950 2000 5750 2000
-Wire Wire Line
 	5000 5700 5000 5650
 Wire Wire Line
 	5000 5550 4950 5550
@@ -1835,19 +1746,7 @@ Wire Wire Line
 Wire Wire Line
 	5000 5650 5000 5550
 Wire Wire Line
-	6450 950  6450 1850
-Wire Wire Line
-	6450 950  6300 950 
-Wire Wire Line
-	7050 950  6450 950 
-Wire Wire Line
 	5750 2600 5950 2600
-Wire Wire Line
-	6050 2150 6050 1900
-Wire Wire Line
-	5650 1150 5900 1150
-Wire Wire Line
-	6050 2150 6550 2150
 Wire Wire Line
 	850  1250 1150 1250
 Wire Wire Line
@@ -1882,10 +1781,6 @@ Wire Wire Line
 	8200 5400 8100 5400
 Wire Wire Line
 	8100 5400 8000 5400
-Wire Wire Line
-	5950 2350 5950 2600
-Wire Wire Line
-	5950 2350 6550 2350
 Wire Wire Line
 	2050 2500 1900 2500
 Wire Wire Line
@@ -2003,8 +1898,6 @@ Wire Wire Line
 Wire Wire Line
 	8050 1150 8750 1150
 Wire Wire Line
-	7750 1850 8150 1850
-Wire Wire Line
 	8300 1450 8150 1450
 Wire Wire Line
 	8150 1450 8150 1850
@@ -2018,16 +1911,6 @@ Wire Wire Line
 	8700 1250 8750 1250
 Wire Wire Line
 	8750 1250 8750 1350
-Wire Wire Line
-	8050 1150 8050 1450
-Wire Wire Line
-	5900 1150 5900 1900
-Wire Wire Line
-	5900 1900 6050 1900
-Wire Wire Line
-	6300 950  6100 950 
-Wire Wire Line
-	6100 1250 6300 1250
 Wire Wire Line
 	4400 2600 4650 2600
 Wire Wire Line
@@ -2161,8 +2044,6 @@ Wire Wire Line
 Wire Wire Line
 	8900 1550 8700 1550
 Wire Wire Line
-	8000 1550 8000 1300
-Wire Wire Line
 	8000 1550 8300 1550
 Wire Wire Line
 	2700 2800 2700 2900
@@ -2210,7 +2091,6 @@ Connection ~ 850  1250
 Connection ~ 850  1050
 Connection ~ 1550 1800
 Connection ~ 2300 1400
-Connection ~ 7150 2750
 Connection ~ 1700 4600
 Connection ~ 1700 4500
 Connection ~ 1700 4400
@@ -2226,9 +2106,6 @@ Connection ~ 5600 3550
 Connection ~ 4100 2900
 Connection ~ 5000 5550
 Connection ~ 5000 5650
-Connection ~ 7050 950 
-Connection ~ 6450 950 
-Connection ~ 5650 1150
 Connection ~ 2500 4700
 Connection ~ 2600 4600
 Connection ~ 2700 4050
@@ -2245,16 +2122,12 @@ Connection ~ 2050 2800
 Connection ~ 6000 3850
 Connection ~ 6000 3550
 Connection ~ 2150 1400
-Connection ~ 6300 950 
 Connection ~ 850  1800
 Connection ~ 1700 3950
 Connection ~ 1450 3950
 Connection ~ 2700 1400
 Connection ~ 2700 1700
-Connection ~ 8150 1850
 Connection ~ 8750 1250
-Connection ~ 6300 1250
-Connection ~ 6100 950 
 Connection ~ 4650 2600
 Connection ~ 4550 2000
 Connection ~ 2700 2500
@@ -2284,15 +2157,85 @@ NoConn ~ 4950 4450
 NoConn ~ 4950 4550
 NoConn ~ 4950 4650
 NoConn ~ 4950 4750
-NoConn ~ 7750 1250
 NoConn ~ 7750 1350
-NoConn ~ 7750 1750
 NoConn ~ 7750 1950
 NoConn ~ 7750 2150
 NoConn ~ 7750 2250
 NoConn ~ 7750 2350
-NoConn ~ 7750 2450
-NoConn ~ 6550 1650
-NoConn ~ 6550 1550
-NoConn ~ 6550 1250
+Wire Wire Line
+	8000 1000 8000 1550
+Wire Wire Line
+	8150 1450 8150 1250
+Wire Wire Line
+	8150 1250 7750 1250
+Connection ~ 8150 1450
+Wire Wire Line
+	8050 1850 7750 1850
+$Comp
+L Interface_USB:CP2104 U3
+U 1 1 5E1F0AC8
+P 7050 1650
+F 0 "U3" H 6550 2500 50  0000 C CNN
+F 1 "CP2104" H 6700 650 50  0000 C CNN
+F 2 "Package_DFN_QFN:QFN-24-1EP_4x4mm_P0.5mm_EP2.6x2.6mm" H 7200 700 50  0001 L CNN
+F 3 "https://www.silabs.com/documents/public/data-sheets/cp2104.pdf" H 6500 2900 50  0001 C CNN
+	1    7050 1650
+	1    0    0    -1  
+$EndComp
+NoConn ~ 7750 1150
+NoConn ~ 7750 1050
+Wire Wire Line
+	8050 1150 8050 1850
+Wire Wire Line
+	6350 1050 6350 750 
+Wire Wire Line
+	6350 1250 5650 1250
+Wire Wire Line
+	5650 1250 5650 850 
+Wire Wire Line
+	5750 2000 5750 1650
+Wire Wire Line
+	5750 1650 6350 1650
+Wire Wire Line
+	5950 1550 6350 1550
+Wire Wire Line
+	5950 1550 5950 2600
+Wire Wire Line
+	6350 750  6850 750 
+Connection ~ 6350 750 
+Connection ~ 6850 750 
+Wire Wire Line
+	6850 750  7050 750 
+NoConn ~ 7250 750 
+NoConn ~ 6350 1850
+NoConn ~ 6350 1950
+NoConn ~ 6350 2050
+NoConn ~ 6350 2150
+NoConn ~ 6350 2350
+Connection ~ 7050 2650
+Connection ~ 6000 750 
+Wire Wire Line
+	6000 750  6200 750 
+$Comp
+L Device:C C18
+U 1 1 5E39EA67
+P 6200 900
+F 0 "C18" H 6200 800 50  0000 L CNN
+F 1 "10uF" H 6000 1000 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 6238 750 50  0001 C CNN
+F 3 "http://www.samsungsem.com/kr/support/product-search/mlcc/CL21B106KOQNNNE.jsp" H 6200 900 50  0001 C CNN
+F 4 "Samsung" H 150 -650 50  0001 C CNN "MFR"
+F 5 "CL21B106KOQNNNE" H 150 -650 50  0001 C CNN "MPN"
+F 6 "Digikey" H 150 -650 50  0001 C CNN "SPR"
+F 7 "1276-2872-1-ND" H 150 -650 50  0001 C CNN "SPN"
+F 8 "-" H 150 -650 50  0001 C CNN "SPURL"
+	1    6200 900 
+	1    0    0    -1  
+$EndComp
+Connection ~ 6200 750 
+Wire Wire Line
+	6200 750  6350 750 
+Wire Wire Line
+	6200 1050 6000 1050
+Connection ~ 6200 1050
 $EndSCHEMATC
