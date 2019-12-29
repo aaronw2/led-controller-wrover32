@@ -50,6 +50,7 @@ F 5 "XCL220B333FR-G" H -250 -650 50  0001 C CNN "MPN"
 F 6 "Digikey" H -250 -650 50  0001 C CNN "SPR"
 F 7 "893-1279-1-ND" H -250 -650 50  0001 C CNN "SPN"
 F 8 "-" H -250 -650 50  0001 C CNN "SPURL"
+F 9 "DC DC CONVERTER 3.3V" H 0   0   50  0001 C CNN "DESC"
 	1    1650 1250
 	1    0    0    -1  
 $EndComp
@@ -68,6 +69,7 @@ F 7 "CL21B106KOQNNNE" H -50 -650 50  0001 C CNN "MPN"
 F 8 "Digikey" H -50 -650 50  0001 C CNN "SPR"
 F 9 "1276-2872-1-ND" H -50 -650 50  0001 C CNN "SPN"
 F 10 "-" H -50 -650 50  0001 C CNN "SPURL"
+F 11 "CAP CER 10UF 16V X7R 0805" H 0   0   50  0001 C CNN "DESC"
 	1    850  1400
 	1    0    0    -1  
 $EndComp
@@ -85,6 +87,7 @@ F 6 "CRCW060310K0FKEC" H -50 -650 50  0001 C CNN "MPN"
 F 7 "Digikey" H -50 -650 50  0001 C CNN "SPR"
 F 8 "541-2979-1-ND" H -50 -650 50  0001 C CNN "SPN"
 F 9 "-" H -50 -650 50  0001 C CNN "SPURL"
+F 10 "RES SMD 10K OHM 1% 1/10W 0603" H 0   0   50  0001 C CNN "DESC"
 	1    1000 1050
 	0    1    1    0   
 $EndComp
@@ -123,6 +126,7 @@ F 5 "CL21B106KOQNNNE" H -400 -500 50  0001 C CNN "MPN"
 F 6 "Digikey" H -400 -500 50  0001 C CNN "SPR"
 F 7 "1276-2872-1-ND" H -400 -500 50  0001 C CNN "SPN"
 F 8 "-" H -400 -500 50  0001 C CNN "SPURL"
+F 9 "CAP CER 10UF 16V X7R 0805" H 0   0   50  0001 C CNN "DESC"
 	1    2300 1550
 	1    0    0    -1  
 $EndComp
@@ -139,6 +143,7 @@ F 5 "CL10B105KP8NNNC" H -400 -500 50  0001 C CNN "MPN"
 F 6 "Digikey" H -400 -500 50  0001 C CNN "SPR"
 F 7 "1276-1946-1-ND" H -400 -500 50  0001 C CNN "SPN"
 F 8 "-" H -400 -500 50  0001 C CNN "SPURL"
+F 9 "CAP CER 1UF 10V X7R 0603" H 0   0   50  0001 C CNN "DESC"
 	1    2700 1550
 	1    0    0    -1  
 $EndComp
@@ -166,6 +171,7 @@ F 5 "1050170001" H -1250 250 50  0001 C CNN "MPN"
 F 6 "Digikey" H -1250 250 50  0001 C CNN "SPR"
 F 7 "WM1399CT-ND" H -1250 250 50  0001 C CNN "SPN"
 F 8 "-" H -1250 250 50  0001 C CNN "SPURL"
+F 9 "CONN RCPT USB2.0 MICRO B SMD R/A" H 0   0   50  0001 C CNN "DESC"
 	1    4100 2500
 	1    0    0    -1  
 $EndComp
@@ -193,6 +199,7 @@ F 5 "CL21B106KOQNNNE" H -50 -650 50  0001 C CNN "MPN"
 F 6 "Digikey" H -50 -650 50  0001 C CNN "SPR"
 F 7 "1276-2872-1-ND" H -50 -650 50  0001 C CNN "SPN"
 F 8 "-" H -50 -650 50  0001 C CNN "SPURL"
+F 9 "CAP CER 10UF 16V X7R 0805" H 0   0   50  0001 C CNN "DESC"
 	1    6000 900 
 	1    0    0    -1  
 $EndComp
@@ -209,6 +216,7 @@ F 5 "B4B-PH-K-S(LF)(SN)" H -2150 -1350 50  0001 C CNN "MPN"
 F 6 "Digikey" H -2150 -1350 50  0001 C CNN "SPR"
 F 7 "455-1706-ND" H -2150 -1350 50  0001 C CNN "SPN"
 F 8 "-" H -2150 -1350 50  0001 C CNN "SPURL"
+F 9 "CONN HEADER VERT 4POS 2MM" H 0   0   50  0001 C CNN "DESC"
 	1    4200 1350
 	-1   0    0    -1  
 $EndComp
@@ -272,6 +280,7 @@ F 8 "Module: combo; GPIO, I2C x2, I2S x2, SDIO, SPI x3, UART x3; U.FL" H 4350 46
 F 9 "Digikey" H 0   0   50  0001 C CNN "SPR"
 F 10 "1904-1015-1-ND" H 0   0   50  0001 C CNN "SPN"
 F 11 "https://www.digikey.com/product-detail/en/espressif-systems/ESP32-WROVER-16MB/1904-1015-1-ND/9381724" H 0   0   50  0001 C CNN "SPURL"
+F 12 "WIFI MODULE 128MBITS SPI FLASH" H 0   0   50  0001 C CNN "DESC"
 	1    4350 4650
 	1    0    0    -1  
 $EndComp
@@ -310,6 +319,7 @@ F 5 "CL21B106KOQNNNE" H -100 -850 50  0001 C CNN "MPN"
 F 6 "Digikey" H -100 -850 50  0001 C CNN "SPR"
 F 7 "1276-2872-1-ND" H -100 -850 50  0001 C CNN "SPN"
 F 8 "-" H -100 -850 50  0001 C CNN "SPURL"
+F 9 "CAP CER 10UF 16V X7R 0805" H 0   0   50  0001 C CNN "DESC"
 	1    3200 6100
 	1    0    0    -1  
 $EndComp
@@ -392,6 +402,7 @@ F 5 "EXB-V8V103JV" H 0   -1000 50  0001 C CNN "MPN"
 F 6 "Digikey" H 0   -1000 50  0001 C CNN "SPR"
 F 7 "Y4103CT-ND" H 0   -1000 50  0001 C CNN "SPN"
 F 8 "-" H 0   -1000 50  0001 C CNN "SPURL"
+F 9 "RES ARRAY 4 RES 10K OHM 1206" H 0   0   50  0001 C CNN "DESC"
 	1    1900 4600
 	0    1    1    0   
 $EndComp
@@ -408,6 +419,7 @@ F 5 "EXB-V4V103JV" H 0   -1000 50  0001 C CNN "MPN"
 F 6 "Digikey" H 0   -1000 50  0001 C CNN "SPR"
 F 7 "Y2103CT-ND" H 0   -1000 50  0001 C CNN "SPN"
 F 8 "-" H 0   -1000 50  0001 C CNN "SPURL"
+F 9 "10k Ohm +/- 5% Isolated  Resistor Network, 0606, Concave" H 0   0   50  0001 C CNN "DESC"
 	1    1900 4050
 	0    1    1    0   
 $EndComp
@@ -424,6 +436,7 @@ F 5 "CL21B106KOQNNNE" H -2200 -300 50  0001 C CNN "MPN"
 F 6 "Digikey" H -2200 -300 50  0001 C CNN "SPR"
 F 7 "1276-2872-1-ND" H -2200 -300 50  0001 C CNN "SPN"
 F 8 "-" H -2200 -300 50  0001 C CNN "SPURL"
+F 9 "CAP CER 10UF 16V X7R 0805" H 0   0   50  0001 C CNN "DESC"
 	1    3550 2500
 	1    0    0    -1  
 $EndComp
@@ -440,6 +453,7 @@ F 5 "CL10B105KP8NNNC" H 0   -1100 50  0001 C CNN "MPN"
 F 6 "Digikey" H 0   -1100 50  0001 C CNN "SPR"
 F 7 "1276-1946-1-ND" H 0   -1100 50  0001 C CNN "SPN"
 F 8 "-" H 0   -1100 50  0001 C CNN "SPURL"
+F 9 "CAP CER 1UF 10V X7R 0603" H 0   0   50  0001 C CNN "DESC"
 	1    1450 4100
 	1    0    0    -1  
 $EndComp
@@ -467,6 +481,7 @@ F 5 "CL21A226KPCLRNC" H -250 -300 50  0001 C CNN "MPN"
 F 6 "Digikey" H -250 -300 50  0001 C CNN "SPR"
 F 7 "1276-6786-1-ND" H -250 -300 50  0001 C CNN "SPN"
 F 8 "https://www.digikey.com/product-detail/en/samsung-electro-mechanics/CL21A226KPCLRNC/1276-6786-1-ND/5961645" H -250 -300 50  0001 C CNN "SPURL"
+F 9 "CAP CER 22UF 10V X5R 0805" H 0   0   50  0001 C CNN "DESC"
 	1    5600 3700
 	1    0    0    -1  
 $EndComp
@@ -538,6 +553,7 @@ F 5 "TMS-102-01-G-S" H 600 -1150 50  0001 C CNN "MPN"
 F 6 "Digikey" H 600 -1150 50  0001 C CNN "SPR"
 F 7 "SAM12199-ND" H 600 -1150 50  0001 C CNN "SPN"
 F 8 "https://www.digikey.com/products/en/connectors-interconnects/rectangular-connectors-headers-male-pins/314?k=1.27mm+header&k=&pkeyword=1.27mm+header&sv=0&pv88=121326&sf=0&FV=28%7C353507%2C28%7C353523%2C28%7C353526%2C28%7C353527%2C69%7C411897%2C1790%7C7022%2C1989%7C0%2C2021%7C417859%2C2025%7C15230%2C-8%7C314%2C1795%7C350796&quantity=&ColumnSort=0&page=1&stock=1&nstock=1&pageSize=500" H 600 -1150 50  0001 C CNN "SPURL"
+F 9 "CONN HEADER VERT 2POS 1.27MM" H 0   0   50  0001 C CNN "DESC"
 	1    1700 2700
 	-1   0    0    1   
 $EndComp
@@ -576,6 +592,7 @@ F 5 "CL21B106KOQNNNE" H 1150 -500 50  0001 C CNN "MPN"
 F 6 "Digikey" H 1150 -500 50  0001 C CNN "SPR"
 F 7 "1276-2872-1-ND" H 1150 -500 50  0001 C CNN "SPN"
 F 8 "-" H 1150 -500 50  0001 C CNN "SPURL"
+F 9 "CAP CER 10UF 16V X7R 0805" H 0   0   50  0001 C CNN "DESC"
 	1    2050 2650
 	1    0    0    -1  
 $EndComp
@@ -592,6 +609,7 @@ F 5 "CL21B106KOQNNNE" H -300 -500 50  0001 C CNN "MPN"
 F 6 "Digikey" H -300 -500 50  0001 C CNN "SPR"
 F 7 "1276-2872-1-ND" H -300 -500 50  0001 C CNN "SPN"
 F 8 "-" H -300 -500 50  0001 C CNN "SPURL"
+F 9 "CAP CER 10UF 16V X7R 0805" H 0   0   50  0001 C CNN "DESC"
 	1    1300 2650
 	1    0    0    -1  
 $EndComp
@@ -630,6 +648,7 @@ F 5 "BM12B-SRSS-TBT(LF)(SN)" H -400 1450 50  0001 C CNN "MPN"
 F 6 "Digikey" H -400 1450 50  0001 C CNN "SPR"
 F 7 "455-2960-1-ND" H -400 1450 50  0001 C CNN "SPN"
 F 8 "https://www.digikey.com/products/en/connectors-interconnects/rectangular-connectors-headers-male-pins/314?k=BM12B-SRSS&k=&pkeyword=BM12B-SRSS&sv=0&pv5=387229&sf=0&FV=-8%7C314%2C7%7C2%2C1989%7C0&quantity=&ColumnSort=0&page=1&stock=1&nstock=1&pageSize=500" H -400 1450 50  0001 C CNN "SPURL"
+F 9 "CONN HEADER SMD 12POS 1MM" H 0   0   50  0001 C CNN "DESC"
 	1    5250 7100
 	-1   0    0    -1  
 $EndComp
@@ -657,6 +676,7 @@ F 5 "BM12B-SRSS-TBT(LF)(SN)" H 250 -100 50  0001 C CNN "MPN"
 F 6 "Digikey" H 250 -100 50  0001 C CNN "SPR"
 F 7 "455-2960-1-ND" H 250 -100 50  0001 C CNN "SPN"
 F 8 "https://www.digikey.com/products/en/connectors-interconnects/rectangular-connectors-headers-male-pins/314?k=BM12B-SRSS&k=&pkeyword=BM12B-SRSS&sv=0&pv5=387229&sf=0&FV=-8%7C314%2C7%7C2%2C1989%7C0&quantity=&ColumnSort=0&page=1&stock=1&nstock=1&pageSize=500" H 250 -100 50  0001 C CNN "SPURL"
+F 9 "CONN HEADER SMD 12POS 1MM" H 0   0   50  0001 C CNN "DESC"
 	1    3950 7100
 	-1   0    0    -1  
 $EndComp
@@ -684,6 +704,7 @@ F 5 "TMS-105-01-G-S" H -450 200 50  0001 C CNN "MPN"
 F 6 "Digikey" H -450 200 50  0001 C CNN "SPR"
 F 7 "SAM10245-ND" H -450 200 50  0001 C CNN "SPN"
 F 8 "https://www.digikey.com/products/en/connectors-interconnects/rectangular-connectors-headers-male-pins/314?k=1.27mm+header&k=&pkeyword=1.27mm+header&sv=0&pv1795=350796&sf=0&FV=28%7C353507%2C28%7C353523%2C28%7C353526%2C28%7C353527%2C69%7C411897%2C88%7C229001%2C1790%7C7022%2C1989%7C0%2C2021%7C417859%2C-8%7C314%2C2025%7C15230&quantity=&ColumnSort=0&page=1&stock=1&nstock=1&pageSize=500" H -450 200 50  0001 C CNN "SPURL"
+F 9 "CONN HEADER VERT 5POS 1.27MM" H 0   0   50  0001 C CNN "DESC"
 	1    8800 6050
 	1    0    0    -1  
 $EndComp
@@ -700,6 +721,7 @@ F 5 "CL10B105KP8NNNC" H -450 200 50  0001 C CNN "MPN"
 F 6 "Digikey" H -450 200 50  0001 C CNN "SPR"
 F 7 "1276-1946-1-ND" H -450 200 50  0001 C CNN "SPN"
 F 8 "-" H -450 200 50  0001 C CNN "SPURL"
+F 9 "CAP CER 1UF 10V X7R 0603" H 0   0   50  0001 C CNN "DESC"
 	1    8500 5700
 	1    0    0    -1  
 $EndComp
@@ -727,6 +749,7 @@ F 5 "GCM188R71H104KA57D" H -250 -300 50  0001 C CNN "MPN"
 F 6 "Digikey" H -250 -300 50  0001 C CNN "SPR"
 F 7 "490-4779-1-ND" H -250 -300 50  0001 C CNN "SPN"
 F 8 "https://www.digikey.com/product-detail/en/murata-electronics/GCM188R71H104KA57D/490-4779-1-ND/1641698" H -250 -300 50  0001 C CNN "SPURL"
+F 9 "CAP CER 0.1UF 50V X7R 0603" H 0   0   50  0001 C CNN "DESC"
 	1    6000 3700
 	1    0    0    -1  
 $EndComp
@@ -776,6 +799,7 @@ F 5 "CRCW0603100KJNEA" H -3550 200 50  0001 C CNN "MPN"
 F 6 "Digikey" H -3550 200 50  0001 C CNN "SPR"
 F 7 "541-100KGCT-ND" H -3550 200 50  0001 C CNN "SPN"
 F 8 "-" H -3550 200 50  0001 C CNN "SPURL"
+F 9 "RES SMD 100K OHM 5% 1/10W 0603" H 0   0   50  0001 C CNN "DESC"
 	1    2250 7550
 	-1   0    0    1   
 $EndComp
@@ -833,6 +857,7 @@ F 13 "ST Microelectronics" H 0   0   50  0001 C CNN "MFR"
 F 14 "Digikey" H 0   0   50  0001 C CNN "SPR"
 F 15 "497-5026-1-ND" H 0   0   50  0001 C CNN "SPN"
 F 16 "-" H 0   0   50  0001 C CNN "SPURL"
+F 17 "TVS DIODE 5.25V 17V SOT666" H 0   0   50  0001 C CNN "DESC"
 	1    5250 2300
 	1    0    0    -1  
 $EndComp
@@ -893,6 +918,7 @@ F 5 "-" H 0   0   50  0001 C CNN "MPN"
 F 6 "-" H 0   0   50  0001 C CNN "SPR"
 F 7 "-" H 0   0   50  0001 C CNN "SPN"
 F 8 "-" H 0   0   50  0001 C CNN "SPURL"
+F 9 "-" H 0   0   50  0001 C CNN "DESC"
 	1    9750 5900
 	1    0    0    -1  
 $EndComp
@@ -909,6 +935,7 @@ F 5 "-" H 0   0   50  0001 C CNN "MPN"
 F 6 "-" H 0   0   50  0001 C CNN "SPR"
 F 7 "-" H 0   0   50  0001 C CNN "SPN"
 F 8 "-" H 0   0   50  0001 C CNN "SPURL"
+F 9 "-" H 0   0   50  0001 C CNN "DESC"
 	1    9750 6100
 	1    0    0    -1  
 $EndComp
@@ -925,6 +952,7 @@ F 5 "-" H 0   0   50  0001 C CNN "MPN"
 F 6 "-" H 0   0   50  0001 C CNN "SPR"
 F 7 "-" H 0   0   50  0001 C CNN "SPN"
 F 8 "-" H 0   0   50  0001 C CNN "SPURL"
+F 9 "-" H 0   0   50  0001 C CNN "DESC"
 	1    9750 6300
 	1    0    0    -1  
 $EndComp
@@ -952,6 +980,7 @@ F 5 "EXB-V8V104JV" H 6600 -4150 50  0001 C CNN "MPN"
 F 6 "Digikey" H 6600 -4150 50  0001 C CNN "SPR"
 F 7 "Y4104CT-ND" H 6600 -4150 50  0001 C CNN "SPN"
 F 8 "https://www.digikey.com/product-detail/en/panasonic-electronic-components/EXB-V8V104JV/Y4104CT-ND/155183" H 6600 -4150 50  0001 C CNN "SPURL"
+F 9 "RES ARRAY 4 RES 100K OHM 1206" H 0   0   50  0001 C CNN "DESC"
 	1    8500 1450
 	0    1    1    0   
 $EndComp
@@ -968,6 +997,7 @@ F 5 "-" H 0   0   50  0001 C CNN "MPN"
 F 6 "-" H 0   0   50  0001 C CNN "SPR"
 F 7 "-" H 0   0   50  0001 C CNN "SPN"
 F 8 "-" H 0   0   50  0001 C CNN "SPURL"
+F 9 "-" H 0   0   50  0001 C CNN "DESC"
 	1    9750 6500
 	1    0    0    -1  
 $EndComp
@@ -984,6 +1014,7 @@ F 5 "GCM188R71H104KA57D" H -9600 3750 50  0001 C CNN "MPN"
 F 6 "Digikey" H -9600 3750 50  0001 C CNN "SPR"
 F 7 "490-4779-1-ND" H -9600 3750 50  0001 C CNN "SPN"
 F 8 "https://www.digikey.com/product-detail/en/murata-electronics/GCM188R71H104KA57D/490-4779-1-ND/1641698" H -9600 3750 50  0001 C CNN "SPURL"
+F 9 "CAP CER 0.1UF 50V X7R 0603" H 0   0   50  0001 C CNN "DESC"
 	1    700  7400
 	1    0    0    -1  
 $EndComp
@@ -1021,17 +1052,6 @@ F 3 "" H 2600 2500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR046
-U 1 1 5BF5F9E8
-P 3100 2900
-F 0 "#PWR046" H 3100 2650 50  0001 C CNN
-F 1 "GND" H 3105 2727 50  0000 C CNN
-F 2 "" H 3100 2900 50  0001 C CNN
-F 3 "" H 3100 2900 50  0001 C CNN
-	1    3100 2900
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:C C19
 U 1 1 5BF97903
 P 2700 2650
@@ -1044,6 +1064,7 @@ F 5 "CL21B106KOQNNNE" H 1800 -500 50  0001 C CNN "MPN"
 F 6 "Digikey" H 1800 -500 50  0001 C CNN "SPR"
 F 7 "1276-2872-1-ND" H 1800 -500 50  0001 C CNN "SPN"
 F 8 "-" H 1800 -500 50  0001 C CNN "SPURL"
+F 9 "CAP CER 10UF 16V X7R 0805" H 0   0   50  0001 C CNN "DESC"
 	1    2700 2650
 	1    0    0    -1  
 $EndComp
@@ -1060,6 +1081,7 @@ F 5 "-" H 1300 -1150 50  0001 C CNN "MPN"
 F 6 "-" H 1300 -1150 50  0001 C CNN "SPR"
 F 7 "-" H 1300 -1150 50  0001 C CNN "SPN"
 F 8 "-" H 1300 -1150 50  0001 C CNN "SPURL"
+F 9 "-" H 0   0   50  0001 C CNN "DESC"
 	1    2400 2700
 	-1   0    0    1   
 $EndComp
@@ -1081,6 +1103,7 @@ F 10 "WS2813B-Mini" H 9250 2800 50  0001 C CNN "MPN"
 F 11 "LCSC" H -450 0   50  0001 C CNN "SPR"
 F 12 "C189639" H -450 0   50  0001 C CNN "SPN"
 F 13 "https://lcsc.com/product-detail/Light-Emitting-Diodes-LED_Worldsemi-WS2813-Mini-WS2813-3535_C189639.html" H -450 0   50  0001 C CNN "SPURL"
+F 14 "RGB 620~625nm Red, 515~525nm Green, 465~475nm Blue SMD-6 Light Emitting Diodes (LED) RoHS" H 0   0   50  0001 C CNN "DESC"
 	1    9250 2800
 	1    0    0    -1  
 $EndComp
@@ -1119,6 +1142,7 @@ F 5 "CL21B106KOQNNNE" H 150 850 50  0001 C CNN "MPN"
 F 6 "Digikey" H 150 850 50  0001 C CNN "SPR"
 F 7 "1276-2872-1-ND" H 150 850 50  0001 C CNN "SPN"
 F 8 "-" H 150 850 50  0001 C CNN "SPURL"
+F 9 "CAP CER 10UF 16V X7R 0805" H 0   0   50  0001 C CNN "DESC"
 	1    9850 3000
 	1    0    0    -1  
 $EndComp
@@ -1146,6 +1170,7 @@ F 5 "CR0603-FX-4701ELF" H -150 200 50  0001 C CNN "MPN"
 F 6 "Digikey" H -150 200 50  0001 C CNN "SPR"
 F 7 "CR0603-FX-4701ELFCT-ND" H -150 200 50  0001 C CNN "SPN"
 F 8 "https://www.digikey.com/product-detail/en/bourns-inc/CR0603-FX-4701ELF/CR0603-FX-4701ELFCT-ND/3740884" H -150 200 50  0001 C CNN "SPURL"
+F 9 "RES SMD 4.7K OHM 1% 1/10W 0603" H 0   0   50  0001 C CNN "DESC"
 	1    8100 2550
 	-1   0    0    1   
 $EndComp
@@ -1173,6 +1198,7 @@ F 5 "BSS138" H -250 200 50  0001 C CNN "MPN"
 F 6 "Digikey" H -250 200 50  0001 C CNN "SPR"
 F 7 "BSS138CT-ND" H -250 200 50  0001 C CNN "SPN"
 F 8 "-" H -250 200 50  0001 C CNN "SPURL"
+F 9 "N-Channel 50V 220mA (Ta) 360mW (Ta) Surface Mount SOT-23-3" H 0   0   50  0001 C CNN "DESC"
 	1    8300 2700
 	0    1    1    0   
 $EndComp
@@ -1208,6 +1234,7 @@ F 13 "Micro Commercial Co" H 9000 850 50  0001 C CNN "MFR"
 F 14 "Digikey" H 9000 850 50  0001 C CNN "SPR"
 F 15 "MMSS8050-H-TPMSCT-ND" H 9000 850 50  0001 C CNN "SPN"
 F 16 "https://www.digikey.com/products/en/discrete-semiconductor-products/transistors-bipolar-bjt-single/276?k=MMSS8050-H-TP&k=&pkeyword=MMSS8050-H-TP&sv=0&pv7=2&sf=0&quantity=&ColumnSort=0&page=1&pageSize=500" H 9000 850 50  0001 C CNN "SPURL"
+F 17 "TRANS NPN 25V 1.5A SOT23" H 0   0   50  0001 C CNN "DESC"
 	1    9000 850 
 	1    0    0    -1  
 $EndComp
@@ -1232,23 +1259,8 @@ F 13 "Knowles" H 1850 7400 50  0001 C CNN "MFR"
 F 14 "Digikey" H 1850 7400 50  0001 C CNN "SPR"
 F 15 "423-1405-1-ND" H 1850 7400 50  0001 C CNN "SPN"
 F 16 "https://www.digikey.com/products/en/audio-products/microphones/158?k=SPH0645LM4H-B&k=&pkeyword=SPH0645LM4H-B&sv=0&pv7=2&sf=0&quantity=&ColumnSort=0&page=1&pageSize=500" H 1850 7400 50  0001 C CNN "SPURL"
+F 17 "CRAWFORD MIC DGT I2S BOTTOM PORT" H 0   0   50  0001 C CNN "DESC"
 	1    1850 7400
-	1    0    0    -1  
-$EndComp
-$Comp
-L Power_Protection:SP0502BAHT D3
-U 1 1 5DF173E0
-P 3100 2700
-F 0 "D3" H 3050 2950 50  0000 L CNN
-F 1 "SP0502BAHT" H 2550 2400 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 3325 2650 50  0001 L CNN
-F 3 "http://www.littelfuse.com/~/media/files/littelfuse/technical%20resources/documents/data%20sheets/sp05xxba.pdf" H 3225 2825 50  0001 C CNN
-F 4 "Littlefuse Inc." H 3100 2700 50  0001 C CNN "MFR"
-F 5 "SP0502BAHTG" H 3100 2700 50  0001 C CNN "MPN"
-F 6 "Digikey" H 3100 2700 50  0001 C CNN "SPR"
-F 7 "F2714CT-ND" H 3100 2700 50  0001 C CNN "SPN"
-F 8 "https://www.digikey.com/products/en/circuit-protection/tvs-diodes/144?k=SP0502BAHT&k=&pkeyword=SP0502BAHT&sv=0&pv7=2&pv1989=0&sf=0&quantity=&ColumnSort=0&page=1&stock=1&nstock=1&pageSize=500" H 3100 2700 50  0001 C CNN "SPURL"
-	1    3100 2700
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1275,6 +1287,7 @@ F 5 "-" H 0   0   50  0001 C CNN "MPN"
 F 6 "-" H 0   0   50  0001 C CNN "SPR"
 F 7 "-" H 0   0   50  0001 C CNN "SPN"
 F 8 "-" H 0   0   50  0001 C CNN "SPURL"
+F 9 "-" H 0   0   50  0001 C CNN "DESC"
 	1    7300 5800
 	1    0    0    -1  
 $EndComp
@@ -1291,6 +1304,7 @@ F 5 "CAT16-4701F4LF" H 0   0   50  0001 C CNN "MPN"
 F 6 "Digikey" H 0   0   50  0001 C CNN "SPR"
 F 7 "CAT16-4701F4LFCT-ND" H 0   0   50  0001 C CNN "SPN"
 F 8 "https://www.digikey.com/product-detail/en/bourns-inc/CAT16-4701F4LF/CAT16-4701F4LFCT-ND/3592883" H 0   0   50  0001 C CNN "SPURL"
+F 9 "RES ARRAY 4 RES 4.7K OHM 1206" H 0   0   50  0001 C CNN "DESC"
 	1    8000 5600
 	-1   0    0    -1  
 $EndComp
@@ -1307,6 +1321,7 @@ F 5 "CR0603-FX-4701ELF" H -350 200 50  0001 C CNN "MPN"
 F 6 "Digikey" H -350 200 50  0001 C CNN "SPR"
 F 7 "CR0603-FX-4701ELFCT-ND" H -350 200 50  0001 C CNN "SPN"
 F 8 "https://www.digikey.com/product-detail/en/bourns-inc/CR0603-FX-4701ELF/CR0603-FX-4701ELFCT-ND/3740884" H -350 200 50  0001 C CNN "SPURL"
+F 9 "RES SMD 4.7K OHM 1% 1/10W 0603" H 0   0   50  0001 C CNN "DESC"
 	1    8500 2550
 	-1   0    0    1   
 $EndComp
@@ -1334,6 +1349,7 @@ F 5 "-" H 0   -300 50  0001 C CNN "MPN"
 F 6 "-" H 0   -300 50  0001 C CNN "SPR"
 F 7 "-" H 0   -300 50  0001 C CNN "SPN"
 F 8 "-" H 0   -300 50  0001 C CNN "SPURL"
+F 9 "-" H 0   0   50  0001 C CNN "DESC"
 	1    8000 1000
 	1    0    0    -1  
 $EndComp
@@ -1350,6 +1366,7 @@ F 5 "FMB2222A" H 0   0   50  0001 C CNN "MPN"
 F 6 "Digikey" H 0   0   50  0001 C CNN "SPR"
 F 7 "FMB2222ACT-ND" H 0   0   50  0001 C CNN "SPN"
 F 8 "-" H 0   0   50  0001 C CNN "SPURL"
+F 9 "TRANS 2NPN 40V 0.5A 6SSOT" H 0   0   50  0001 C CNN "DESC"
 	1    9450 1250
 	1    0    0    -1  
 $EndComp
@@ -1366,6 +1383,7 @@ F 5 "FMB2222A" H 9450 1750 50  0001 C CNN "MPN"
 F 6 "Digikey" H 9450 1750 50  0001 C CNN "SPR"
 F 7 "FMB2222ACT-ND" H 9450 1750 50  0001 C CNN "SPN"
 F 8 "https://www.digikey.com/product-detail/en/on-semiconductor/FMB2222A/FMB2222ACT-ND/2053099" H 9450 1750 50  0001 C CNN "SPURL"
+F 9 "TRANS 2NPN 40V 0.5A 6SSOT" H 0   0   50  0001 C CNN "DESC"
 	2    9450 1750
 	1    0    0    -1  
 $EndComp
@@ -1382,6 +1400,7 @@ F 5 "TMS-102-01-G-S" H 850 2600 50  0001 C CNN "MPN"
 F 6 "Digikey" H 850 2600 50  0001 C CNN "SPR"
 F 7 "SAM12199-ND" H 850 2600 50  0001 C CNN "SPN"
 F 8 "https://www.digikey.com/products/en/connectors-interconnects/rectangular-connectors-headers-male-pins/314?k=1.27mm+header&k=&pkeyword=1.27mm+header&sv=0&pv88=121326&sf=0&FV=28%7C353507%2C28%7C353523%2C28%7C353526%2C28%7C353527%2C69%7C411897%2C1790%7C7022%2C1989%7C0%2C2021%7C417859%2C2025%7C15230%2C-8%7C314%2C1795%7C350796&quantity=&ColumnSort=0&page=1&stock=1&nstock=1&pageSize=500" H 850 2600 50  0001 C CNN "SPURL"
+F 9 "CONN HEADER VERT 2POS 1.27MM" H 0   0   50  0001 C CNN "DESC"
 	1    850  2600
 	-1   0    0    -1  
 $EndComp
@@ -1398,8 +1417,54 @@ F 5 "693072010801" H 0   -1050 50  0001 C CNN "MPN"
 F 6 "Digikey" H 0   -1050 50  0001 C CNN "SPR"
 F 7 "732-3820-1-ND" H 0   -1050 50  0001 C CNN "SPN"
 F 8 "https://www.digikey.com/product-detail/en/w-rth-elektronik/693072010801/732-3820-1-ND/3124605" H 0   -1050 50  0001 C CNN "SPURL"
+F 9 "CONN MICRO SD CARD HINGED TYPE" H 0   0   50  0001 C CNN "DESC"
 	1    1600 5700
 	-1   0    0    1   
+$EndComp
+$Comp
+L Interface_USB:CP2104 U3
+U 1 1 5E1F0AC8
+P 7050 1650
+F 0 "U3" H 6550 2500 50  0000 C CNN
+F 1 "CP2104" H 6700 650 50  0000 C CNN
+F 2 "Package_DFN_QFN:QFN-24-1EP_4x4mm_P0.5mm_EP2.6x2.6mm" H 7200 700 50  0001 L CNN
+F 3 "https://www.silabs.com/documents/public/data-sheets/cp2104.pdf" H 6500 2900 50  0001 C CNN
+F 4 "Silicon Labs" H 0   0   50  0001 C CNN "MFR"
+F 5 "CP2104-F03-GMR" H 0   0   50  0001 C CNN "MPN"
+F 6 "Digikey" H 0   0   50  0001 C CNN "SPR"
+F 7 "336-4146-1-ND" H 0   0   50  0001 C CNN "SPN"
+F 8 "https://www.digikey.com/products/en/integrated-circuits-ics/interface-controllers/753?k=cp2104&k=&pkeyword=cp2104&sv=0&pv7=2&sf=0&FV=-8%7C753&quantity=&ColumnSort=0&page=1&stock=1&pageSize=500" H 0   0   50  0001 C CNN "SPURL"
+F 9 "IC SGL USB-TO-UART BRIDGE 24QFN" H 0   0   50  0001 C CNN "DESC"
+	1    7050 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C18
+U 1 1 5E39EA67
+P 6200 900
+F 0 "C18" H 6200 800 50  0000 L CNN
+F 1 "10uF" H 6000 1000 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 6238 750 50  0001 C CNN
+F 3 "http://www.samsungsem.com/kr/support/product-search/mlcc/CL21B106KOQNNNE.jsp" H 6200 900 50  0001 C CNN
+F 4 "Samsung" H 150 -650 50  0001 C CNN "MFR"
+F 5 "CL21B106KOQNNNE" H 150 -650 50  0001 C CNN "MPN"
+F 6 "Digikey" H 150 -650 50  0001 C CNN "SPR"
+F 7 "1276-2872-1-ND" H 150 -650 50  0001 C CNN "SPN"
+F 8 "-" H 150 -650 50  0001 C CNN "SPURL"
+F 9 "CAP CER 10UF 16V X7R 0805" H 0   0   50  0001 C CNN "DESC"
+	1    6200 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR046
+U 1 1 5BF5F9E8
+P 2700 2900
+F 0 "#PWR046" H 2700 2650 50  0001 C CNN
+F 1 "GND" H 2705 2727 50  0000 C CNN
+F 2 "" H 2700 2900 50  0001 C CNN
+F 3 "" H 2700 2900 50  0001 C CNN
+	1    2700 2900
+	1    0    0    -1  
 $EndComp
 Text Label 7750 1550 0    50   ~ 0
 RXD0
@@ -2021,10 +2086,6 @@ Wire Wire Line
 	2600 3650 2300 3650
 Wire Wire Line
 	5750 5700 6000 5700
-Wire Wire Line
-	2700 2500 3000 2500
-Wire Wire Line
-	3000 2500 3200 2500
 Wire Notes Line
 	500  3400 3400 3400
 Wire Notes Line
@@ -2051,8 +2112,6 @@ Wire Wire Line
 	2700 2900 2600 2900
 Wire Wire Line
 	2600 2700 2600 2900
-Wire Wire Line
-	2700 2900 3100 2900
 Wire Wire Line
 	9550 1450 9250 1450
 Wire Wire Line
@@ -2087,6 +2146,42 @@ Wire Wire Line
 	2500 5400 2600 5400
 Wire Wire Line
 	600  5100 800  5100
+Wire Wire Line
+	8000 1000 8000 1550
+Wire Wire Line
+	8150 1450 8150 1250
+Wire Wire Line
+	8150 1250 7750 1250
+Wire Wire Line
+	8050 1850 7750 1850
+Wire Wire Line
+	8050 1150 8050 1850
+Wire Wire Line
+	6350 1050 6350 750 
+Wire Wire Line
+	6350 1250 5650 1250
+Wire Wire Line
+	5650 1250 5650 850 
+Wire Wire Line
+	5750 2000 5750 1650
+Wire Wire Line
+	5750 1650 6350 1650
+Wire Wire Line
+	5950 1550 6350 1550
+Wire Wire Line
+	5950 1550 5950 2600
+Wire Wire Line
+	6350 750  6850 750 
+Wire Wire Line
+	6850 750  7050 750 
+Wire Wire Line
+	6000 750  6200 750 
+Wire Wire Line
+	6200 750  6350 750 
+Wire Wire Line
+	6200 1050 6000 1050
+Wire Wire Line
+	2700 2500 3200 2500
 Connection ~ 850  1250
 Connection ~ 850  1050
 Connection ~ 1550 1800
@@ -2130,7 +2225,6 @@ Connection ~ 2700 1700
 Connection ~ 8750 1250
 Connection ~ 4650 2600
 Connection ~ 4550 2000
-Connection ~ 2700 2500
 Connection ~ 9850 2500
 Connection ~ 9850 2600
 Connection ~ 9850 3150
@@ -2140,16 +2234,21 @@ Connection ~ 8100 2400
 Connection ~ 8750 1150
 Connection ~ 2600 3650
 Connection ~ 2250 7400
-Connection ~ 3000 2500
-Connection ~ 3200 2500
 Connection ~ 8000 5400
 Connection ~ 2600 2500
-Connection ~ 3100 2900
-Connection ~ 2700 2900
 Connection ~ 9250 1850
 Connection ~ 1300 2500
 Connection ~ 1300 2800
 Connection ~ 8750 2800
+Connection ~ 8150 1450
+Connection ~ 6350 750 
+Connection ~ 6850 750 
+Connection ~ 7050 2650
+Connection ~ 6000 750 
+Connection ~ 6200 750 
+Connection ~ 6200 1050
+Connection ~ 2700 2500
+Connection ~ 2700 2900
 NoConn ~ 4400 2700
 NoConn ~ 4950 4250
 NoConn ~ 4950 4350
@@ -2162,80 +2261,12 @@ NoConn ~ 7750 1950
 NoConn ~ 7750 2150
 NoConn ~ 7750 2250
 NoConn ~ 7750 2350
-Wire Wire Line
-	8000 1000 8000 1550
-Wire Wire Line
-	8150 1450 8150 1250
-Wire Wire Line
-	8150 1250 7750 1250
-Connection ~ 8150 1450
-Wire Wire Line
-	8050 1850 7750 1850
-$Comp
-L Interface_USB:CP2104 U3
-U 1 1 5E1F0AC8
-P 7050 1650
-F 0 "U3" H 6550 2500 50  0000 C CNN
-F 1 "CP2104" H 6700 650 50  0000 C CNN
-F 2 "Package_DFN_QFN:QFN-24-1EP_4x4mm_P0.5mm_EP2.6x2.6mm" H 7200 700 50  0001 L CNN
-F 3 "https://www.silabs.com/documents/public/data-sheets/cp2104.pdf" H 6500 2900 50  0001 C CNN
-	1    7050 1650
-	1    0    0    -1  
-$EndComp
 NoConn ~ 7750 1150
 NoConn ~ 7750 1050
-Wire Wire Line
-	8050 1150 8050 1850
-Wire Wire Line
-	6350 1050 6350 750 
-Wire Wire Line
-	6350 1250 5650 1250
-Wire Wire Line
-	5650 1250 5650 850 
-Wire Wire Line
-	5750 2000 5750 1650
-Wire Wire Line
-	5750 1650 6350 1650
-Wire Wire Line
-	5950 1550 6350 1550
-Wire Wire Line
-	5950 1550 5950 2600
-Wire Wire Line
-	6350 750  6850 750 
-Connection ~ 6350 750 
-Connection ~ 6850 750 
-Wire Wire Line
-	6850 750  7050 750 
 NoConn ~ 7250 750 
-NoConn ~ 6350 1850
-NoConn ~ 6350 1950
 NoConn ~ 6350 2050
 NoConn ~ 6350 2150
 NoConn ~ 6350 2350
-Connection ~ 7050 2650
-Connection ~ 6000 750 
-Wire Wire Line
-	6000 750  6200 750 
-$Comp
-L Device:C C18
-U 1 1 5E39EA67
-P 6200 900
-F 0 "C18" H 6200 800 50  0000 L CNN
-F 1 "10uF" H 6000 1000 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 6238 750 50  0001 C CNN
-F 3 "http://www.samsungsem.com/kr/support/product-search/mlcc/CL21B106KOQNNNE.jsp" H 6200 900 50  0001 C CNN
-F 4 "Samsung" H 150 -650 50  0001 C CNN "MFR"
-F 5 "CL21B106KOQNNNE" H 150 -650 50  0001 C CNN "MPN"
-F 6 "Digikey" H 150 -650 50  0001 C CNN "SPR"
-F 7 "1276-2872-1-ND" H 150 -650 50  0001 C CNN "SPN"
-F 8 "-" H 150 -650 50  0001 C CNN "SPURL"
-	1    6200 900 
-	1    0    0    -1  
-$EndComp
-Connection ~ 6200 750 
-Wire Wire Line
-	6200 750  6350 750 
-Wire Wire Line
-	6200 1050 6000 1050
-Connection ~ 6200 1050
+NoConn ~ 6350 1950
+NoConn ~ 6350 1850
 $EndSCHEMATC

@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 3 5
 Title "Wrover32 LED Controller"
-Date "2019-12-19"
-Rev "3.5"
+Date "2019-12-26"
+Rev "3.7"
 Comp ""
 Comment1 "Copyright © 2019 by Aaron Williams"
 Comment2 ""
@@ -26,6 +26,7 @@ F 5 "MAX98357AETE+T" H 3900 3200 50  0001 C CNN "MPN"
 F 6 "Digikey" H 3900 3200 50  0001 C CNN "SPR"
 F 7 "MAX98357AETE+TCT-ND" H 3900 3200 50  0001 C CNN "SPN"
 F 8 "https://www.digikey.com/products/en/integrated-circuits-ics/linear-amplifiers-audio/742?k=MAX98357A&k=&pkeyword=MAX98357A&sv=0&pv7=2&pv1291=108687&pv16=108891&sf=0&FV=-8%7C742&quantity=&ColumnSort=0&page=1&pageSize=500" H 3900 3200 50  0001 C CNN "SPURL"
+F 9 "IC AMP CLASS D MONO 3.2W 16TQFN" H 0   0   50  0001 C CNN "DESC"
 	1    3900 3200
 	1    0    0    -1  
 $EndComp
@@ -36,12 +37,13 @@ P 4450 2650
 F 0 "C20" H 4565 2696 50  0000 L CNN
 F 1 "10uF" H 4565 2605 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 4488 2500 50  0001 C CNN
-F 3 "~" H 4450 2650 50  0001 C CNN
-F 4 "-" H 0   0   50  0001 C CNN "MFR"
-F 5 "-" H 0   0   50  0001 C CNN "MPN"
-F 6 "-" H 0   0   50  0001 C CNN "SPR"
-F 7 "-" H 0   0   50  0001 C CNN "SPN"
+F 3 "http://www.samsungsem.com/kr/support/product-search/mlcc/CL21B106KOQNNNE.jsp" H 4450 2650 50  0001 C CNN
+F 4 "Samsung" H 0   0   50  0001 C CNN "MFR"
+F 5 "CL21B106KOQNNNE" H 0   0   50  0001 C CNN "MPN"
+F 6 "Digikey" H 0   0   50  0001 C CNN "SPR"
+F 7 "1276-2872-1-ND" H 0   0   50  0001 C CNN "SPN"
 F 8 "-" H 0   0   50  0001 C CNN "SPURL"
+F 9 "CAP CER 10UF 16V X7R 0805" H 0   0   50  0001 C CNN "DESC"
 	1    4450 2650
 	1    0    0    -1  
 $EndComp
@@ -58,6 +60,7 @@ F 5 "GCM188R71H104KA57D" H 0   0   50  0001 C CNN "MPN"
 F 6 "Digikey" H 0   0   50  0001 C CNN "SPR"
 F 7 "490-4779-1-ND" H 0   0   50  0001 C CNN "SPN"
 F 8 "-" H 0   0   50  0001 C CNN "SPURL"
+F 9 "CAP CER 0.1UF 50V X7R 0603" H 0   0   50  0001 C CNN "DESC"
 	1    4850 2650
 	1    0    0    -1  
 $EndComp
@@ -140,6 +143,7 @@ F 5 "GCM188R71H104KA57D" H 0   0   50  0001 C CNN "MPN"
 F 6 "Digikey" H 0   0   50  0001 C CNN "SPR"
 F 7 "490-4779-1-ND" H 0   0   50  0001 C CNN "SPN"
 F 8 "-" H 0   0   50  0001 C CNN "SPURL"
+F 9 "CAP CER 0.1UF 50V X7R 0603" H 0   0   50  0001 C CNN "DESC"
 	1    3000 2800
 	1    0    0    -1  
 $EndComp
@@ -156,6 +160,7 @@ F 5 "BM02B-SRSS-TB(LF)(SN)" H 5200 3200 50  0001 C CNN "MPN"
 F 6 "Digikey" H 5200 3200 50  0001 C CNN "SPR"
 F 7 "455-1788-1-ND" H 5200 3200 50  0001 C CNN "SPN"
 F 8 "https://www.digikey.com/product-detail/en/jst-sales-america-inc/BM02B-SRSS-TB-LF-SN/455-1788-1-ND/926859" H 5200 3200 50  0001 C CNN "SPURL"
+F 9 "CONN HEADER SMD 2POS 1MM" H 0   0   50  0001 C CNN "DESC"
 	1    5200 3200
 	1    0    0    -1  
 $EndComp
@@ -172,6 +177,7 @@ F 5 "M50-3630242R" H 5200 3600 50  0001 C CNN "MPN"
 F 6 "Digikey" H 5200 3600 50  0001 C CNN "SPR"
 F 7 "952-3933-1-ND" H 5200 3600 50  0001 C CNN "SPN"
 F 8 "https://www.digikey.com/products/en/connectors-interconnects/rectangular-connectors-headers-male-pins/314?k=M50-3630242R&k=&pkeyword=M50-3630242R&sv=0&pv7=2&sf=0&quantity=&ColumnSort=0&page=1&stock=1&nstock=1&pageSize=500" H 5200 3600 50  0001 C CNN "SPURL"
+F 9 "CONN HEADER SMD 2POS 1.27MM" H 0   0   50  0001 C CNN "DESC"
 	1    5200 3600
 	1    0    0    -1  
 $EndComp
