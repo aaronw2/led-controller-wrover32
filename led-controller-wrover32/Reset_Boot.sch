@@ -4,11 +4,11 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 4 5
-Title ""
-Date ""
-Rev ""
+Title "Wrover32 LED Controller"
+Date "2019-12-26"
+Rev "3.7"
 Comp ""
-Comment1 ""
+Comment1 "Copyright © 2019 by Aaron Williams"
 Comment2 ""
 Comment3 ""
 Comment4 ""
@@ -16,25 +16,26 @@ $EndDescr
 $Comp
 L dk_Transistors-FETs-MOSFETs-Arrays:BSS138DW-7-F Q5
 U 1 1 5DD66E94
-P 4800 2350
-F 0 "Q5" H 4750 2837 60  0000 C CNN
-F 1 "BSS138DW-7-F" H 4750 2731 60  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-363_SC-70-6" H 5000 2550 60  0001 L CNN
-F 3 "https://www.diodes.com/assets/Datasheets/ds30203.pdf" V 5000 2650 60  0001 L CNN
-F 4 "BSS138DW-FDICT-ND" H 5000 2750 60  0001 L CNN "Digi-Key_PN"
-F 5 "BSS138DW-7-F" H 5000 2850 60  0001 L CNN "MPN"
-F 6 "Discrete Semiconductor Products" H 5000 2950 60  0001 L CNN "Category"
-F 7 "Transistors - FETs, MOSFETs - Arrays" H 5000 3050 60  0001 L CNN "Family"
-F 8 "https://www.diodes.com/assets/Datasheets/ds30203.pdf" H 5000 3150 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/diodes-incorporated/BSS138DW-7-F/BSS138DW-FDICT-ND/808541" H 5000 3250 60  0001 L CNN "DK_Detail_Page"
-F 10 "MOSFET 2N-CH 50V 0.2A SC70-6" H 5000 3350 60  0001 L CNN "Description"
-F 11 "Diodes Incorporated" H 5000 3450 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 5000 3550 60  0001 L CNN "Status"
-F 13 "Diodes Incorporated" H 4800 2350 50  0001 C CNN "MFR"
-F 14 "Digikey" H 4800 2350 50  0001 C CNN "SPR"
-F 15 "BSS138DW-FDICT-ND" H 4800 2350 50  0001 C CNN "SPN"
-F 16 "https://www.digikey.com/products/en/discrete-semiconductor-products/transistors-fets-mosfets-arrays/289?k=BSS138DW-7-F&k=&pkeyword=BSS138DW-7-F&sv=0&pv7=2&sf=0&quantity=&ColumnSort=0&page=1&stock=1&nstock=1&pageSize=500" H 4800 2350 50  0001 C CNN "SPURL"
-	1    4800 2350
+P 5050 2350
+F 0 "Q5" H 5000 2837 60  0000 C CNN
+F 1 "BSS138DW-7-F" H 5000 2731 60  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-363_SC-70-6" H 5250 2550 60  0001 L CNN
+F 3 "https://www.diodes.com/assets/Datasheets/ds30203.pdf" V 5250 2650 60  0001 L CNN
+F 4 "BSS138DW-FDICT-ND" H 5250 2750 60  0001 L CNN "Digi-Key_PN"
+F 5 "BSS138DW-7-F" H 5250 2850 60  0001 L CNN "MPN"
+F 6 "Discrete Semiconductor Products" H 5250 2950 60  0001 L CNN "Category"
+F 7 "Transistors - FETs, MOSFETs - Arrays" H 5250 3050 60  0001 L CNN "Family"
+F 8 "https://www.diodes.com/assets/Datasheets/ds30203.pdf" H 5250 3150 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/diodes-incorporated/BSS138DW-7-F/BSS138DW-FDICT-ND/808541" H 5250 3250 60  0001 L CNN "DK_Detail_Page"
+F 10 "MOSFET 2N-CH 50V 0.2A SC70-6" H 5250 3350 60  0001 L CNN "Description"
+F 11 "Diodes Incorporated" H 5250 3450 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 5250 3550 60  0001 L CNN "Status"
+F 13 "Diodes Incorporated" H 5050 2350 50  0001 C CNN "MFR"
+F 14 "Digikey" H 5050 2350 50  0001 C CNN "SPR"
+F 15 "BSS138DW-FDICT-ND" H 5050 2350 50  0001 C CNN "SPN"
+F 16 "https://www.digikey.com/products/en/discrete-semiconductor-products/transistors-fets-mosfets-arrays/289?k=BSS138DW-7-F&k=&pkeyword=BSS138DW-7-F&sv=0&pv7=2&sf=0&quantity=&ColumnSort=0&page=1&stock=1&nstock=1&pageSize=500" H 5050 2350 50  0001 C CNN "SPURL"
+F 17 "MOSFET 2N-CH 50V 0.2A SC70-6" H 0   0   50  0001 C CNN "DESC"
+	1    5050 2350
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -50,23 +51,8 @@ F 5 "KMR211GLFS" H 3000 2350 50  0001 C CNN "MPN"
 F 6 "Digikey" H 3000 2350 50  0001 C CNN "SPR"
 F 7 "401-1426-1-ND" H 3000 2350 50  0001 C CNN "SPN"
 F 8 "https://www.digikey.com/product-detail/en/c-k/KMR211GLFS/401-1426-1-ND/550461" H 3000 2350 50  0001 C CNN "SPURL"
+F 9 "SWITCH TACTILE SPST-NO 0.05A 32V" H 0   0   50  0001 C CNN "DESC"
 	1    3000 2350
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C23
-U 1 1 5DD6F2FF
-P 3400 2600
-F 0 "C23" H 3515 2646 50  0000 L CNN
-F 1 "1nF" H 3515 2555 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 3438 2450 50  0001 C CNN
-F 3 "https://api.kemet.com/component-edge/download/datasheet/C0603C102K4RECAUTO.pdf" H 3400 2600 50  0001 C CNN
-F 4 "Kemet" H 3400 2600 50  0001 C CNN "MFR"
-F 5 "C0603C102K4RECAUTO" H 3400 2600 50  0001 C CNN "MPN"
-F 6 "Digikey" H 3400 2600 50  0001 C CNN "SPR"
-F 7 "399-17878-1-ND" H 3400 2600 50  0001 C CNN "SPN"
-F 8 "https://www.digikey.com/product-detail/en/kemet/C0603C102K4RECAUTO/399-17878-1-ND/8640545" H 3400 2600 50  0001 C CNN "SPURL"
-	1    3400 2600
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -105,23 +91,23 @@ $EndComp
 $Comp
 L power:GND #PWR0127
 U 1 1 5DD73FDE
-P 4500 2150
-F 0 "#PWR0127" H 4500 1900 50  0001 C CNN
-F 1 "GND" H 4505 1977 50  0000 C CNN
-F 2 "" H 4500 2150 50  0001 C CNN
-F 3 "" H 4500 2150 50  0001 C CNN
-	1    4500 2150
+P 4750 2150
+F 0 "#PWR0127" H 4750 1900 50  0001 C CNN
+F 1 "GND" H 4755 1977 50  0000 C CNN
+F 2 "" H 4750 2150 50  0001 C CNN
+F 3 "" H 4750 2150 50  0001 C CNN
+	1    4750 2150
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0128
 U 1 1 5DD74502
-P 5000 2750
-F 0 "#PWR0128" H 5000 2500 50  0001 C CNN
-F 1 "GND" H 5005 2577 50  0000 C CNN
-F 2 "" H 5000 2750 50  0001 C CNN
-F 3 "" H 5000 2750 50  0001 C CNN
-	1    5000 2750
+P 5250 2750
+F 0 "#PWR0128" H 5250 2500 50  0001 C CNN
+F 1 "GND" H 5255 2577 50  0000 C CNN
+F 2 "" H 5250 2750 50  0001 C CNN
+F 3 "" H 5250 2750 50  0001 C CNN
+	1    5250 2750
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -133,10 +119,11 @@ F 1 "100K" V 3574 2450 50  0000 C CNN
 F 2 "Resistor_SMD:R_Array_Convex_4x0603" V 4175 2450 50  0001 C CNN
 F 3 "https://industrial.panasonic.com/cdbs/www-data/pdf/AOC0000/AOC0000C14.pdf" H 3900 2450 50  0001 C CNN
 F 4 "Panasonic" H 3900 2450 50  0001 C CNN "MFR"
-F 5 "EXB-V8V103JV" H 3900 2450 50  0001 C CNN "MPN"
+F 5 "EXB-V8V104JV" H 3900 2450 50  0001 C CNN "MPN"
 F 6 "Digikey" H 3900 2450 50  0001 C CNN "SPR"
-F 7 "Y4103CT-ND" H 3900 2450 50  0001 C CNN "SPN"
+F 7 "Y4104CT-ND" H 3900 2450 50  0001 C CNN "SPN"
 F 8 "https://www.digikey.com/product-detail/en/bourns-inc/CAT16-1003F4LF/CAT16-1003F4LFCT-ND/3592894" H 3900 2450 50  0001 C CNN "SPURL"
+F 9 "RES ARRAY 4 RES 100K OHM 1206" H 0   0   50  0001 C CNN "DESC"
 	1    3900 2450
 	0    1    1    0   
 $EndComp
@@ -168,6 +155,7 @@ F 5 "RC1608F471CS" H -1100 2500 50  0001 C CNN "MPN"
 F 6 "Digikey" H -1100 2500 50  0001 C CNN "SPR"
 F 7 "1276-4619-1-ND" H -1100 2500 50  0001 C CNN "SPN"
 F 8 "-" H -1100 2500 50  0001 C CNN "SPURL"
+F 9 "RES SMD 470 OHM 1% 1/10W 0603" H 0   0   50  0001 C CNN "DESC"
 	1    3400 3550
 	1    0    0    -1  
 $EndComp
@@ -180,12 +168,13 @@ AR Path="/5DD65482/5DDF9E8F" Ref="C5"  Part="1"
 F 0 "C5" H 3965 3896 50  0000 L CNN
 F 1 "0.1uF" H 3965 3805 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 3888 3700 50  0001 C CNN
-F 3 "http://datasheets.avx.com/FlexitermMLCC.pdf" H 3850 3850 50  0001 C CNN
-F 4 "AVX" H -1100 2300 50  0001 C CNN "MFR"
-F 5 "06035C104K4Z4A" H -1100 2300 50  0001 C CNN "MPN"
+F 3 "https://psearch.en.murata.com/capacitor/product/GCM188R71H104KA57%23.pdf" H 3850 3850 50  0001 C CNN
+F 4 "Murata Electronics" H -1100 2300 50  0001 C CNN "MFR"
+F 5 "GCM188R71H104KA57D" H -1100 2300 50  0001 C CNN "MPN"
 F 6 "Digikey" H -1100 2300 50  0001 C CNN "SPR"
-F 7 "478-10679-1-ND" H -1100 2300 50  0001 C CNN "SPN"
+F 7 "490-4779-1-ND" H -1100 2300 50  0001 C CNN "SPN"
 F 8 "-" H -1100 2300 50  0001 C CNN "SPURL"
+F 9 "CAP CER 0.1UF 50V X7R 0603" H 0   0   50  0001 C CNN "DESC"
 	1    3850 3850
 	1    0    0    -1  
 $EndComp
@@ -209,12 +198,13 @@ P 3400 3900
 F 0 "SW1" H 3400 4222 42  0000 C CNN
 F 1 "SW_SPST_KMR2" H 3400 4143 42  0000 C CNN
 F 2 "Aaron:SW_SPST_KMR2" H 3400 3900 50  0001 C CNN
-F 3 "https://www.digikey.com/product-detail/en/c-k/KMR211GLFS/401-1426-1-ND/550461" H 3400 3900 50  0001 C CNN
+F 3 "https://www.ckswitches.com/media/1479/kmr2.pdf" H 3400 3900 50  0001 C CNN
 F 4 "C&K" H 3400 3900 50  0001 C CNN "MFR"
 F 5 "KMR211GLFS" H 3400 3900 50  0001 C CNN "MPN"
 F 6 "Digikey" H 3400 3900 50  0001 C CNN "SPR"
 F 7 "401-1426-1-ND" H 3400 3900 50  0001 C CNN "SPN"
 F 8 "https://www.digikey.com/product-detail/en/c-k/KMR211GLFS/401-1426-1-ND/550461" H 3400 3900 50  0001 C CNN "SPURL"
+F 9 "SWITCH TACTILE SPST-NO 0.05A 32V" H 0   0   50  0001 C CNN "DESC"
 	1    3400 3900
 	0    -1   -1   0   
 $EndComp
@@ -225,13 +215,42 @@ P 3200 2600
 F 0 "R3" H 3250 2700 50  0000 L CNN
 F 1 "10K" H 3250 2500 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 3130 2600 50  0001 C CNN
-F 3 "~" H 3200 2600 50  0001 C CNN
-F 4 "-" H 0   0   50  0001 C CNN "MFR"
-F 5 "-" H 0   0   50  0001 C CNN "MPN"
-F 6 "-" H 0   0   50  0001 C CNN "SPR"
-F 7 "-" H 0   0   50  0001 C CNN "SPN"
+F 3 "http://www.vishay.com/docs/20035/dcrcwe3.pdf" H 3200 2600 50  0001 C CNN
+F 4 "Vishay Dale" H 0   0   50  0001 C CNN "MFR"
+F 5 "CRCW060310K0FKEC" H 0   0   50  0001 C CNN "MPN"
+F 6 "Digikey" H 0   0   50  0001 C CNN "SPR"
+F 7 "541-2979-1-ND" H 0   0   50  0001 C CNN "SPN"
 F 8 "-" H 0   0   50  0001 C CNN "SPURL"
+F 9 "RES SMD 10K OHM 1% 1/10W 0603" H 0   0   50  0001 C CNN "DESC"
 	1    3200 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0135
+U 1 1 5E105B99
+P 4200 2100
+F 0 "#PWR0135" H 4200 1850 50  0001 C CNN
+F 1 "GND" H 4205 1927 50  0000 C CNN
+F 2 "" H 4200 2100 50  0001 C CNN
+F 3 "" H 4200 2100 50  0001 C CNN
+	1    4200 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C23
+U 1 1 5DD6F2FF
+P 3400 2600
+F 0 "C23" H 3515 2646 50  0000 L CNN
+F 1 "22nF" H 3515 2555 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3438 2450 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_18.pdf" H 3400 2600 50  0001 C CNN
+F 4 "Yageo" H 3400 2600 50  0001 C CNN "MFR"
+F 5 "CC0603JRX7R9BB223" H 3400 2600 50  0001 C CNN "MPN"
+F 6 "Digikey" H 3400 2600 50  0001 C CNN "SPR"
+F 7 "311-4010-1-ND" H 3400 2600 50  0001 C CNN "SPN"
+F 8 "https://www.digikey.com/product-detail/en/yageo/CC0603JRX7R9BB223/311-4010-1-ND/8025099" H 3400 2600 50  0001 C CNN "SPURL"
+F 9 "CAP CER 0.022UF 50V X7R 0603" H 0   0   50  0001 C CNN "DESC"
+	1    3400 2600
 	1    0    0    -1  
 $EndComp
 Text Label 5500 2150 0    50   ~ 0
@@ -248,6 +267,14 @@ Text Label 3900 3700 0    50   ~ 0
 ~RESET
 Text Notes 3600 3400 0    50   ~ 0
 Reset button
+Text Label 3200 2450 0    50   ~ 0
+~PGM_SW_OUT
+Text Label 4450 1800 0    50   ~ 0
+PGM_IO2_DRV
+Text Label 4150 2450 0    50   ~ 0
+PGM_IO0_DRV
+Text Notes 2450 2600 0    50   ~ 0
+Program Button
 Wire Wire Line
 	2550 2350 2800 2350
 Wire Wire Line
@@ -263,23 +290,23 @@ Wire Wire Line
 Wire Wire Line
 	3700 2450 3700 2550
 Wire Wire Line
-	4100 2450 4500 2450
+	4100 2450 4750 2450
 Wire Wire Line
 	4100 2350 4250 2350
 Wire Wire Line
 	4250 2350 4250 1800
 Wire Wire Line
-	4250 1800 5200 1800
+	4250 1800 5450 1800
 Wire Wire Line
-	5200 1800 5200 2450
+	5450 1800 5450 2450
 Wire Wire Line
-	5200 2450 5000 2450
+	5450 2450 5250 2450
 Wire Wire Line
-	5000 2150 5650 2150
+	5250 2150 5650 2150
 Wire Wire Line
-	4500 2750 4500 3100
+	4750 2750 4750 3100
 Wire Wire Line
-	4500 3100 5650 3100
+	4750 3100 5650 3100
 Wire Wire Line
 	3850 4000 3850 4100
 Wire Wire Line
@@ -294,6 +321,10 @@ Wire Wire Line
 	3400 4100 3500 4100
 Wire Wire Line
 	3200 2750 3400 2750
+Wire Wire Line
+	4200 2100 4100 2100
+Wire Wire Line
+	4100 2100 4100 2250
 Connection ~ 2800 2350
 Connection ~ 3200 2450
 Connection ~ 3400 2450
@@ -304,6 +335,5 @@ Connection ~ 3500 3700
 Connection ~ 3400 4100
 Connection ~ 3500 4100
 Connection ~ 3400 2750
-NoConn ~ 4100 2250
 NoConn ~ 3700 2250
 $EndSCHEMATC
