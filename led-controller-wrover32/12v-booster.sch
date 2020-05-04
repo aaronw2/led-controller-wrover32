@@ -27,7 +27,7 @@ F 4 "Texas Instruments" H 0   0   50  0001 C CNN "MFR"
 F 5 "TPS55340RTER" H 0   0   50  0001 C CNN "MPN"
 F 6 "Digikey" H 0   0   50  0001 C CNN "SPR"
 F 7 "296-37677-1-ND" H 0   0   50  0001 C CNN "SPN"
-F 8 "-" H 0   0   50  0001 C CNN "SPURL"
+F 8 "https://www.digikey.com/products/en?keywords=296-37677-1-ND" H 0   0   50  0001 C CNN "SPURL"
 F 9 "IC REG BOOST ADJ 5.25A 16WQFN" H 0   0   50  0001 C CNN "DESC"
 	1    4950 3000
 	1    0    0    -1  
@@ -44,7 +44,7 @@ F 4 "Vishay Dale" H 0   0   50  0001 C CNN "MFR"
 F 5 "IHLP1212BZER3R3M11" H 0   0   50  0001 C CNN "MPN"
 F 6 "Digikey" H 0   0   50  0001 C CNN "SPR"
 F 7 "541-2567-1-ND" H 0   0   50  0001 C CNN "SPN"
-F 8 "-" H 0   0   50  0001 C CNN "SPURL"
+F 8 "https://www.digikey.com/products/en?keywords=541-2567-1-ND" H 0   0   50  0001 C CNN "SPURL"
 F 9 "FIXED IND 3.3UH 2.7A 61 MOHM SMD" H 0   0   50  0001 C CNN "DESC"
 	1    4950 1900
 	0    -1   -1   0   
@@ -61,7 +61,7 @@ F 4 "ON" H 0   0   50  0001 C CNN "MFR"
 F 5 "SS24FL" H 0   0   50  0001 C CNN "MPN"
 F 6 "Digikey" H 0   0   50  0001 C CNN "SPR"
 F 7 "SS24FLCT-ND" H 0   0   50  0001 C CNN "SPN"
-F 8 "-" H 0   0   50  0001 C CNN "SPURL"
+F 8 "https://www.digikey.com/products/en?keywords=SS24FLCT-ND" H 0   0   50  0001 C CNN "SPURL"
 F 9 "DIODE SCHOTTKY 40V 2A SOD123F" H 0   0   50  0001 C CNN "DESC"
 	1    6300 2450
 	-1   0    0    1   
@@ -146,7 +146,7 @@ F 4 "Murata" H 0   0   50  0001 C CNN "MFR"
 F 5 "GRM188R61H474KA12D" H 0   0   50  0001 C CNN "MPN"
 F 6 "Digikey" H 0   0   50  0001 C CNN "SPR"
 F 7 "490-11994-1-ND" H 0   0   50  0001 C CNN "SPN"
-F 8 "-" H 0   0   50  0001 C CNN "SPURL"
+F 8 "https://www.digikey.com/products/en?keywords=490-11994-1-ND" H 0   0   50  0001 C CNN "SPURL"
 F 9 "CAP CER 0.47UF 50V X5R 0603" H 0   0   50  0001 C CNN "DESC"
 	1    6400 3600
 	1    0    0    -1  
@@ -163,7 +163,7 @@ F 4 "Vishay Dale" H 0   0   50  0001 C CNN "MFR"
 F 5 "CRCW060310K0FKEC" H 0   0   50  0001 C CNN "MPN"
 F 6 "Digikey" H 0   0   50  0001 C CNN "SPR"
 F 7 "541-2979-1-ND" H 0   0   50  0001 C CNN "SPN"
-F 8 "-" H 0   0   50  0001 C CNN "SPURL"
+F 8 "https://www.digikey.com/products/en?keywords=541-2979-1-ND" H 0   0   50  0001 C CNN "SPURL"
 F 9 "RES SMD 10K OHM 1% 1/10W 0603" H 0   0   50  0001 C CNN "DESC"
 	1    7100 3250
 	1    0    0    -1  
@@ -180,7 +180,7 @@ F 4 "Vishay Dale" H 0   0   50  0001 C CNN "MFR"
 F 5 "CRCW060386K6FKEA" H 0   0   50  0001 C CNN "MPN"
 F 6 "Digikey" H 0   0   50  0001 C CNN "SPR"
 F 7 "541-86.6KHCT-ND" H 0   0   50  0001 C CNN "SPN"
-F 8 "-" H 0   0   50  0001 C CNN "SPURL"
+F 8 "https://www.digikey.com/products/en?keywords=541-86.6KHCT-ND" H 0   0   50  0001 C CNN "SPURL"
 F 9 "RES SMD 86.6K OHM 1% 1/10W 0603" H 0   0   50  0001 C CNN "DESC"
 	1    7100 2600
 	1    0    0    -1  
@@ -214,7 +214,7 @@ F 4 "Samsung" H 0   0   50  0001 C CNN "MFR"
 F 5 "CL10B105KP8NNNC" H 0   0   50  0001 C CNN "MPN"
 F 6 "Digikey" H 0   0   50  0001 C CNN "SPR"
 F 7 "1276-1946-1-ND" H 0   0   50  0001 C CNN "SPN"
-F 8 "-" H 0   0   50  0001 C CNN "SPURL"
+F 8 "https://www.digikey.com/products/en?keywords=1276-1946-1-ND" H 0   0   50  0001 C CNN "SPURL"
 F 9 "CAP CER 1UF 10V X7R 0603" H 0   0   50  0001 C CNN "DESC"
 	1    8000 2850
 	1    0    0    -1  
@@ -320,10 +320,27 @@ F 4 "Murata Electronics" H 0   0   50  0001 C CNN "MFR"
 F 5 "GCM188R71H104KA57D" H 0   0   50  0001 C CNN "MPN"
 F 6 "Digikey" H 0   0   50  0001 C CNN "SPR"
 F 7 "490-4779-1-ND" H 0   0   50  0001 C CNN "SPN"
-F 8 "-" H 0   0   50  0001 C CNN "SPURL"
+F 8 "https://www.digikey.com/product-detail/en/murata-electronics/GCM188R71H104KA57D/490-4779-1-ND/1641698" H 0   0   50  0001 C CNN "SPURL"
 F 9 "CAP CER 0.1UF 50V X7R 0603" H 0   0   50  0001 C CNN "DESC"
 	1    3200 2750
 	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R103
+U 1 1 5BAB141D
+P 6400 3300
+F 0 "R103" V 6193 3300 50  0000 C CNN
+F 1 "1.62K" V 6284 3300 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 6330 3300 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_10.pdf" H 6400 3300 50  0001 C CNN
+F 4 "Yageo" H 250 300 50  0001 C CNN "MFR"
+F 5 "RC0603FR-071K62L" H 250 300 50  0001 C CNN "MPN"
+F 6 "Digikey" H 250 300 50  0001 C CNN "SPR"
+F 7 "311-1.62KHRCT-ND" H 250 300 50  0001 C CNN "SPN"
+F 8 "https://www.digikey.com/product-detail/en/yageo/RC0603FR-071K62L/311-1.62KHRCT-ND/729816" H 250 300 50  0001 C CNN "SPURL"
+F 9 "RES SMD 1.62K OHM 1% 1/10W 0603" H 0   0   50  0001 C CNN "DESC"
+	1    6400 3300
+	-1   0    0    1   
 $EndComp
 Text Label 5500 1900 0    50   ~ 0
 SW
@@ -465,21 +482,4 @@ Connection ~ 8500 2450
 Connection ~ 8500 3750
 Connection ~ 8900 3750
 NoConn ~ 5500 3900
-$Comp
-L Device:R R103
-U 1 1 5BAB141D
-P 6400 3300
-F 0 "R103" V 6193 3300 50  0000 C CNN
-F 1 "1.62K" V 6284 3300 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 6330 3300 50  0001 C CNN
-F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_10.pdf" H 6400 3300 50  0001 C CNN
-F 4 "Yageo" H 250 300 50  0001 C CNN "MFR"
-F 5 "RC0603FR-071K62L" H 250 300 50  0001 C CNN "MPN"
-F 6 "Digikey" H 250 300 50  0001 C CNN "SPR"
-F 7 "311-1.62KHRCT-ND" H 250 300 50  0001 C CNN "SPN"
-F 8 "https://www.digikey.com/product-detail/en/yageo/RC0603FR-071K62L/311-1.62KHRCT-ND/729816" H 250 300 50  0001 C CNN "SPURL"
-F 9 "RES SMD 1.62K OHM 1% 1/10W 0603" H 0   0   50  0001 C CNN "DESC"
-	1    6400 3300
-	-1   0    0    1   
-$EndComp
 $EndSCHEMATC

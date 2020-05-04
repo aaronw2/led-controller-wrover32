@@ -2,16 +2,16 @@
 <export version="D">
   <design>
     <source>/home/aaronw/kicad/Projects/Ralph/led-controller-wrover32/led-controller-wrover32/led-controller-wrover32.sch</source>
-    <date>Sun 29 Dec 2019 12:17:07 AM PST</date>
+    <date>Sun 03 May 2020 11:29:38 PM PDT</date>
     <tool>Eeschema 5.1.5-5.1.5</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
         <title>Wrover32 LED Controller</title>
-        <company/>
-        <rev>3.7</rev>
-        <date>2019-12-26</date>
+        <company>Aaron Williams</company>
+        <rev>3.8</rev>
+        <date>2020-05-03</date>
         <source>led-controller-wrover32.sch</source>
-        <comment number="1" value="Copyright © 2019 by Aaron Williams"/>
+        <comment number="1" value="Copyright © 2020 by Aaron Williams"/>
         <comment number="2" value=""/>
         <comment number="3" value=""/>
         <comment number="4" value=""/>
@@ -81,9 +81,9 @@
         <field name="MPN">XCL220B333FR-G</field>
         <field name="SPN">893-1279-1-ND</field>
         <field name="SPR">Digikey</field>
-        <field name="SPURL">-</field>
+        <field name="SPURL">https://www.digikey.com/products/en?keywords=893-1279-1-ND</field>
       </fields>
-      <libsource lib="Torex_Semiconductor" part="XCL21X" description="Torex Semiconductor XCL219/XCL220 Series"/>
+      <libsource lib="led-controller-wrover32-rescue" part="XCL21X-Torex_Semiconductor" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5B95D259</tstamp>
     </comp>
@@ -98,7 +98,7 @@
         <field name="Minimum Voltage">10</field>
         <field name="SPN">1276-2872-1-ND</field>
         <field name="SPR">Digikey</field>
-        <field name="SPURL">-</field>
+        <field name="SPURL">https://www.digikey.com/products/en?keywords=1276-2872-1-ND</field>
         <field name="Tolerance">20%</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
@@ -115,7 +115,7 @@
         <field name="MPN">CRCW060310K0FKEC</field>
         <field name="SPN">541-2979-1-ND</field>
         <field name="SPR">Digikey</field>
-        <field name="SPURL">-</field>
+        <field name="SPURL">https://www.digikey.com/products/en?keywords=541-2979-1-ND</field>
         <field name="Tolerance">5%</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
@@ -132,7 +132,7 @@
         <field name="MPN">CL21B106KOQNNNE</field>
         <field name="SPN">1276-2872-1-ND</field>
         <field name="SPR">Digikey</field>
-        <field name="SPURL">-</field>
+        <field name="SPURL">https://www.digikey.com/products/en?keywords=1276-2872-1-ND</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -148,7 +148,7 @@
         <field name="MPN">CL10B105KP8NNNC</field>
         <field name="SPN">1276-1946-1-ND</field>
         <field name="SPR">Digikey</field>
-        <field name="SPURL">-</field>
+        <field name="SPURL">https://www.digikey.com/products/en?keywords=1276-1946-1-ND</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -164,7 +164,7 @@
         <field name="MPN">1050170001</field>
         <field name="SPN">WM1399CT-ND</field>
         <field name="SPR">Digikey</field>
-        <field name="SPURL">-</field>
+        <field name="SPURL">https://www.digikey.com/products/en?keywords=WM1399CT-ND</field>
       </fields>
       <libsource lib="Connector" part="USB_B_Micro" description="USB Micro Type B connector"/>
       <sheetpath names="/" tstamps="/"/>
@@ -180,7 +180,7 @@
         <field name="MPN">CL21B106KOQNNNE</field>
         <field name="SPN">1276-2872-1-ND</field>
         <field name="SPR">Digikey</field>
-        <field name="SPURL">-</field>
+        <field name="SPURL">https://www.digikey.com/products/en?keywords=1276-2872-1-ND</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -196,14 +196,14 @@
         <field name="MPN">B4B-PH-K-S(LF)(SN)</field>
         <field name="SPN">455-1706-ND</field>
         <field name="SPR">Digikey</field>
-        <field name="SPURL">-</field>
+        <field name="SPURL">https://www.digikey.com/products/en?keywords=455-1706-ND</field>
       </fields>
       <libsource lib="Connector_Generic" part="Conn_01x04" description="Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5B95FBDA</tstamp>
     </comp>
     <comp ref="U2">
-      <value>ESP32-WROVER</value>
+      <value>ESP32-WROVER-B</value>
       <footprint>ESP32:ESP32-WROOVER</footprint>
       <datasheet>https://www.espressif.com/sites/default/files/documentation/esp32-wrover-b_datasheet_en.pdf</datasheet>
       <fields>
@@ -212,7 +212,7 @@
         <field name="Field7">Module Espressif Systems</field>
         <field name="Field8">Module: combo; GPIO, I2C x2, I2S x2, SDIO, SPI x3, UART x3; U.FL</field>
         <field name="MFR">Espressif Systems</field>
-        <field name="MPN">ESP32-WROVER (16MB)</field>
+        <field name="MPN">ESP32-WROVER (16MB) ESP32-WROVER-B</field>
         <field name="SPN">1904-1015-1-ND</field>
         <field name="SPR">Digikey</field>
         <field name="SPURL">https://www.digikey.com/product-detail/en/espressif-systems/ESP32-WROVER-16MB/1904-1015-1-ND/9381724</field>
@@ -231,7 +231,7 @@
         <field name="MPN">CL21B106KOQNNNE</field>
         <field name="SPN">1276-2872-1-ND</field>
         <field name="SPR">Digikey</field>
-        <field name="SPURL">-</field>
+        <field name="SPURL">https://www.digikey.com/products/en?keywords=1276-2872-1-ND</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -247,27 +247,11 @@
         <field name="MPN">EXB-V8V103JV</field>
         <field name="SPN">Y4103CT-ND</field>
         <field name="SPR">Digikey</field>
-        <field name="SPURL">-</field>
+        <field name="SPURL">https://www.digikey.com/products/en?keywords=Y4103CT-ND</field>
       </fields>
       <libsource lib="Device" part="R_Pack04" description="4 resistor network, parallel topology, DIP package"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5BBAF9AE</tstamp>
-    </comp>
-    <comp ref="RN1">
-      <value>10K</value>
-      <footprint>Resistor_SMD:R_Array_Convex_2x0603</footprint>
-      <datasheet>https://industrial.panasonic.com/cdbs/www-data/pdf/AOC0000/AOC0000C14.pdf</datasheet>
-      <fields>
-        <field name="DESC">10k Ohm +/- 5% Isolated  Resistor Network, 0606, Concave</field>
-        <field name="MFR">Panasonic</field>
-        <field name="MPN">EXB-V4V103JV</field>
-        <field name="SPN">Y2103CT-ND</field>
-        <field name="SPR">Digikey</field>
-        <field name="SPURL">-</field>
-      </fields>
-      <libsource lib="Device" part="R_Pack02" description="2 resistor network, parallel topology, DIP package"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5BBAFB63</tstamp>
     </comp>
     <comp ref="C10">
       <value>10uF</value>
@@ -279,7 +263,7 @@
         <field name="MPN">CL21B106KOQNNNE</field>
         <field name="SPN">1276-2872-1-ND</field>
         <field name="SPR">Digikey</field>
-        <field name="SPURL">-</field>
+        <field name="SPURL">https://www.digikey.com/products/en?keywords=1276-2872-1-ND</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -295,7 +279,7 @@
         <field name="MPN">CL10B105KP8NNNC</field>
         <field name="SPN">1276-1946-1-ND</field>
         <field name="SPR">Digikey</field>
-        <field name="SPURL">-</field>
+        <field name="SPURL">https://www.digikey.com/products/en?keywords=1276-1946-1-ND</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -343,7 +327,7 @@
         <field name="MPN">CL21B106KOQNNNE</field>
         <field name="SPN">1276-2872-1-ND</field>
         <field name="SPR">Digikey</field>
-        <field name="SPURL">-</field>
+        <field name="SPURL">https://www.digikey.com/products/en?keywords=1276-2872-1-ND</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -359,7 +343,7 @@
         <field name="MPN">CL21B106KOQNNNE</field>
         <field name="SPN">1276-2872-1-ND</field>
         <field name="SPR">Digikey</field>
-        <field name="SPURL">-</field>
+        <field name="SPURL">https://www.digikey.com/products/en?keywords=1276-2872-1-ND</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -423,7 +407,7 @@
         <field name="MPN">CL10B105KP8NNNC</field>
         <field name="SPN">1276-1946-1-ND</field>
         <field name="SPR">Digikey</field>
-        <field name="SPURL">-</field>
+        <field name="SPURL">https://www.digikey.com/products/en?keywords=1276-1946-1-ND</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -446,16 +430,16 @@
       <tstamp>5BD3CD62</tstamp>
     </comp>
     <comp ref="R10">
-      <value>100K</value>
+      <value>86.6K</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <datasheet>http://www.vishay.com/docs/20035/dcrcwe3.pdf</datasheet>
       <fields>
-        <field name="DESC">RES SMD 100K OHM 5% 1/10W 0603</field>
+        <field name="DESC">RES SMD 86.6K OHM 1% 1/10W 0603</field>
         <field name="MFR">Vishay Dale</field>
-        <field name="MPN">CRCW0603100KJNEA</field>
-        <field name="SPN">541-100KGCT-ND</field>
+        <field name="MPN">CRCW060386K6FKEA</field>
+        <field name="SPN">541-86.6KHCT-ND</field>
         <field name="SPR">Digikey</field>
-        <field name="SPURL">-</field>
+        <field name="SPURL">https://www.digikey.com/products/en?keywords=541-86.6KHCT-ND</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -478,7 +462,7 @@
         <field name="Manufacturer">STMicroelectronics</field>
         <field name="SPN">497-5026-1-ND</field>
         <field name="SPR">Digikey</field>
-        <field name="SPURL">-</field>
+        <field name="SPURL">https://www.digikey.com/products/en?keywords=497-5026-1-ND</field>
         <field name="Status">Active</field>
       </fields>
       <libsource lib="dk_TVS-Diodes" part="USBLC6-2SC6" description="TVS DIODE 5.25V 17V SOT23-6"/>
@@ -587,7 +571,7 @@
         <field name="MPN">CL21B106KOQNNNE</field>
         <field name="SPN">1276-2872-1-ND</field>
         <field name="SPR">Digikey</field>
-        <field name="SPURL">-</field>
+        <field name="SPURL">https://www.digikey.com/products/en?keywords=1276-2872-1-ND</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -640,7 +624,7 @@
         <field name="MPN">CL21B106KOQNNNE</field>
         <field name="SPN">1276-2872-1-ND</field>
         <field name="SPR">Digikey</field>
-        <field name="SPURL">-</field>
+        <field name="SPURL">https://www.digikey.com/products/en?keywords=1276-2872-1-ND</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -672,7 +656,7 @@
         <field name="MPN">BSS138</field>
         <field name="SPN">BSS138CT-ND</field>
         <field name="SPR">Digikey</field>
-        <field name="SPURL">-</field>
+        <field name="SPURL">https://www.digikey.com/product-detail/en/on-semiconductor/BSS138/BSS138CT-ND/244294</field>
       </fields>
       <libsource lib="Transistor_FET" part="BSS138" description="50V Vds, 0.22A Id, N-Channel MOSFET, SOT-23"/>
       <sheetpath names="/" tstamps="/"/>
@@ -726,38 +710,6 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5DE52238</tstamp>
     </comp>
-    <comp ref="TP1">
-      <value>DNF</value>
-      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
-      <datasheet>~</datasheet>
-      <fields>
-        <field name="DESC">-</field>
-        <field name="MFR">-</field>
-        <field name="MPN">-</field>
-        <field name="SPN">-</field>
-        <field name="SPR">-</field>
-        <field name="SPURL">-</field>
-      </fields>
-      <libsource lib="Connector" part="TestPoint" description="test point"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5E040823</tstamp>
-    </comp>
-    <comp ref="RN3">
-      <value>4.7K</value>
-      <footprint>Resistor_SMD:R_Array_Convex_4x0603</footprint>
-      <datasheet>https://www.bourns.com/docs/Product-Datasheets/CATCAY.pdf</datasheet>
-      <fields>
-        <field name="DESC">RES ARRAY 4 RES 4.7K OHM 1206</field>
-        <field name="MFR">Bourns Inc.</field>
-        <field name="MPN">CAT16-4701F4LF</field>
-        <field name="SPN">CAT16-4701F4LFCT-ND</field>
-        <field name="SPR">Digikey</field>
-        <field name="SPURL">https://www.digikey.com/product-detail/en/bourns-inc/CAT16-4701F4LF/CAT16-4701F4LFCT-ND/3592883</field>
-      </fields>
-      <libsource lib="Device" part="R_Pack04" description="4 resistor network, parallel topology, DIP package"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5BC2EF2D</tstamp>
-    </comp>
     <comp ref="R6">
       <value>4.7K</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
@@ -800,7 +752,7 @@
         <field name="MPN">FMB2222A</field>
         <field name="SPN">FMB2222ACT-ND</field>
         <field name="SPR">Digikey</field>
-        <field name="SPURL">-</field>
+        <field name="SPURL">https://www.digikey.com/products/en?keywords=FMB2222ACT-ND</field>
       </fields>
       <libsource lib="Aaron" part="FMB2222A" description="Dual NPN transistor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -864,11 +816,110 @@
         <field name="MPN">CL21B106KOQNNNE</field>
         <field name="SPN">1276-2872-1-ND</field>
         <field name="SPR">Digikey</field>
-        <field name="SPURL">-</field>
+        <field name="SPURL">https://www.digikey.com/products/en?keywords=1276-2872-1-ND</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5E39EA67</tstamp>
+    </comp>
+    <comp ref="R8">
+      <value>4.7K</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://www.bourns.com/docs/Product-Datasheets/CHPREZTR.pdf</datasheet>
+      <fields>
+        <field name="DESC">RES SMD 4.7K OHM 1% 1/10W 0603</field>
+        <field name="MFR">Bourns Inc.</field>
+        <field name="MPN">CR0603-FX-4701ELF</field>
+        <field name="SPN">CR0603-FX-4701ELFCT-ND</field>
+        <field name="SPR">Digikey</field>
+        <field name="SPURL">https://www.digikey.com/product-detail/en/bourns-inc/CR0603-FX-4701ELF/CR0603-FX-4701ELFCT-ND/3740884</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5ECE7BFB</tstamp>
+    </comp>
+    <comp ref="R7">
+      <value>4.7K</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://www.bourns.com/docs/Product-Datasheets/CHPREZTR.pdf</datasheet>
+      <fields>
+        <field name="DESC">RES SMD 4.7K OHM 1% 1/10W 0603</field>
+        <field name="MFR">Bourns Inc.</field>
+        <field name="MPN">CR0603-FX-4701ELF</field>
+        <field name="SPN">CR0603-FX-4701ELFCT-ND</field>
+        <field name="SPR">Digikey</field>
+        <field name="SPURL">https://www.digikey.com/product-detail/en/bourns-inc/CR0603-FX-4701ELF/CR0603-FX-4701ELFCT-ND/3740884</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5ECEAE8F</tstamp>
+    </comp>
+    <comp ref="R4">
+      <value>4.7K</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://www.bourns.com/docs/Product-Datasheets/CHPREZTR.pdf</datasheet>
+      <fields>
+        <field name="DESC">RES SMD 4.7K OHM 1% 1/10W 0603</field>
+        <field name="MFR">Bourns Inc.</field>
+        <field name="MPN">CR0603-FX-4701ELF</field>
+        <field name="SPN">CR0603-FX-4701ELFCT-ND</field>
+        <field name="SPR">Digikey</field>
+        <field name="SPURL">https://www.digikey.com/product-detail/en/bourns-inc/CR0603-FX-4701ELF/CR0603-FX-4701ELFCT-ND/3740884</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5ECEB174</tstamp>
+    </comp>
+    <comp ref="R3">
+      <value>10K</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>http://www.vishay.com/docs/20035/dcrcwe3.pdf</datasheet>
+      <fields>
+        <field name="DESC">RES SMD 10K OHM 1% 1/10W 0603</field>
+        <field name="MFR">Vishay Dale</field>
+        <field name="MPN">CRCW060310K0FKEC</field>
+        <field name="SPN">541-2979-1-ND</field>
+        <field name="SPR">Digikey</field>
+        <field name="SPURL">https://www.digikey.com/products/en?keywords=541-2979-1-ND</field>
+        <field name="Tolerance">5%</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5ED690A2</tstamp>
+    </comp>
+    <comp ref="R9">
+      <value>10K</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>http://www.vishay.com/docs/20035/dcrcwe3.pdf</datasheet>
+      <fields>
+        <field name="DESC">RES SMD 10K OHM 1% 1/10W 0603</field>
+        <field name="MFR">Vishay Dale</field>
+        <field name="MPN">CRCW060310K0FKEC</field>
+        <field name="SPN">541-2979-1-ND</field>
+        <field name="SPR">Digikey</field>
+        <field name="SPURL">https://www.digikey.com/products/en?keywords=541-2979-1-ND</field>
+        <field name="Tolerance">5%</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5ED6ADA8</tstamp>
+    </comp>
+    <comp ref="R11">
+      <value>10K</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>http://www.vishay.com/docs/20035/dcrcwe3.pdf</datasheet>
+      <fields>
+        <field name="DESC">RES SMD 10K OHM 1% 1/10W 0603</field>
+        <field name="MFR">Vishay Dale</field>
+        <field name="MPN">CRCW060310K0FKEC</field>
+        <field name="SPN">541-2979-1-ND</field>
+        <field name="SPR">Digikey</field>
+        <field name="SPURL">https://www.digikey.com/products/en?keywords=541-2979-1-ND</field>
+        <field name="Tolerance">5%</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5EDA3E9D</tstamp>
     </comp>
     <comp ref="U101">
       <value>TPS55340-Q1</value>
@@ -880,7 +931,7 @@
         <field name="MPN">TPS55340RTER</field>
         <field name="SPN">296-37677-1-ND</field>
         <field name="SPR">Digikey</field>
-        <field name="SPURL">-</field>
+        <field name="SPURL">https://www.digikey.com/products/en?keywords=296-37677-1-ND</field>
       </fields>
       <libsource lib="led-controller-wrover32-rescue" part="TPS55340-Q1-texas-12v-booster-rescue" description=""/>
       <sheetpath names="/12v-booster/" tstamps="/5BE8E860/"/>
@@ -896,7 +947,7 @@
         <field name="MPN">IHLP1212BZER3R3M11</field>
         <field name="SPN">541-2567-1-ND</field>
         <field name="SPR">Digikey</field>
-        <field name="SPURL">-</field>
+        <field name="SPURL">https://www.digikey.com/products/en?keywords=541-2567-1-ND</field>
       </fields>
       <libsource lib="Device" part="L" description="Inductor"/>
       <sheetpath names="/12v-booster/" tstamps="/5BE8E860/"/>
@@ -912,7 +963,7 @@
         <field name="MPN">SS24FL</field>
         <field name="SPN">SS24FLCT-ND</field>
         <field name="SPR">Digikey</field>
-        <field name="SPURL">-</field>
+        <field name="SPURL">https://www.digikey.com/products/en?keywords=SS24FLCT-ND</field>
       </fields>
       <libsource lib="Device" part="D_Schottky" description="Schottky diode"/>
       <sheetpath names="/12v-booster/" tstamps="/5BE8E860/"/>
@@ -992,7 +1043,7 @@
         <field name="MPN">GRM188R61H474KA12D</field>
         <field name="SPN">490-11994-1-ND</field>
         <field name="SPR">Digikey</field>
-        <field name="SPURL">-</field>
+        <field name="SPURL">https://www.digikey.com/products/en?keywords=490-11994-1-ND</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/12v-booster/" tstamps="/5BE8E860/"/>
@@ -1008,7 +1059,7 @@
         <field name="MPN">CRCW060310K0FKEC</field>
         <field name="SPN">541-2979-1-ND</field>
         <field name="SPR">Digikey</field>
-        <field name="SPURL">-</field>
+        <field name="SPURL">https://www.digikey.com/products/en?keywords=541-2979-1-ND</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/12v-booster/" tstamps="/5BE8E860/"/>
@@ -1024,7 +1075,7 @@
         <field name="MPN">CRCW060386K6FKEA</field>
         <field name="SPN">541-86.6KHCT-ND</field>
         <field name="SPR">Digikey</field>
-        <field name="SPURL">-</field>
+        <field name="SPURL">https://www.digikey.com/products/en?keywords=541-86.6KHCT-ND</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/12v-booster/" tstamps="/5BE8E860/"/>
@@ -1056,7 +1107,7 @@
         <field name="MPN">CL10B105KP8NNNC</field>
         <field name="SPN">1276-1946-1-ND</field>
         <field name="SPR">Digikey</field>
-        <field name="SPURL">-</field>
+        <field name="SPURL">https://www.digikey.com/products/en?keywords=1276-1946-1-ND</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/12v-booster/" tstamps="/5BE8E860/"/>
@@ -1104,7 +1155,7 @@
         <field name="MPN">GCM188R71H104KA57D</field>
         <field name="SPN">490-4779-1-ND</field>
         <field name="SPR">Digikey</field>
-        <field name="SPURL">-</field>
+        <field name="SPURL">https://www.digikey.com/product-detail/en/murata-electronics/GCM188R71H104KA57D/490-4779-1-ND/1641698</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/12v-booster/" tstamps="/5BE8E860/"/>
@@ -1152,7 +1203,7 @@
         <field name="MPN">CL21B106KOQNNNE</field>
         <field name="SPN">1276-2872-1-ND</field>
         <field name="SPR">Digikey</field>
-        <field name="SPURL">-</field>
+        <field name="SPURL">https://www.digikey.com/products/en?keywords=1276-2872-1-ND</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/Amp/" tstamps="/5DB534FC/"/>
@@ -1168,7 +1219,7 @@
         <field name="MPN">GCM188R71H104KA57D</field>
         <field name="SPN">490-4779-1-ND</field>
         <field name="SPR">Digikey</field>
-        <field name="SPURL">-</field>
+        <field name="SPURL">https://www.digikey.com/product-detail/en/murata-electronics/GCM188R71H104KA57D/490-4779-1-ND/1641698</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/Amp/" tstamps="/5DB534FC/"/>
@@ -1184,7 +1235,7 @@
         <field name="MPN">GCM188R71H104KA57D</field>
         <field name="SPN">490-4779-1-ND</field>
         <field name="SPR">Digikey</field>
-        <field name="SPURL">-</field>
+        <field name="SPURL">https://www.digikey.com/product-detail/en/murata-electronics/GCM188R71H104KA57D/490-4779-1-ND/1641698</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/Amp/" tstamps="/5DB534FC/"/>
@@ -1206,46 +1257,6 @@
       <sheetpath names="/Amp/" tstamps="/5DB534FC/"/>
       <tstamp>5DBCE011</tstamp>
     </comp>
-    <comp ref="J10">
-      <value>Conn_01x02 DNF</value>
-      <footprint>Connector_PinHeader_1.27mm:PinHeader_1x02_P1.27mm_Vertical_SMD_Pin1Left</footprint>
-      <datasheet>https://media.digikey.com/pdf/Data%20Sheets/JST%20PDFs/SR%20Connector.pdf</datasheet>
-      <fields>
-        <field name="DESC">CONN HEADER SMD 2POS 1.27MM</field>
-        <field name="MFR">Harwin Inc.</field>
-        <field name="MPN">M50-3630242R</field>
-        <field name="SPN">952-3933-1-ND</field>
-        <field name="SPR">Digikey</field>
-        <field name="SPURL">https://www.digikey.com/products/en/connectors-interconnects/rectangular-connectors-headers-male-pins/314?k=M50-3630242R&amp;k=&amp;pkeyword=M50-3630242R&amp;sv=0&amp;pv7=2&amp;sf=0&amp;quantity=&amp;ColumnSort=0&amp;page=1&amp;stock=1&amp;nstock=1&amp;pageSize=500</field>
-      </fields>
-      <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
-      <sheetpath names="/Amp/" tstamps="/5DB534FC/"/>
-      <tstamp>5E133F76</tstamp>
-    </comp>
-    <comp ref="Q5">
-      <value>BSS138DW-7-F</value>
-      <footprint>Package_TO_SOT_SMD:SOT-363_SC-70-6</footprint>
-      <datasheet>https://www.diodes.com/assets/Datasheets/ds30203.pdf</datasheet>
-      <fields>
-        <field name="Category">Discrete Semiconductor Products</field>
-        <field name="DESC">MOSFET 2N-CH 50V 0.2A SC70-6</field>
-        <field name="DK_Datasheet_Link">https://www.diodes.com/assets/Datasheets/ds30203.pdf</field>
-        <field name="DK_Detail_Page">/product-detail/en/diodes-incorporated/BSS138DW-7-F/BSS138DW-FDICT-ND/808541</field>
-        <field name="Description">MOSFET 2N-CH 50V 0.2A SC70-6</field>
-        <field name="Digi-Key_PN">BSS138DW-FDICT-ND</field>
-        <field name="Family">Transistors - FETs, MOSFETs - Arrays</field>
-        <field name="MFR">Diodes Incorporated</field>
-        <field name="MPN">BSS138DW-7-F</field>
-        <field name="Manufacturer">Diodes Incorporated</field>
-        <field name="SPN">BSS138DW-FDICT-ND</field>
-        <field name="SPR">Digikey</field>
-        <field name="SPURL">https://www.digikey.com/products/en/discrete-semiconductor-products/transistors-fets-mosfets-arrays/289?k=BSS138DW-7-F&amp;k=&amp;pkeyword=BSS138DW-7-F&amp;sv=0&amp;pv7=2&amp;sf=0&amp;quantity=&amp;ColumnSort=0&amp;page=1&amp;stock=1&amp;nstock=1&amp;pageSize=500</field>
-        <field name="Status">Active</field>
-      </fields>
-      <libsource lib="dk_Transistors-FETs-MOSFETs-Arrays" part="BSS138DW-7-F" description="MOSFET 2N-CH 50V 0.2A SC70-6"/>
-      <sheetpath names="/Reset_Boot/" tstamps="/5DD65482/"/>
-      <tstamp>5DD66E94</tstamp>
-    </comp>
     <comp ref="SW2">
       <value>SW_SPST_KMR2</value>
       <footprint>Aaron:SW_SPST_KMR2</footprint>
@@ -1263,16 +1274,16 @@
       <tstamp>5DD6A125</tstamp>
     </comp>
     <comp ref="RN6">
-      <value>100K</value>
+      <value>10K</value>
       <footprint>Resistor_SMD:R_Array_Convex_4x0603</footprint>
       <datasheet>https://industrial.panasonic.com/cdbs/www-data/pdf/AOC0000/AOC0000C14.pdf</datasheet>
       <fields>
-        <field name="DESC">RES ARRAY 4 RES 100K OHM 1206</field>
+        <field name="DESC">RES ARRAY 4 RES 10K OHM 1206</field>
         <field name="MFR">Panasonic</field>
-        <field name="MPN">EXB-V8V104JV</field>
-        <field name="SPN">Y4104CT-ND</field>
+        <field name="MPN">EXB-V8V103JV</field>
+        <field name="SPN">Y4103CT-ND</field>
         <field name="SPR">Digikey</field>
-        <field name="SPURL">https://www.digikey.com/product-detail/en/bourns-inc/CAT16-1003F4LF/CAT16-1003F4LFCT-ND/3592894</field>
+        <field name="SPURL">https://www.digikey.com/products/en?keywords=Y4103CT-ND</field>
       </fields>
       <libsource lib="Device" part="R_Pack04" description="4 resistor network, parallel topology, DIP package"/>
       <sheetpath names="/Reset_Boot/" tstamps="/5DD65482/"/>
@@ -1288,7 +1299,7 @@
         <field name="MPN">RC1608F471CS</field>
         <field name="SPN">1276-4619-1-ND</field>
         <field name="SPR">Digikey</field>
-        <field name="SPURL">-</field>
+        <field name="SPURL">https://www.digikey.com/products/en?keywords=1276-4619-1-ND</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/Reset_Boot/" tstamps="/5DD65482/"/>
@@ -1304,7 +1315,7 @@
         <field name="MPN">GCM188R71H104KA57D</field>
         <field name="SPN">490-4779-1-ND</field>
         <field name="SPR">Digikey</field>
-        <field name="SPURL">-</field>
+        <field name="SPURL">https://www.digikey.com/product-detail/en/murata-electronics/GCM188R71H104KA57D/490-4779-1-ND/1641698</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/Reset_Boot/" tstamps="/5DD65482/"/>
@@ -1326,22 +1337,6 @@
       <sheetpath names="/Reset_Boot/" tstamps="/5DD65482/"/>
       <tstamp>5E038054</tstamp>
     </comp>
-    <comp ref="R3">
-      <value>10K</value>
-      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
-      <datasheet>http://www.vishay.com/docs/20035/dcrcwe3.pdf</datasheet>
-      <fields>
-        <field name="DESC">RES SMD 10K OHM 1% 1/10W 0603</field>
-        <field name="MFR">Vishay Dale</field>
-        <field name="MPN">CRCW060310K0FKEC</field>
-        <field name="SPN">541-2979-1-ND</field>
-        <field name="SPR">Digikey</field>
-        <field name="SPURL">-</field>
-      </fields>
-      <libsource lib="Device" part="R" description="Resistor"/>
-      <sheetpath names="/Reset_Boot/" tstamps="/5DD65482/"/>
-      <tstamp>5DBEA787</tstamp>
-    </comp>
     <comp ref="C23">
       <value>22nF</value>
       <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
@@ -1358,6 +1353,38 @@
       <sheetpath names="/Reset_Boot/" tstamps="/5DD65482/"/>
       <tstamp>5DD6F2FF</tstamp>
     </comp>
+    <comp ref="Q4">
+      <value>BSS138</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>https://www.fairchildsemi.com/datasheets/BS/BSS138.pdf</datasheet>
+      <fields>
+        <field name="DESC">N-Channel 50V 220mA (Ta) 360mW (Ta) Surface Mount SOT-23-3</field>
+        <field name="MFR">ON Semiconductor</field>
+        <field name="MPN">BSS138</field>
+        <field name="SPN">BSS138CT-ND</field>
+        <field name="SPR">Digikey</field>
+        <field name="SPURL">https://www.digikey.com/product-detail/en/on-semiconductor/BSS138/BSS138CT-ND/244294</field>
+      </fields>
+      <libsource lib="Transistor_FET" part="BSS138" description="50V Vds, 0.22A Id, N-Channel MOSFET, SOT-23"/>
+      <sheetpath names="/Reset_Boot/" tstamps="/5DD65482/"/>
+      <tstamp>5EC189C0</tstamp>
+    </comp>
+    <comp ref="Q5">
+      <value>BSS138</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>https://www.fairchildsemi.com/datasheets/BS/BSS138.pdf</datasheet>
+      <fields>
+        <field name="DESC">N-Channel 50V 220mA (Ta) 360mW (Ta) Surface Mount SOT-23-3</field>
+        <field name="MFR">ON Semiconductor</field>
+        <field name="MPN">BSS138</field>
+        <field name="SPN">BSS138CT-ND</field>
+        <field name="SPR">Digikey</field>
+        <field name="SPURL">https://www.digikey.com/product-detail/en/on-semiconductor/BSS138/BSS138CT-ND/244294</field>
+      </fields>
+      <libsource lib="Transistor_FET" part="BSS138" description="50V Vds, 0.22A Id, N-Channel MOSFET, SOT-23"/>
+      <sheetpath names="/Reset_Boot/" tstamps="/5DD65482/"/>
+      <tstamp>5EC114C9</tstamp>
+    </comp>
     <comp ref="C24">
       <value>0.1uF</value>
       <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
@@ -1368,7 +1395,7 @@
         <field name="MPN">GCM188R71H104KA57D</field>
         <field name="SPN">490-4779-1-ND</field>
         <field name="SPR">Digikey</field>
-        <field name="SPURL">-</field>
+        <field name="SPURL">https://www.digikey.com/product-detail/en/murata-electronics/GCM188R71H104KA57D/490-4779-1-ND/1641698</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/Level Shifter/" tstamps="/5DE460A6/"/>
@@ -1400,7 +1427,7 @@
         <field name="MPN">GCM188R71H104KA57D</field>
         <field name="SPN">490-4779-1-ND</field>
         <field name="SPR">Digikey</field>
-        <field name="SPURL">-</field>
+        <field name="SPURL">https://www.digikey.com/product-detail/en/murata-electronics/GCM188R71H104KA57D/490-4779-1-ND/1641698</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/Level Shifter/" tstamps="/5DE460A6/"/>
@@ -1416,7 +1443,7 @@
         <field name="MPN">CL21B106KOQNNNE</field>
         <field name="SPN">1276-2872-1-ND</field>
         <field name="SPR">Digikey</field>
-        <field name="SPURL">-</field>
+        <field name="SPURL">https://www.digikey.com/products/en?keywords=1276-2872-1-ND</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/Level Shifter/" tstamps="/5DE460A6/"/>
@@ -1656,24 +1683,6 @@
         <pin num="2" name="~" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="Device" part="R_Pack02">
-      <description>2 resistor network, parallel topology, DIP package</description>
-      <docs>~</docs>
-      <footprints>
-        <fp>DIP*</fp>
-        <fp>SOIC*</fp>
-      </footprints>
-      <fields>
-        <field name="Reference">RN</field>
-        <field name="Value">R_Pack02</field>
-      </fields>
-      <pins>
-        <pin num="1" name="R1.1" type="passive"/>
-        <pin num="2" name="R2.1" type="passive"/>
-        <pin num="3" name="R2.2" type="passive"/>
-        <pin num="4" name="R1.2" type="passive"/>
-      </pins>
-    </libpart>
     <libpart lib="Device" part="R_Pack04">
       <description>4 resistor network, parallel topology, DIP package</description>
       <docs>~</docs>
@@ -1784,28 +1793,6 @@
         <pin num="23" name="DTR" type="output"/>
         <pin num="24" name="DCD" type="input"/>
         <pin num="25" name="PAD" type="power_in"/>
-      </pins>
-    </libpart>
-    <libpart lib="Torex_Semiconductor" part="XCL21X">
-      <description>Torex Semiconductor XCL219/XCL220 Series</description>
-      <docs>https://www.torexsemi.com/file/xcl219/XCL219-XCL220.pdf</docs>
-      <footprints>
-        <fp>Torex_Semi:CL-2025-02</fp>
-      </footprints>
-      <fields>
-        <field name="Reference">U</field>
-        <field name="Value">XCL21X</field>
-      </fields>
-      <pins>
-        <pin num="1" name="LX" type="input"/>
-        <pin num="2" name="AGND" type="power_in"/>
-        <pin num="3" name="VOUT" type="input"/>
-        <pin num="4" name="CE" type="input"/>
-        <pin num="5" name="PGND" type="power_in"/>
-        <pin num="6" name="VIN" type="power_in"/>
-        <pin num="7" name="L1" type="output"/>
-        <pin num="8" name="L2" type="power_out"/>
-        <pin num="9" name="GND" type="power_in"/>
       </pins>
     </libpart>
     <libpart lib="Transistor_FET" part="BSS138">
@@ -1986,33 +1973,6 @@
         <pin num="3" name="C" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="dk_Transistors-FETs-MOSFETs-Arrays" part="BSS138DW-7-F">
-      <description>MOSFET 2N-CH 50V 0.2A SC70-6</description>
-      <docs>https://www.diodes.com/assets/Datasheets/ds30203.pdf</docs>
-      <fields>
-        <field name="Reference">Q</field>
-        <field name="Value">BSS138DW-7-F</field>
-        <field name="Footprint">digikey-footprints:SOT-363</field>
-        <field name="Datasheet">https://www.diodes.com/assets/Datasheets/ds30203.pdf</field>
-        <field name="Digi-Key_PN">BSS138DW-FDICT-ND</field>
-        <field name="MPN">BSS138DW-7-F</field>
-        <field name="Category">Discrete Semiconductor Products</field>
-        <field name="Family">Transistors - FETs, MOSFETs - Arrays</field>
-        <field name="DK_Datasheet_Link">https://www.diodes.com/assets/Datasheets/ds30203.pdf</field>
-        <field name="DK_Detail_Page">/product-detail/en/diodes-incorporated/BSS138DW-7-F/BSS138DW-FDICT-ND/808541</field>
-        <field name="Description">MOSFET 2N-CH 50V 0.2A SC70-6</field>
-        <field name="Manufacturer">Diodes Incorporated</field>
-        <field name="Status">Active</field>
-      </fields>
-      <pins>
-        <pin num="1" name="S2" type="input"/>
-        <pin num="2" name="G2" type="input"/>
-        <pin num="3" name="D1" type="output"/>
-        <pin num="4" name="S1" type="input"/>
-        <pin num="5" name="G1" type="input"/>
-        <pin num="6" name="D2" type="output"/>
-      </pins>
-    </libpart>
     <libpart lib="fiducial" part="FIDUCIAL_1MM">
       <fields>
         <field name="Reference">FID</field>
@@ -2088,6 +2048,26 @@
         <pin num="17" name="AGND" type="power_in"/>
       </pins>
     </libpart>
+    <libpart lib="led-controller-wrover32-rescue" part="XCL21X-Torex_Semiconductor">
+      <footprints>
+        <fp>Torex_Semi:CL-2025-02</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">XCL21X-Torex_Semiconductor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="LX" type="input"/>
+        <pin num="2" name="AGND" type="power_in"/>
+        <pin num="3" name="VOUT" type="input"/>
+        <pin num="4" name="CE" type="input"/>
+        <pin num="5" name="PGND" type="power_in"/>
+        <pin num="6" name="VIN" type="power_in"/>
+        <pin num="7" name="L1" type="output"/>
+        <pin num="8" name="L2" type="power_out"/>
+        <pin num="9" name="GND" type="power_in"/>
+      </pins>
+    </libpart>
     <libpart lib="switch_tact_smt" part="SW_SPST_KMR2">
       <description>SPST SMD  KMR2 SMD micro button</description>
       <docs>https://www.digikey.com/product-detail/en/c-k/KMR211GLFS/401-1426-1-ND/550461</docs>
@@ -2124,9 +2104,6 @@
     <library logical="Interface_USB">
       <uri>/usr/share/kicad/library/Interface_USB.lib</uri>
     </library>
-    <library logical="Torex_Semiconductor">
-      <uri>/home/aaronw/kicad/library/aaron/Torex_Semiconductor.lib</uri>
-    </library>
     <library logical="Transistor_FET">
       <uri>/usr/share/kicad/library/Transistor_FET.lib</uri>
     </library>
@@ -2142,9 +2119,6 @@
     <library logical="dk_Transistors-Bipolar-BJT-Single">
       <uri>/home/aaronw/kicad/library/digikey/digikey-kicad-library/digikey-symbols/dk_Transistors-Bipolar-BJT-Single.lib</uri>
     </library>
-    <library logical="dk_Transistors-FETs-MOSFETs-Arrays">
-      <uri>/home/aaronw/kicad/library/digikey/digikey-kicad-library/digikey-symbols/dk_Transistors-FETs-MOSFETs-Arrays.lib</uri>
-    </library>
     <library logical="fiducial">
       <uri>/home/aaronw/kicad/library/library-kicad/fiducial.lib</uri>
     </library>
@@ -2157,359 +2131,357 @@
   </libraries>
   <nets>
     <net code="1" name="IO5">
-      <node ref="U2" pin="29"/>
       <node ref="U4" pin="1"/>
+      <node ref="U2" pin="29"/>
     </net>
     <net code="2" name="IO18">
       <node ref="U4" pin="2"/>
       <node ref="U2" pin="30"/>
     </net>
     <net code="3" name="IO32">
-      <node ref="U2" pin="8"/>
       <node ref="U4" pin="5"/>
+      <node ref="U2" pin="8"/>
     </net>
-    <net code="4" name="VBUS">
-      <node ref="L101" pin="1"/>
-      <node ref="J4" pin="12"/>
-      <node ref="C101" pin="1"/>
-      <node ref="J9" pin="2"/>
-      <node ref="J2" pin="1"/>
-      <node ref="J3" pin="1"/>
-      <node ref="U3" pin="8"/>
-      <node ref="D2" pin="5"/>
-      <node ref="R6" pin="2"/>
-      <node ref="C102" pin="1"/>
-      <node ref="U101" pin="3"/>
-      <node ref="J6" pin="2"/>
-      <node ref="C13" pin="1"/>
-      <node ref="D1" pin="1"/>
-      <node ref="U101" pin="2"/>
-      <node ref="C10" pin="1"/>
-      <node ref="J5" pin="1"/>
-      <node ref="C9" pin="1"/>
-      <node ref="D1" pin="2"/>
-      <node ref="U5" pin="7"/>
-      <node ref="U4" pin="14"/>
-      <node ref="C19" pin="1"/>
-      <node ref="C21" pin="1"/>
-      <node ref="C7" pin="1"/>
-      <node ref="C8" pin="1"/>
-      <node ref="C1" pin="1"/>
-      <node ref="U5" pin="8"/>
-      <node ref="U1" pin="6"/>
-      <node ref="R1" pin="2"/>
-      <node ref="C20" pin="1"/>
-    </net>
-    <net code="5" name="+3V3">
-      <node ref="C11" pin="1"/>
-      <node ref="RN3" pin="6"/>
-      <node ref="RN3" pin="7"/>
-      <node ref="RN3" pin="8"/>
-      <node ref="RN3" pin="5"/>
-      <node ref="U5" pin="4"/>
-      <node ref="C12" pin="1"/>
-      <node ref="C22" pin="1"/>
+    <net code="4" name="+3V3">
       <node ref="U1" pin="8"/>
-      <node ref="U1" pin="3"/>
-      <node ref="U3" pin="5"/>
-      <node ref="U3" pin="6"/>
-      <node ref="U3" pin="7"/>
-      <node ref="C17" pin="1"/>
       <node ref="C6" pin="1"/>
-      <node ref="R2" pin="1"/>
-      <node ref="MIC1" pin="5"/>
+      <node ref="J8" pin="5"/>
+      <node ref="J1" pin="4"/>
       <node ref="RN4" pin="5"/>
-      <node ref="R5" pin="2"/>
+      <node ref="U1" pin="3"/>
+      <node ref="R2" pin="1"/>
+      <node ref="C17" pin="1"/>
+      <node ref="MIC1" pin="5"/>
+      <node ref="R8" pin="2"/>
+      <node ref="C3" pin="1"/>
+      <node ref="SW2" pin="1"/>
+      <node ref="C18" pin="1"/>
+      <node ref="U3" pin="7"/>
+      <node ref="SW2" pin="1"/>
+      <node ref="U3" pin="6"/>
+      <node ref="U3" pin="5"/>
       <node ref="U2" pin="2"/>
       <node ref="C4" pin="1"/>
-      <node ref="C24" pin="1"/>
-      <node ref="U4" pin="10"/>
-      <node ref="C3" pin="1"/>
+      <node ref="C22" pin="1"/>
       <node ref="C2" pin="1"/>
-      <node ref="J4" pin="9"/>
-      <node ref="RN1" pin="2"/>
-      <node ref="RN1" pin="1"/>
-      <node ref="SW2" pin="1"/>
-      <node ref="SW2" pin="1"/>
+      <node ref="U5" pin="4"/>
+      <node ref="R9" pin="2"/>
+      <node ref="R3" pin="2"/>
+      <node ref="R4" pin="2"/>
+      <node ref="R7" pin="2"/>
+      <node ref="C12" pin="1"/>
+      <node ref="C15" pin="1"/>
+      <node ref="Q3" pin="1"/>
+      <node ref="C11" pin="1"/>
       <node ref="RN2" pin="3"/>
       <node ref="RN2" pin="2"/>
       <node ref="RN2" pin="1"/>
+      <node ref="C24" pin="1"/>
+      <node ref="J4" pin="9"/>
+      <node ref="U4" pin="10"/>
       <node ref="RN2" pin="4"/>
-      <node ref="C15" pin="1"/>
+      <node ref="R5" pin="2"/>
+      <node ref="MIC1" pin="2"/>
       <node ref="C16" pin="1"/>
-      <node ref="Q3" pin="1"/>
-      <node ref="J8" pin="5"/>
-      <node ref="J1" pin="4"/>
       <node ref="J2" pin="3"/>
-      <node ref="C18" pin="1"/>
     </net>
-    <net code="6" name="/IO19">
+    <net code="5" name="VBUS">
+      <node ref="U101" pin="2"/>
+      <node ref="J4" pin="12"/>
+      <node ref="U101" pin="3"/>
+      <node ref="C20" pin="1"/>
+      <node ref="C102" pin="1"/>
+      <node ref="U3" pin="8"/>
+      <node ref="C101" pin="1"/>
+      <node ref="L101" pin="1"/>
+      <node ref="C7" pin="1"/>
+      <node ref="C10" pin="1"/>
+      <node ref="U5" pin="8"/>
+      <node ref="U5" pin="7"/>
+      <node ref="C8" pin="1"/>
+      <node ref="C21" pin="1"/>
+      <node ref="D2" pin="5"/>
+      <node ref="D1" pin="2"/>
+      <node ref="D1" pin="1"/>
+      <node ref="J9" pin="2"/>
+      <node ref="C19" pin="1"/>
+      <node ref="J5" pin="1"/>
+      <node ref="R6" pin="2"/>
+      <node ref="C9" pin="1"/>
+      <node ref="J3" pin="1"/>
+      <node ref="U4" pin="14"/>
+      <node ref="J2" pin="1"/>
+      <node ref="C13" pin="1"/>
+      <node ref="J6" pin="2"/>
+      <node ref="U1" pin="6"/>
+      <node ref="C1" pin="1"/>
+      <node ref="R1" pin="2"/>
+    </net>
+    <net code="6" name="GND">
+      <node ref="C6" pin="2"/>
+      <node ref="C15" pin="2"/>
+      <node ref="J3" pin="5"/>
+      <node ref="J3" pin="6"/>
+      <node ref="C21" pin="2"/>
+      <node ref="U2" pin="38"/>
+      <node ref="J4" pin="11"/>
+      <node ref="U1" pin="9"/>
+      <node ref="C2" pin="2"/>
+      <node ref="U2" pin="1"/>
+      <node ref="U1" pin="5"/>
+      <node ref="J5" pin="4"/>
+      <node ref="C3" pin="2"/>
+      <node ref="J2" pin="2"/>
+      <node ref="C16" pin="2"/>
+      <node ref="C1" pin="2"/>
+      <node ref="J4" pin="10"/>
+      <node ref="C102" pin="2"/>
+      <node ref="C108" pin="2"/>
+      <node ref="C9" pin="2"/>
+      <node ref="D1" pin="5"/>
+      <node ref="J7" pin="2"/>
+      <node ref="C103" pin="2"/>
+      <node ref="C104" pin="2"/>
+      <node ref="C106" pin="2"/>
+      <node ref="C107" pin="2"/>
+      <node ref="C101" pin="2"/>
+      <node ref="R104" pin="2"/>
+      <node ref="U101" pin="11"/>
+      <node ref="R102" pin="2"/>
+      <node ref="U101" pin="12"/>
+      <node ref="U101" pin="13"/>
+      <node ref="U101" pin="17"/>
+      <node ref="U101" pin="6"/>
+      <node ref="C20" pin="2"/>
+      <node ref="U5" pin="11"/>
+      <node ref="U5" pin="15"/>
+      <node ref="U5" pin="17"/>
+      <node ref="U3" pin="2"/>
+      <node ref="R11" pin="1"/>
+      <node ref="J1" pin="9"/>
+      <node ref="U5" pin="2"/>
+      <node ref="U5" pin="3"/>
+      <node ref="J1" pin="6"/>
+      <node ref="U3" pin="25"/>
+      <node ref="C18" pin="2"/>
+      <node ref="U2" pin="15"/>
+      <node ref="C4" pin="2"/>
+      <node ref="C19" pin="2"/>
+      <node ref="MIC1" pin="3"/>
+      <node ref="D2" pin="2"/>
+      <node ref="J9" pin="1"/>
+      <node ref="U2" pin="39"/>
+      <node ref="C17" pin="2"/>
+      <node ref="J101" pin="1"/>
+      <node ref="C105" pin="2"/>
+      <node ref="C22" pin="2"/>
+      <node ref="U4" pin="3"/>
+      <node ref="RN6" pin="8"/>
+      <node ref="RN6" pin="5"/>
+      <node ref="Q5" pin="2"/>
+      <node ref="C8" pin="2"/>
+      <node ref="C24" pin="2"/>
+      <node ref="U4" pin="15"/>
+      <node ref="SW1" pin="1"/>
+      <node ref="C23" pin="2"/>
+      <node ref="Q4" pin="2"/>
+      <node ref="U4" pin="7"/>
+      <node ref="SW1" pin="1"/>
+      <node ref="C5" pin="2"/>
+      <node ref="C12" pin="2"/>
+      <node ref="C11" pin="2"/>
+      <node ref="J8" pin="1"/>
+      <node ref="J6" pin="1"/>
+      <node ref="C14" pin="2"/>
+      <node ref="C10" pin="2"/>
+      <node ref="C13" pin="2"/>
+      <node ref="C7" pin="2"/>
+      <node ref="U1" pin="2"/>
+    </net>
+    <net code="7" name="/IO19">
       <node ref="U2" pin="31"/>
       <node ref="J4" pin="4"/>
       <node ref="MIC1" pin="1"/>
     </net>
-    <net code="7" name="/IO23">
-      <node ref="U2" pin="37"/>
-      <node ref="J8" pin="2"/>
-      <node ref="J4" pin="1"/>
-      <node ref="RN3" pin="3"/>
+    <net code="8" name="/D-">
+      <node ref="D2" pin="3"/>
+      <node ref="J3" pin="2"/>
+      <node ref="J5" pin="2"/>
     </net>
-    <net code="8" name="/IO35">
+    <net code="9" name="/D+">
+      <node ref="D2" pin="1"/>
+      <node ref="J5" pin="3"/>
+      <node ref="J3" pin="3"/>
+    </net>
+    <net code="10" name="/IO23">
+      <node ref="J4" pin="1"/>
+      <node ref="J8" pin="2"/>
+      <node ref="R4" pin="1"/>
+      <node ref="U2" pin="37"/>
+    </net>
+    <net code="11" name="/IO35">
       <node ref="R10" pin="2"/>
       <node ref="J4" pin="7"/>
       <node ref="U2" pin="7"/>
       <node ref="MIC1" pin="6"/>
     </net>
-    <net code="9" name="/DO">
+    <net code="12" name="/DO">
       <node ref="D1" pin="3"/>
       <node ref="J2" pin="4"/>
     </net>
-    <net code="10" name="/IO21">
-      <node ref="U2" pin="33"/>
-      <node ref="RN3" pin="1"/>
+    <net code="13" name="/IO21">
       <node ref="J8" pin="4"/>
+      <node ref="R8" pin="1"/>
+      <node ref="U2" pin="33"/>
       <node ref="J4" pin="3"/>
     </net>
-    <net code="11" name="/IO22">
-      <node ref="J8" pin="3"/>
+    <net code="14" name="/IO22">
+      <node ref="R7" pin="1"/>
       <node ref="J4" pin="2"/>
-      <node ref="RN3" pin="2"/>
       <node ref="U2" pin="36"/>
+      <node ref="J8" pin="3"/>
     </net>
-    <net code="12" name="/IO0_RTS_DRV">
+    <net code="15" name="/IO0_RTS_DRV">
       <node ref="Q2" pin="1"/>
       <node ref="RN4" pin="2"/>
     </net>
-    <net code="13" name="/RST_DTR_DRV">
+    <net code="16" name="/RST_DTR_DRV">
       <node ref="RN4" pin="6"/>
       <node ref="Q1" pin="1"/>
     </net>
-    <net code="14" name="~RESET">
-      <node ref="SW1" pin="2"/>
-      <node ref="Q1" pin="3"/>
-      <node ref="C5" pin="1"/>
-      <node ref="R2" pin="2"/>
-      <node ref="U2" pin="3"/>
-      <node ref="J2" pin="12"/>
-      <node ref="SW1" pin="2"/>
-    </net>
-    <net code="15" name="/SENSOR_VN">
-      <node ref="J2" pin="10"/>
+    <net code="17" name="/SENSOR_VN">
       <node ref="U2" pin="5"/>
+      <node ref="J2" pin="10"/>
     </net>
-    <net code="16" name="/SENSOR_VP">
+    <net code="18" name="/SENSOR_VP">
       <node ref="J2" pin="11"/>
       <node ref="U2" pin="4"/>
     </net>
-    <net code="17" name="/USB_D-">
-      <node ref="D2" pin="4"/>
-      <node ref="U3" pin="4"/>
+    <net code="19" name="~RESET">
+      <node ref="U2" pin="3"/>
+      <node ref="J2" pin="12"/>
+      <node ref="SW1" pin="2"/>
+      <node ref="Q1" pin="3"/>
+      <node ref="SW1" pin="2"/>
+      <node ref="R2" pin="2"/>
+      <node ref="C5" pin="1"/>
     </net>
-    <net code="18" name="Net-(U1-Pad1)">
+    <net code="20" name="/USB_D-">
+      <node ref="U3" pin="4"/>
+      <node ref="D2" pin="4"/>
+    </net>
+    <net code="21" name="Net-(U1-Pad1)">
       <node ref="U1" pin="7"/>
       <node ref="U1" pin="1"/>
     </net>
-    <net code="19" name="/RXD0">
+    <net code="22" name="/RXD0">
       <node ref="U3" pin="21"/>
       <node ref="U2" pin="34"/>
     </net>
-    <net code="20" name="Net-(U3-Pad9)">
+    <net code="23" name="Net-(R10-Pad1)">
+      <node ref="R10" pin="1"/>
+      <node ref="R11" pin="2"/>
+    </net>
+    <net code="24" name="Net-(U3-Pad9)">
       <node ref="U3" pin="9"/>
     </net>
-    <net code="21" name="Net-(J3-Pad4)">
+    <net code="25" name="Net-(J3-Pad4)">
       <node ref="J3" pin="4"/>
     </net>
-    <net code="22" name="Net-(U2-Pad21)">
+    <net code="26" name="Net-(U2-Pad21)">
       <node ref="U2" pin="21"/>
     </net>
-    <net code="23" name="Net-(U2-Pad22)">
+    <net code="27" name="Net-(U2-Pad22)">
       <node ref="U2" pin="22"/>
     </net>
-    <net code="24" name="Net-(U2-Pad17)">
+    <net code="28" name="Net-(U2-Pad17)">
       <node ref="U2" pin="17"/>
     </net>
-    <net code="25" name="Net-(U2-Pad18)">
+    <net code="29" name="Net-(U2-Pad18)">
       <node ref="U2" pin="18"/>
     </net>
-    <net code="26" name="Net-(U2-Pad19)">
+    <net code="30" name="Net-(U2-Pad19)">
       <node ref="U2" pin="19"/>
     </net>
-    <net code="27" name="Net-(U2-Pad20)">
+    <net code="31" name="Net-(U2-Pad20)">
       <node ref="U2" pin="20"/>
     </net>
-    <net code="28" name="Net-(U3-Pad22)">
+    <net code="32" name="Net-(U3-Pad22)">
       <node ref="U3" pin="22"/>
     </net>
-    <net code="29" name="Net-(U3-Pad18)">
+    <net code="33" name="Net-(U3-Pad18)">
       <node ref="U3" pin="18"/>
     </net>
-    <net code="30" name="Net-(U3-Pad17)">
+    <net code="34" name="Net-(U3-Pad17)">
       <node ref="U3" pin="17"/>
     </net>
-    <net code="31" name="Net-(U3-Pad15)">
+    <net code="35" name="Net-(U3-Pad15)">
       <node ref="U3" pin="15"/>
     </net>
-    <net code="32" name="Net-(U3-Pad24)">
+    <net code="36" name="Net-(U3-Pad24)">
       <node ref="U3" pin="24"/>
     </net>
-    <net code="33" name="Net-(U3-Pad1)">
+    <net code="37" name="Net-(U3-Pad1)">
       <node ref="U3" pin="1"/>
     </net>
-    <net code="34" name="Net-(U3-Pad10)">
+    <net code="38" name="Net-(U3-Pad10)">
       <node ref="U3" pin="10"/>
     </net>
-    <net code="35" name="Net-(U3-Pad12)">
+    <net code="39" name="Net-(U3-Pad12)">
       <node ref="U3" pin="12"/>
     </net>
-    <net code="36" name="Net-(U3-Pad11)">
+    <net code="40" name="Net-(U3-Pad11)">
       <node ref="U3" pin="11"/>
     </net>
-    <net code="37" name="Net-(U3-Pad16)">
+    <net code="41" name="Net-(U3-Pad16)">
       <node ref="U3" pin="16"/>
     </net>
-    <net code="38" name="Net-(U3-Pad13)">
+    <net code="42" name="Net-(U3-Pad13)">
       <node ref="U3" pin="13"/>
     </net>
-    <net code="39" name="Net-(U3-Pad14)">
+    <net code="43" name="Net-(U3-Pad14)">
       <node ref="U3" pin="14"/>
     </net>
-    <net code="40" name="/IO27">
+    <net code="44" name="/IO27_5V">
+      <node ref="D1" pin="6"/>
+      <node ref="R6" pin="1"/>
+      <node ref="Q3" pin="3"/>
+      <node ref="D1" pin="4"/>
+    </net>
+    <net code="45" name="/IO27">
       <node ref="R5" pin="1"/>
       <node ref="Q3" pin="2"/>
       <node ref="U2" pin="12"/>
     </net>
-    <net code="41" name="+12V">
+    <net code="46" name="+12V">
       <node ref="D101" pin="1"/>
       <node ref="J101" pin="2"/>
+      <node ref="C14" pin="1"/>
       <node ref="C108" pin="1"/>
       <node ref="R101" pin="1"/>
+      <node ref="C103" pin="1"/>
       <node ref="J7" pin="1"/>
       <node ref="C104" pin="1"/>
-      <node ref="C14" pin="1"/>
-      <node ref="C103" pin="1"/>
     </net>
-    <net code="42" name="/IO27_5V">
-      <node ref="Q3" pin="3"/>
-      <node ref="D1" pin="6"/>
-      <node ref="D1" pin="4"/>
-      <node ref="R6" pin="1"/>
+    <net code="47" name="/IO2_RTS_DRV">
+      <node ref="RN4" pin="1"/>
+      <node ref="Q2" pin="3"/>
     </net>
-    <net code="43" name="/D-">
-      <node ref="J3" pin="2"/>
-      <node ref="D2" pin="3"/>
-      <node ref="J5" pin="2"/>
+    <net code="48" name="/IO34">
+      <node ref="J2" pin="5"/>
+      <node ref="U2" pin="6"/>
     </net>
-    <net code="44" name="/D+">
-      <node ref="J5" pin="3"/>
-      <node ref="D2" pin="1"/>
-      <node ref="J3" pin="3"/>
+    <net code="49" name="/USB_D+">
+      <node ref="D2" pin="6"/>
+      <node ref="U3" pin="3"/>
     </net>
-    <net code="45" name="Net-(RN4-Pad4)">
+    <net code="50" name="Net-(RN4-Pad4)">
       <node ref="RN4" pin="4"/>
       <node ref="TP2" pin="1"/>
     </net>
-    <net code="46" name="/USB_D+">
-      <node ref="U3" pin="3"/>
-      <node ref="D2" pin="6"/>
-    </net>
-    <net code="47" name="/IO2_RTS_DRV">
-      <node ref="Q2" pin="3"/>
-      <node ref="RN4" pin="1"/>
-    </net>
-    <net code="48" name="/IO34">
-      <node ref="U2" pin="6"/>
-      <node ref="J2" pin="5"/>
-    </net>
-    <net code="49" name="Net-(RN3-Pad4)">
-      <node ref="RN3" pin="4"/>
-      <node ref="TP1" pin="1"/>
-    </net>
-    <net code="50" name="GND">
-      <node ref="MIC1" pin="2"/>
-      <node ref="C19" pin="2"/>
-      <node ref="MIC1" pin="3"/>
-      <node ref="D2" pin="2"/>
-      <node ref="J9" pin="1"/>
-      <node ref="D1" pin="5"/>
-      <node ref="U4" pin="7"/>
-      <node ref="C9" pin="2"/>
-      <node ref="Q5" pin="4"/>
-      <node ref="C21" pin="2"/>
-      <node ref="C22" pin="2"/>
-      <node ref="C20" pin="2"/>
-      <node ref="U5" pin="11"/>
-      <node ref="U5" pin="15"/>
-      <node ref="U5" pin="2"/>
-      <node ref="U5" pin="3"/>
-      <node ref="C7" pin="2"/>
-      <node ref="C8" pin="2"/>
-      <node ref="C24" pin="2"/>
-      <node ref="U4" pin="15"/>
-      <node ref="U4" pin="3"/>
-      <node ref="U5" pin="17"/>
-      <node ref="RN6" pin="8"/>
-      <node ref="RN6" pin="5"/>
-      <node ref="C5" pin="2"/>
-      <node ref="SW1" pin="1"/>
-      <node ref="SW1" pin="1"/>
-      <node ref="R3" pin="2"/>
-      <node ref="C23" pin="2"/>
-      <node ref="Q5" pin="1"/>
-      <node ref="J101" pin="1"/>
-      <node ref="C104" pin="2"/>
-      <node ref="C103" pin="2"/>
-      <node ref="C108" pin="2"/>
-      <node ref="C102" pin="2"/>
-      <node ref="U101" pin="6"/>
-      <node ref="U101" pin="13"/>
-      <node ref="U101" pin="12"/>
-      <node ref="U101" pin="11"/>
-      <node ref="U101" pin="17"/>
-      <node ref="R104" pin="2"/>
-      <node ref="C107" pin="2"/>
-      <node ref="C106" pin="2"/>
-      <node ref="C105" pin="2"/>
-      <node ref="R102" pin="2"/>
-      <node ref="C101" pin="2"/>
-      <node ref="J5" pin="4"/>
-      <node ref="C6" pin="2"/>
-      <node ref="J3" pin="6"/>
-      <node ref="J3" pin="5"/>
-      <node ref="J4" pin="11"/>
-      <node ref="J4" pin="10"/>
-      <node ref="C14" pin="2"/>
-      <node ref="C16" pin="2"/>
-      <node ref="U2" pin="39"/>
-      <node ref="U2" pin="38"/>
-      <node ref="C3" pin="2"/>
-      <node ref="C2" pin="2"/>
-      <node ref="C1" pin="2"/>
-      <node ref="U1" pin="9"/>
-      <node ref="U1" pin="5"/>
-      <node ref="U2" pin="1"/>
-      <node ref="C13" pin="2"/>
-      <node ref="J6" pin="1"/>
-      <node ref="C12" pin="2"/>
-      <node ref="C11" pin="2"/>
-      <node ref="U1" pin="2"/>
-      <node ref="C15" pin="2"/>
-      <node ref="J8" pin="1"/>
-      <node ref="J2" pin="2"/>
-      <node ref="C10" pin="2"/>
-      <node ref="C18" pin="2"/>
-      <node ref="J1" pin="6"/>
-      <node ref="J7" pin="2"/>
-      <node ref="R10" pin="1"/>
-      <node ref="C17" pin="2"/>
-      <node ref="J1" pin="9"/>
-      <node ref="U3" pin="2"/>
-      <node ref="U2" pin="15"/>
-      <node ref="U3" pin="25"/>
-      <node ref="C4" pin="2"/>
-    </net>
     <net code="51" name="Net-(R1-Pad1)">
-      <node ref="U1" pin="4"/>
       <node ref="R1" pin="1"/>
+      <node ref="U1" pin="4"/>
     </net>
     <net code="52" name="Net-(U2-Pad27)">
       <node ref="U2" pin="27"/>
@@ -2517,159 +2489,156 @@
     <net code="53" name="Net-(U2-Pad28)">
       <node ref="U2" pin="28"/>
     </net>
-    <net code="54" name="/IO15">
+    <net code="54" name="IO2">
+      <node ref="Q5" pin="3"/>
+      <node ref="U2" pin="24"/>
+      <node ref="Q2" pin="4"/>
+      <node ref="J1" pin="7"/>
+      <node ref="RN2" pin="6"/>
+    </net>
+    <net code="55" name="/IO4">
+      <node ref="J1" pin="8"/>
+      <node ref="U2" pin="26"/>
+      <node ref="RN2" pin="5"/>
+    </net>
+    <net code="56" name="/IO12">
+      <node ref="R3" pin="1"/>
+      <node ref="J1" pin="1"/>
+      <node ref="U2" pin="14"/>
+    </net>
+    <net code="57" name="/IO13">
+      <node ref="J1" pin="2"/>
+      <node ref="R9" pin="1"/>
+      <node ref="U2" pin="16"/>
+    </net>
+    <net code="58" name="/IO14">
+      <node ref="RN2" pin="7"/>
+      <node ref="J1" pin="5"/>
+      <node ref="U2" pin="13"/>
+    </net>
+    <net code="59" name="/IO15">
       <node ref="RN2" pin="8"/>
       <node ref="U2" pin="23"/>
       <node ref="J1" pin="3"/>
     </net>
-    <net code="55" name="IO32_H">
-      <node ref="U4" pin="9"/>
-      <node ref="J2" pin="7"/>
-    </net>
-    <net code="56" name="IO33_H">
-      <node ref="U4" pin="8"/>
+    <net code="60" name="IO33_H">
       <node ref="J2" pin="6"/>
+      <node ref="U4" pin="8"/>
     </net>
-    <net code="57" name="IO2">
-      <node ref="Q2" pin="4"/>
-      <node ref="J1" pin="7"/>
-      <node ref="U2" pin="24"/>
-      <node ref="Q5" pin="6"/>
-      <node ref="RN2" pin="6"/>
+    <net code="61" name="IO25">
+      <node ref="U5" pin="1"/>
+      <node ref="U2" pin="10"/>
+      <node ref="J4" pin="6"/>
     </net>
-    <net code="58" name="/IO4">
-      <node ref="U2" pin="26"/>
-      <node ref="J1" pin="8"/>
-      <node ref="RN2" pin="5"/>
-    </net>
-    <net code="59" name="/IO12">
-      <node ref="U2" pin="14"/>
-      <node ref="J1" pin="1"/>
-      <node ref="RN1" pin="4"/>
-    </net>
-    <net code="60" name="/IO13">
-      <node ref="U2" pin="16"/>
-      <node ref="RN1" pin="3"/>
-      <node ref="J1" pin="2"/>
-    </net>
-    <net code="61" name="/IO14">
-      <node ref="J1" pin="5"/>
-      <node ref="U2" pin="13"/>
-      <node ref="RN2" pin="7"/>
-    </net>
-    <net code="62" name="IO18_H">
-      <node ref="J2" pin="8"/>
-      <node ref="U4" pin="12"/>
-    </net>
-    <net code="63" name="/TXD0">
+    <net code="62" name="/TXD0">
       <node ref="U2" pin="35"/>
       <node ref="U3" pin="20"/>
     </net>
-    <net code="64" name="/RTS">
-      <node ref="Q1" pin="2"/>
+    <net code="63" name="/RTS">
       <node ref="RN4" pin="7"/>
-      <node ref="U3" pin="19"/>
       <node ref="RN4" pin="8"/>
+      <node ref="U3" pin="19"/>
+      <node ref="Q1" pin="2"/>
     </net>
-    <net code="65" name="/DTR">
-      <node ref="U3" pin="23"/>
+    <net code="64" name="/DTR">
+      <node ref="Q2" pin="2"/>
       <node ref="Q2" pin="5"/>
       <node ref="RN4" pin="3"/>
-      <node ref="Q2" pin="2"/>
+      <node ref="U3" pin="23"/>
     </net>
-    <net code="66" name="IO0">
+    <net code="65" name="IO0">
+      <node ref="Q4" pin="3"/>
       <node ref="Q2" pin="6"/>
-      <node ref="J4" pin="8"/>
-      <node ref="Q5" pin="3"/>
       <node ref="U2" pin="25"/>
       <node ref="MIC1" pin="4"/>
+      <node ref="J4" pin="8"/>
     </net>
-    <net code="67" name="IO25">
-      <node ref="U5" pin="1"/>
-      <node ref="J4" pin="6"/>
-      <node ref="U2" pin="10"/>
-    </net>
-    <net code="68" name="IO26">
+    <net code="66" name="IO26">
+      <node ref="U5" pin="16"/>
       <node ref="U2" pin="11"/>
       <node ref="J4" pin="5"/>
-      <node ref="U5" pin="16"/>
     </net>
-    <net code="69" name="IO33">
-      <node ref="U2" pin="9"/>
+    <net code="67" name="IO33">
       <node ref="U5" pin="14"/>
       <node ref="U4" pin="6"/>
+      <node ref="U2" pin="9"/>
     </net>
-    <net code="70" name="IO5_H">
+    <net code="68" name="IO5_H">
       <node ref="J2" pin="9"/>
       <node ref="U4" pin="13"/>
     </net>
-    <net code="71" name="/12v-booster/COMP">
-      <node ref="U101" pin="7"/>
-      <node ref="R103" pin="2"/>
-      <node ref="C106" pin="1"/>
+    <net code="69" name="IO18_H">
+      <node ref="U4" pin="12"/>
+      <node ref="J2" pin="8"/>
     </net>
-    <net code="72" name="/12v-booster/SS">
-      <node ref="C105" pin="1"/>
+    <net code="70" name="IO32_H">
+      <node ref="J2" pin="7"/>
+      <node ref="U4" pin="9"/>
+    </net>
+    <net code="71" name="/12v-booster/SS">
       <node ref="U101" pin="4"/>
+      <node ref="C105" pin="1"/>
     </net>
-    <net code="73" name="/12v-booster/FB">
-      <node ref="U101" pin="8"/>
-      <node ref="R104" pin="1"/>
+    <net code="72" name="/12v-booster/FB">
       <node ref="R101" pin="2"/>
+      <node ref="R104" pin="1"/>
+      <node ref="U101" pin="8"/>
+    </net>
+    <net code="73" name="/12v-booster/COMP">
+      <node ref="R103" pin="2"/>
+      <node ref="U101" pin="7"/>
+      <node ref="C106" pin="1"/>
     </net>
     <net code="74" name="Net-(U101-Pad5)">
       <node ref="U101" pin="5"/>
     </net>
-    <net code="75" name="Net-(C107-Pad1)">
-      <node ref="R103" pin="1"/>
-      <node ref="C107" pin="1"/>
-    </net>
-    <net code="76" name="Net-(U101-Pad10)">
-      <node ref="U101" pin="10"/>
-    </net>
-    <net code="77" name="/12v-booster/FREQ">
+    <net code="75" name="/12v-booster/FREQ">
       <node ref="R102" pin="1"/>
       <node ref="U101" pin="9"/>
+    </net>
+    <net code="76" name="Net-(C107-Pad1)">
+      <node ref="C107" pin="1"/>
+      <node ref="R103" pin="1"/>
+    </net>
+    <net code="77" name="Net-(U101-Pad10)">
+      <node ref="U101" pin="10"/>
     </net>
     <net code="78" name="Net-(U101-Pad14)">
       <node ref="U101" pin="14"/>
     </net>
     <net code="79" name="/12v-booster/SW">
-      <node ref="D101" pin="2"/>
       <node ref="L101" pin="2"/>
-      <node ref="U101" pin="1"/>
       <node ref="U101" pin="15"/>
+      <node ref="U101" pin="1"/>
       <node ref="U101" pin="16"/>
+      <node ref="D101" pin="2"/>
     </net>
     <net code="80" name="/Amp/SPKR+">
       <node ref="U5" pin="9"/>
       <node ref="J11" pin="1"/>
-      <node ref="J10" pin="1"/>
     </net>
     <net code="81" name="/Amp/SPKR-">
-      <node ref="U5" pin="10"/>
       <node ref="J11" pin="2"/>
-      <node ref="J10" pin="2"/>
+      <node ref="U5" pin="10"/>
     </net>
     <net code="82" name="/Reset_Boot/~PGM_SW_OUT">
       <node ref="RN6" pin="2"/>
-      <node ref="R3" pin="1"/>
+      <node ref="SW2" pin="2"/>
+      <node ref="SW2" pin="2"/>
       <node ref="RN6" pin="3"/>
       <node ref="RN6" pin="4"/>
-      <node ref="SW2" pin="2"/>
       <node ref="C23" pin="1"/>
-      <node ref="SW2" pin="2"/>
     </net>
     <net code="83" name="/Reset_Boot/PGM_IO0_DRV">
+      <node ref="Q4" pin="1"/>
       <node ref="RN6" pin="6"/>
-      <node ref="Q5" pin="5"/>
     </net>
-    <net code="84" name="/Reset_Boot/PGM_IO2_DRV">
-      <node ref="RN6" pin="7"/>
-      <node ref="Q5" pin="2"/>
-    </net>
-    <net code="85" name="Net-(RN6-Pad1)">
+    <net code="84" name="Net-(RN6-Pad1)">
       <node ref="RN6" pin="1"/>
+    </net>
+    <net code="85" name="/Reset_Boot/PGM_IO2_DRV">
+      <node ref="Q5" pin="1"/>
+      <node ref="RN6" pin="7"/>
     </net>
     <net code="86" name="Net-(U4-Pad4)">
       <node ref="U4" pin="4"/>

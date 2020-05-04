@@ -42,7 +42,7 @@ F 4 "Samsung" H 0   0   50  0001 C CNN "MFR"
 F 5 "CL21B106KOQNNNE" H 0   0   50  0001 C CNN "MPN"
 F 6 "Digikey" H 0   0   50  0001 C CNN "SPR"
 F 7 "1276-2872-1-ND" H 0   0   50  0001 C CNN "SPN"
-F 8 "-" H 0   0   50  0001 C CNN "SPURL"
+F 8 "https://www.digikey.com/products/en?keywords=1276-2872-1-ND" H 0   0   50  0001 C CNN "SPURL"
 F 9 "CAP CER 10UF 16V X7R 0805" H 0   0   50  0001 C CNN "DESC"
 	1    4450 2650
 	1    0    0    -1  
@@ -59,7 +59,7 @@ F 4 "Murata Electronics" H 0   0   50  0001 C CNN "MFR"
 F 5 "GCM188R71H104KA57D" H 0   0   50  0001 C CNN "MPN"
 F 6 "Digikey" H 0   0   50  0001 C CNN "SPR"
 F 7 "490-4779-1-ND" H 0   0   50  0001 C CNN "SPN"
-F 8 "-" H 0   0   50  0001 C CNN "SPURL"
+F 8 "https://www.digikey.com/product-detail/en/murata-electronics/GCM188R71H104KA57D/490-4779-1-ND/1641698" H 0   0   50  0001 C CNN "SPURL"
 F 9 "CAP CER 0.1UF 50V X7R 0603" H 0   0   50  0001 C CNN "DESC"
 	1    4850 2650
 	1    0    0    -1  
@@ -142,7 +142,7 @@ F 4 "Murata Electronics" H 0   0   50  0001 C CNN "MFR"
 F 5 "GCM188R71H104KA57D" H 0   0   50  0001 C CNN "MPN"
 F 6 "Digikey" H 0   0   50  0001 C CNN "SPR"
 F 7 "490-4779-1-ND" H 0   0   50  0001 C CNN "SPN"
-F 8 "-" H 0   0   50  0001 C CNN "SPURL"
+F 8 "https://www.digikey.com/product-detail/en/murata-electronics/GCM188R71H104KA57D/490-4779-1-ND/1641698" H 0   0   50  0001 C CNN "SPURL"
 F 9 "CAP CER 0.1UF 50V X7R 0603" H 0   0   50  0001 C CNN "DESC"
 	1    3000 2800
 	1    0    0    -1  
@@ -162,23 +162,6 @@ F 7 "455-1788-1-ND" H 5200 3200 50  0001 C CNN "SPN"
 F 8 "https://www.digikey.com/product-detail/en/jst-sales-america-inc/BM02B-SRSS-TB-LF-SN/455-1788-1-ND/926859" H 5200 3200 50  0001 C CNN "SPURL"
 F 9 "CONN HEADER SMD 2POS 1MM" H 0   0   50  0001 C CNN "DESC"
 	1    5200 3200
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x02 J10
-U 1 1 5E133F76
-P 5200 3600
-F 0 "J10" H 5280 3592 50  0000 L CNN
-F 1 "Conn_01x02 DNF" H 5280 3501 50  0000 L CNN
-F 2 "Connector_PinHeader_1.27mm:PinHeader_1x02_P1.27mm_Vertical_SMD_Pin1Left" H 5200 3600 50  0001 C CNN
-F 3 "https://media.digikey.com/pdf/Data%20Sheets/JST%20PDFs/SR%20Connector.pdf" H 5200 3600 50  0001 C CNN
-F 4 "Harwin Inc." H 5200 3600 50  0001 C CNN "MFR"
-F 5 "M50-3630242R" H 5200 3600 50  0001 C CNN "MPN"
-F 6 "Digikey" H 5200 3600 50  0001 C CNN "SPR"
-F 7 "952-3933-1-ND" H 5200 3600 50  0001 C CNN "SPN"
-F 8 "https://www.digikey.com/products/en/connectors-interconnects/rectangular-connectors-headers-male-pins/314?k=M50-3630242R&k=&pkeyword=M50-3630242R&sv=0&pv7=2&sf=0&quantity=&ColumnSort=0&page=1&stock=1&nstock=1&pageSize=500" H 5200 3600 50  0001 C CNN "SPURL"
-F 9 "CONN HEADER SMD 2POS 1.27MM" H 0   0   50  0001 C CNN "DESC"
-	1    5200 3600
 	1    0    0    -1  
 $EndComp
 Text Label 2650 3100 0    50   ~ 0
@@ -224,21 +207,9 @@ Wire Wire Line
 Wire Wire Line
 	4900 3200 5000 3200
 Wire Wire Line
-	4550 3300 4800 3300
-Wire Wire Line
-	4900 3200 4900 3600
-Wire Wire Line
-	4900 3600 5000 3600
-Wire Wire Line
-	4800 3300 4800 3700
-Wire Wire Line
-	4800 3700 5000 3700
-Wire Wire Line
-	4800 3300 5000 3300
+	4550 3300 5000 3300
 Connection ~ 4850 2800
 Connection ~ 4450 2500
 Connection ~ 3000 2650
 Connection ~ 3000 3200
-Connection ~ 4900 3200
-Connection ~ 4800 3300
 $EndSCHEMATC

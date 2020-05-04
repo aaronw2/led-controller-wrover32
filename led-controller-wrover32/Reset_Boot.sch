@@ -14,31 +14,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L dk_Transistors-FETs-MOSFETs-Arrays:BSS138DW-7-F Q5
-U 1 1 5DD66E94
-P 5050 2350
-F 0 "Q5" H 5000 2837 60  0000 C CNN
-F 1 "BSS138DW-7-F" H 5000 2731 60  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-363_SC-70-6" H 5250 2550 60  0001 L CNN
-F 3 "https://www.diodes.com/assets/Datasheets/ds30203.pdf" V 5250 2650 60  0001 L CNN
-F 4 "BSS138DW-FDICT-ND" H 5250 2750 60  0001 L CNN "Digi-Key_PN"
-F 5 "BSS138DW-7-F" H 5250 2850 60  0001 L CNN "MPN"
-F 6 "Discrete Semiconductor Products" H 5250 2950 60  0001 L CNN "Category"
-F 7 "Transistors - FETs, MOSFETs - Arrays" H 5250 3050 60  0001 L CNN "Family"
-F 8 "https://www.diodes.com/assets/Datasheets/ds30203.pdf" H 5250 3150 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/diodes-incorporated/BSS138DW-7-F/BSS138DW-FDICT-ND/808541" H 5250 3250 60  0001 L CNN "DK_Detail_Page"
-F 10 "MOSFET 2N-CH 50V 0.2A SC70-6" H 5250 3350 60  0001 L CNN "Description"
-F 11 "Diodes Incorporated" H 5250 3450 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 5250 3550 60  0001 L CNN "Status"
-F 13 "Diodes Incorporated" H 5050 2350 50  0001 C CNN "MFR"
-F 14 "Digikey" H 5050 2350 50  0001 C CNN "SPR"
-F 15 "BSS138DW-FDICT-ND" H 5050 2350 50  0001 C CNN "SPN"
-F 16 "https://www.digikey.com/products/en/discrete-semiconductor-products/transistors-fets-mosfets-arrays/289?k=BSS138DW-7-F&k=&pkeyword=BSS138DW-7-F&sv=0&pv7=2&sf=0&quantity=&ColumnSort=0&page=1&stock=1&nstock=1&pageSize=500" H 5050 2350 50  0001 C CNN "SPURL"
-F 17 "MOSFET 2N-CH 50V 0.2A SC70-6" H 0   0   50  0001 C CNN "DESC"
-	1    5050 2350
-	1    0    0    -1  
-$EndComp
-$Comp
 L switch_tact_smt:SW_SPST_KMR2 SW2
 U 1 1 5DD6A125
 P 3000 2350
@@ -91,23 +66,12 @@ $EndComp
 $Comp
 L power:GND #PWR0127
 U 1 1 5DD73FDE
-P 4750 2150
-F 0 "#PWR0127" H 4750 1900 50  0001 C CNN
-F 1 "GND" H 4755 1977 50  0000 C CNN
-F 2 "" H 4750 2150 50  0001 C CNN
-F 3 "" H 4750 2150 50  0001 C CNN
-	1    4750 2150
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0128
-U 1 1 5DD74502
-P 5250 2750
-F 0 "#PWR0128" H 5250 2500 50  0001 C CNN
-F 1 "GND" H 5255 2577 50  0000 C CNN
-F 2 "" H 5250 2750 50  0001 C CNN
-F 3 "" H 5250 2750 50  0001 C CNN
-	1    5250 2750
+P 5250 2650
+F 0 "#PWR0127" H 5250 2400 50  0001 C CNN
+F 1 "GND" H 5255 2477 50  0000 C CNN
+F 2 "" H 5250 2650 50  0001 C CNN
+F 3 "" H 5250 2650 50  0001 C CNN
+	1    5250 2650
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -115,15 +79,15 @@ L Device:R_Pack04 RN6
 U 1 1 5DD75EB2
 P 3900 2450
 F 0 "RN6" V 3483 2450 50  0000 C CNN
-F 1 "100K" V 3574 2450 50  0000 C CNN
+F 1 "10K" V 3574 2450 50  0000 C CNN
 F 2 "Resistor_SMD:R_Array_Convex_4x0603" V 4175 2450 50  0001 C CNN
 F 3 "https://industrial.panasonic.com/cdbs/www-data/pdf/AOC0000/AOC0000C14.pdf" H 3900 2450 50  0001 C CNN
 F 4 "Panasonic" H 3900 2450 50  0001 C CNN "MFR"
-F 5 "EXB-V8V104JV" H 3900 2450 50  0001 C CNN "MPN"
+F 5 "EXB-V8V103JV" H 3900 2450 50  0001 C CNN "MPN"
 F 6 "Digikey" H 3900 2450 50  0001 C CNN "SPR"
-F 7 "Y4104CT-ND" H 3900 2450 50  0001 C CNN "SPN"
-F 8 "https://www.digikey.com/product-detail/en/bourns-inc/CAT16-1003F4LF/CAT16-1003F4LFCT-ND/3592894" H 3900 2450 50  0001 C CNN "SPURL"
-F 9 "RES ARRAY 4 RES 100K OHM 1206" H 0   0   50  0001 C CNN "DESC"
+F 7 "Y4103CT-ND" H 3900 2450 50  0001 C CNN "SPN"
+F 8 "https://www.digikey.com/products/en?keywords=Y4103CT-ND" H 3900 2450 50  0001 C CNN "SPURL"
+F 9 "RES ARRAY 4 RES 10K OHM 1206" H 0   0   50  0001 C CNN "DESC"
 	1    3900 2450
 	0    1    1    0   
 $EndComp
@@ -154,7 +118,7 @@ F 4 "Samsung" H -1100 2500 50  0001 C CNN "MFR"
 F 5 "RC1608F471CS" H -1100 2500 50  0001 C CNN "MPN"
 F 6 "Digikey" H -1100 2500 50  0001 C CNN "SPR"
 F 7 "1276-4619-1-ND" H -1100 2500 50  0001 C CNN "SPN"
-F 8 "-" H -1100 2500 50  0001 C CNN "SPURL"
+F 8 "https://www.digikey.com/products/en?keywords=1276-4619-1-ND" H -1100 2500 50  0001 C CNN "SPURL"
 F 9 "RES SMD 470 OHM 1% 1/10W 0603" H 0   0   50  0001 C CNN "DESC"
 	1    3400 3550
 	1    0    0    -1  
@@ -173,7 +137,7 @@ F 4 "Murata Electronics" H -1100 2300 50  0001 C CNN "MFR"
 F 5 "GCM188R71H104KA57D" H -1100 2300 50  0001 C CNN "MPN"
 F 6 "Digikey" H -1100 2300 50  0001 C CNN "SPR"
 F 7 "490-4779-1-ND" H -1100 2300 50  0001 C CNN "SPN"
-F 8 "-" H -1100 2300 50  0001 C CNN "SPURL"
+F 8 "https://www.digikey.com/product-detail/en/murata-electronics/GCM188R71H104KA57D/490-4779-1-ND/1641698" H -1100 2300 50  0001 C CNN "SPURL"
 F 9 "CAP CER 0.1UF 50V X7R 0603" H 0   0   50  0001 C CNN "DESC"
 	1    3850 3850
 	1    0    0    -1  
@@ -209,28 +173,11 @@ F 9 "SWITCH TACTILE SPST-NO 0.05A 32V" H 0   0   50  0001 C CNN "DESC"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R R3
-U 1 1 5DBEA787
-P 3200 2600
-F 0 "R3" H 3250 2700 50  0000 L CNN
-F 1 "10K" H 3250 2500 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 3130 2600 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/20035/dcrcwe3.pdf" H 3200 2600 50  0001 C CNN
-F 4 "Vishay Dale" H 0   0   50  0001 C CNN "MFR"
-F 5 "CRCW060310K0FKEC" H 0   0   50  0001 C CNN "MPN"
-F 6 "Digikey" H 0   0   50  0001 C CNN "SPR"
-F 7 "541-2979-1-ND" H 0   0   50  0001 C CNN "SPN"
-F 8 "-" H 0   0   50  0001 C CNN "SPURL"
-F 9 "RES SMD 10K OHM 1% 1/10W 0603" H 0   0   50  0001 C CNN "DESC"
-	1    3200 2600
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR0135
 U 1 1 5E105B99
 P 4200 2100
 F 0 "#PWR0135" H 4200 1850 50  0001 C CNN
-F 1 "GND" H 4205 1927 50  0000 C CNN
+F 1 "GND" H 4300 2100 50  0000 C CNN
 F 2 "" H 4200 2100 50  0001 C CNN
 F 3 "" H 4200 2100 50  0001 C CNN
 	1    4200 2100
@@ -253,13 +200,58 @@ F 9 "CAP CER 0.022UF 50V X7R 0603" H 0   0   50  0001 C CNN "DESC"
 	1    3400 2600
 	1    0    0    -1  
 $EndComp
-Text Label 5500 2150 0    50   ~ 0
+$Comp
+L Transistor_FET:BSS138 Q4
+U 1 1 5EC189C0
+P 5150 2450
+F 0 "Q4" V 5492 2450 50  0000 C CNN
+F 1 "BSS138" V 5401 2450 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 5350 2375 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/BS/BSS138.pdf" H 5150 2450 50  0001 L CNN
+F 4 "ON Semiconductor" H 5150 2450 50  0001 C CNN "MFR"
+F 5 "BSS138" H 5150 2450 50  0001 C CNN "MPN"
+F 6 "Digikey" H 5150 2450 50  0001 C CNN "SPR"
+F 7 "BSS138CT-ND" H 5150 2450 50  0001 C CNN "SPN"
+F 8 "https://www.digikey.com/product-detail/en/on-semiconductor/BSS138/BSS138CT-ND/244294" H 5150 2450 50  0001 C CNN "SPURL"
+F 9 "N-Channel 50V 220mA (Ta) 360mW (Ta) Surface Mount SOT-23-3" H 0   0   50  0001 C CNN "DESC"
+	1    5150 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:BSS138 Q5
+U 1 1 5EC114C9
+P 4950 1950
+F 0 "Q5" V 5199 1950 50  0000 C CNN
+F 1 "BSS138" V 5290 1950 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 5150 1875 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/BS/BSS138.pdf" H 4950 1950 50  0001 L CNN
+F 4 "ON Semiconductor" H 4950 1950 50  0001 C CNN "MFR"
+F 5 "BSS138" H 4950 1950 50  0001 C CNN "MPN"
+F 6 "Digikey" H 4950 1950 50  0001 C CNN "SPR"
+F 7 "BSS138CT-ND" H 4950 1950 50  0001 C CNN "SPN"
+F 8 "https://www.digikey.com/product-detail/en/on-semiconductor/BSS138/BSS138CT-ND/244294" H 4950 1950 50  0001 C CNN "SPURL"
+F 9 "N-Channel 50V 220mA (Ta) 360mW (Ta) Surface Mount SOT-23-3" H 0   0   50  0001 C CNN "DESC"
+	1    4950 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0128
+U 1 1 5DD74502
+P 5050 2150
+F 0 "#PWR0128" H 5050 1900 50  0001 C CNN
+F 1 "GND" H 5055 1977 50  0000 C CNN
+F 2 "" H 5050 2150 50  0001 C CNN
+F 3 "" H 5050 2150 50  0001 C CNN
+	1    5050 2150
+	1    0    0    -1  
+$EndComp
+Text Label 5600 2250 0    50   ~ 0
 IO0
-Text Label 5500 3100 0    50   ~ 0
+Text Label 5300 1750 0    50   ~ 0
 IO2
-Text GLabel 5650 2150 2    50   Output ~ 0
+Text GLabel 5750 2250 2    50   Output ~ 0
 IO0
-Text GLabel 5650 3100 2    50   Output ~ 0
+Text GLabel 5450 1750 2    50   Output ~ 0
 IO2
 Text GLabel 5650 3700 2    50   Output ~ 0
 ~RESET
@@ -269,7 +261,7 @@ Text Notes 3600 3400 0    50   ~ 0
 Reset button
 Text Label 3200 2450 0    50   ~ 0
 ~PGM_SW_OUT
-Text Label 4450 1800 0    50   ~ 0
+Text Label 4150 2350 0    50   ~ 0
 PGM_IO2_DRV
 Text Label 4150 2450 0    50   ~ 0
 PGM_IO0_DRV
@@ -290,24 +282,6 @@ Wire Wire Line
 Wire Wire Line
 	3700 2450 3700 2550
 Wire Wire Line
-	4100 2450 4750 2450
-Wire Wire Line
-	4100 2350 4250 2350
-Wire Wire Line
-	4250 2350 4250 1800
-Wire Wire Line
-	4250 1800 5450 1800
-Wire Wire Line
-	5450 1800 5450 2450
-Wire Wire Line
-	5450 2450 5250 2450
-Wire Wire Line
-	5250 2150 5650 2150
-Wire Wire Line
-	4750 2750 4750 3100
-Wire Wire Line
-	4750 3100 5650 3100
-Wire Wire Line
 	3850 4000 3850 4100
 Wire Wire Line
 	3850 3700 5650 3700
@@ -320,11 +294,19 @@ Wire Wire Line
 Wire Wire Line
 	3400 4100 3500 4100
 Wire Wire Line
-	3200 2750 3400 2750
-Wire Wire Line
 	4200 2100 4100 2100
 Wire Wire Line
 	4100 2100 4100 2250
+Wire Wire Line
+	5050 1750 5450 1750
+Wire Wire Line
+	4100 2450 4950 2450
+Wire Wire Line
+	5250 2250 5750 2250
+Wire Wire Line
+	4100 2350 4750 2350
+Wire Wire Line
+	4750 1950 4750 2350
 Connection ~ 2800 2350
 Connection ~ 3200 2450
 Connection ~ 3400 2450
@@ -334,6 +316,5 @@ Connection ~ 3400 3700
 Connection ~ 3500 3700
 Connection ~ 3400 4100
 Connection ~ 3500 4100
-Connection ~ 3400 2750
 NoConn ~ 3700 2250
 $EndSCHEMATC
